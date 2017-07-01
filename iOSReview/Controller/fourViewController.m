@@ -1,0 +1,55 @@
+//
+//  fourViewController.m
+//  iOSReview
+//
+//  Created by 于海涛 on 2017/6/26.
+//  Copyright © 2017年 KennyHito. All rights reserved.
+//
+
+#import "fourViewController.h"
+#import "HeadTools.h"
+@interface fourViewController ()
+@property (nonatomic,strong) UIImageView * imageV;
+@end
+
+@implementation fourViewController
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    
+    UIView * view = [self createUIViewFrame:CGRectMake(10, 100, 200, 80) andBackgroudColor:[UIColor redColor] andCircle:YES andShadow:YES andShadowColor:[UIColor blueColor]];
+    [self.view addSubview:view];
+    
+    _imageV = [[UIImageView alloc]initWithFrame:CGRectMake(10, 300, 200, 200)];
+    _imageV.userInteractionEnabled = YES;
+    _imageV.image = [UIImage imageNamed:@"ying"];
+    [self.view addSubview:_imageV];
+    
+    UILongPressGestureRecognizer * longPress = [[UILongPressGestureRecognizer alloc]initWithTarget:self action:@selector(longPressClick:)];
+    //设置长按时间,默认0.5秒
+    longPress.minimumPressDuration = 1.0;
+    [self.imageV addGestureRecognizer:longPress];
+}
+- (void)longPressClick:(UIGestureRecognizer *)longPress{
+    //必须加上判断语句防止多次保存
+    if (longPress.state == UIGestureRecognizerStateBegan ) {
+        [self savePicture:self.imageV.image];
+    }
+}
+
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
+
+/*
+#pragma mark - Navigation
+
+// In a storyboard-based application, you will often want to do a little preparation before navigation
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    // Get the new view controller using [segue destinationViewController].
+    // Pass the selected object to the new view controller.
+}
+*/
+
+@end
