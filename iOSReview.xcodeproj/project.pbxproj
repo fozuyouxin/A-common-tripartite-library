@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1805075B1F0C81B200D52818 /* 123.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 1805075A1F0C81B200D52818 /* 123.mp4 */; };
+		1805075E1F0C876A00D52818 /* fiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1805075D1F0C876A00D52818 /* fiveViewController.m */; };
 		18B554601F0B9B4C00B9B7F3 /* aa.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 18B5545F1F0B9B4C00B9B7F3 /* aa.jpg */; };
 		50502E571F0232A200868306 /* fourViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50502E4E1F0232A200868306 /* fourViewController.m */; };
 		50502E581F0232A200868306 /* NextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50502E501F0232A200868306 /* NextViewController.m */; };
@@ -49,6 +50,9 @@
 
 /* Begin PBXFileReference section */
 		1805075A1F0C81B200D52818 /* 123.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 123.mp4; sourceTree = "<group>"; };
+		1805075C1F0C876A00D52818 /* fiveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fiveViewController.h; sourceTree = "<group>"; };
+		1805075D1F0C876A00D52818 /* fiveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = fiveViewController.m; sourceTree = "<group>"; };
+		1805075F1F0C879B00D52818 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		18B5545F1F0B9B4C00B9B7F3 /* aa.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = aa.jpg; sourceTree = "<group>"; };
 		50275D2A1F00D7C600C3733C /* HeadTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeadTools.h; sourceTree = "<group>"; };
 		50502E4D1F0232A200868306 /* fourViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fourViewController.h; sourceTree = "<group>"; };
@@ -119,18 +123,20 @@
 			children = (
 				1805075A1F0C81B200D52818 /* 123.mp4 */,
 				50E48D181F034670005E0088 /* 霍建华、赵丽颖 - 不可说.mp4 */,
-				50502E4D1F0232A200868306 /* fourViewController.h */,
-				50502E4E1F0232A200868306 /* fourViewController.m */,
-				50502E4F1F0232A200868306 /* NextViewController.h */,
-				50502E501F0232A200868306 /* NextViewController.m */,
-				50502E511F0232A200868306 /* secondViewController.h */,
-				50502E521F0232A200868306 /* secondViewController.m */,
-				50502E531F0232A200868306 /* thirdViewController.h */,
-				50502E541F0232A200868306 /* thirdViewController.m */,
 				50502E551F0232A200868306 /* ViewController.h */,
 				50502E561F0232A200868306 /* ViewController.m */,
+				50502E511F0232A200868306 /* secondViewController.h */,
+				50502E521F0232A200868306 /* secondViewController.m */,
+				50502E4F1F0232A200868306 /* NextViewController.h */,
+				50502E501F0232A200868306 /* NextViewController.m */,
+				50502E531F0232A200868306 /* thirdViewController.h */,
+				50502E541F0232A200868306 /* thirdViewController.m */,
+				50502E4D1F0232A200868306 /* fourViewController.h */,
+				50502E4E1F0232A200868306 /* fourViewController.m */,
 				508719601F02481F00F60FAC /* filmViewController.h */,
 				508719611F02481F00F60FAC /* filmViewController.m */,
+				1805075C1F0C876A00D52818 /* fiveViewController.h */,
+				1805075D1F0C876A00D52818 /* fiveViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -200,6 +206,7 @@
 			children = (
 				508E51751EFB54B1007C32B3 /* iOSReviewTests.m */,
 				508E51771EFB54B1007C32B3 /* Info.plist */,
+				1805075F1F0C879B00D52818 /* PrefixHeader.pch */,
 			);
 			path = iOSReviewTests;
 			sourceTree = "<group>";
@@ -427,6 +434,7 @@
 				50502E581F0232A200868306 /* NextViewController.m in Sources */,
 				50502E5B1F0232A200868306 /* ViewController.m in Sources */,
 				508E51961EFB6B1E007C32B3 /* BaseViewController.m in Sources */,
+				1805075E1F0C876A00D52818 /* fiveViewController.m in Sources */,
 				508E51601EFB54B1007C32B3 /* AppDelegate.m in Sources */,
 				508719621F02481F00F60FAC /* filmViewController.m in Sources */,
 				50502E571F0232A200868306 /* fourViewController.m in Sources */,
@@ -582,6 +590,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 3PV6M3KT2L;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/iOSReviewTests/PrefixHeader.pch";
 				INFOPLIST_FILE = iOSReview/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -596,6 +606,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 3PV6M3KT2L;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/iOSReviewTests/PrefixHeader.pch";
 				INFOPLIST_FILE = iOSReview/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

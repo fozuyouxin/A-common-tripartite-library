@@ -718,7 +718,11 @@
 - (UILabel *)createLabelTitle:(NSString *)title andFont:(int)size andTitleColor:(UIColor *)titleColor andBackColor:(UIColor *)backColor andTag:(int)tag andFrame:(CGRect)frame andTextAlignment:(NSTextAlignment)align{
     UILabel * label = [[UILabel alloc]initWithFrame:frame];
     label.text = title;
-    label.font = [UIFont systemFontOfSize:size];
+    if (size==0) {
+        label.adjustsFontSizeToFitWidth = YES;
+    }else{
+        label.font = [UIFont systemFontOfSize:size];
+    }
     label.textColor = titleColor;
     label.backgroundColor = backColor;
     label.tag = tag;
@@ -796,8 +800,10 @@
 
 /* 网络请求 */
 - (void)getRequestWithUrl:(NSString *)url andParameter:(NSDictionary *)parameter andReturnBlock:(Myblock)block{
-
+    //提示 "正在加载中..."
     [self showMessage];
+    //在状态栏增加网络请求的菊花，类似safari加载网页的时候状态栏菊花
+    [UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
     
     AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
     manager.responseSerializer = [AFHTTPResponseSerializer serializer];
@@ -809,12 +815,14 @@
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         
         [MBProgressHUD hideHUDForView:kApplication animated:YES];
+        [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
         //成功
         block(responseObject,nil);
         
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         
         [MBProgressHUD hideHUDForView:kApplication animated:YES];
+        [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
         //失败
         block(nil,error);
     }];
@@ -822,7 +830,10 @@
 
 - (void)postRequestWithUrl:(NSString *)url andParameter:(NSDictionary *)parameter andReturnBlock:(Myblock)block{
 
+    //提示 "正在加载中..."
     [self showMessage];
+    //在状态栏增加网络请求的菊花，类似safari加载网页的时候状态栏菊花
+    [UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
     
     AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
     manager.responseSerializer = [AFHTTPResponseSerializer serializer];
@@ -833,11 +844,13 @@
         
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         [MBProgressHUD hideHUDForView:kApplication animated:YES];
+        [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
         //成功
         block(responseObject,nil);
         
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         [MBProgressHUD hideHUDForView:kApplication animated:YES];
+        [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
         //失败
         block(nil,error);
     }];

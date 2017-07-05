@@ -37,41 +37,38 @@
     item.tag = 2000;
     self.navigationItem.leftBarButtonItem = item;
     
-    UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
-    [btn.titleLabel setFont:[UIFont systemFontOfSize:15]];
-    [btn setTitle:@"走你!" forState:UIControlStateNormal];
-    btn.tag = 100;
-    [btn setFrame:CGRectMake(20, 100, HitoScreenW-40, 40)];
-    [btn.layer setMasksToBounds:YES];
-    [btn.layer setCornerRadius:4.0];
-    btn.backgroundColor = [UIColor redColor];
-    [btn setTitleColor:[UIColor yellowColor] forState:UIControlStateNormal];
-    [btn addTarget:self action:@selector(btnClick:) forControlEvents:UIControlEventTouchUpInside];
-    [self.view addSubview:btn];
-    
-    UIButton *btn1 = [UIButton buttonWithType:UIButtonTypeCustom];
-    [btn1.titleLabel setFont:[UIFont systemFontOfSize:15]];
-    [btn1 setTitle:@"好的!" forState:UIControlStateNormal];
-    btn1.tag = 200;
-    [btn1 setFrame:CGRectMake(20, 160, HitoScreenW-40, 40)];
-    [btn1.layer setMasksToBounds:YES];
-    [btn1.layer setCornerRadius:4.0];
-    btn1.backgroundColor = [UIColor redColor];
-    [btn1 setTitleColor:[UIColor yellowColor] forState:UIControlStateNormal];
-    [btn1 addTarget:self action:@selector(btnClick:) forControlEvents:UIControlEventTouchUpInside];
-    [self.view addSubview:btn1];
     
     NSArray *oldArr = @[@"12",@"123",@"123"];
     //去除数组中相同的元素
     NSArray *newArr = [oldArr valueForKeyPath:@"@distinctUnionOfObjects.self"];
     NSLog(@"====%@====",newArr);
+    
+    
+    NSArray * titleArr = @[@"third",@"four",@"five"];
+    for (int i = 0 ; i<3; i++) {
+        UIButton *btn1 = [UIButton buttonWithType:UIButtonTypeCustom];
+        [btn1.titleLabel setFont:[UIFont systemFontOfSize:16]];
+        [btn1 setTitle:titleArr[i] forState:UIControlStateNormal];
+        btn1.tag = 1000+i;
+        [btn1 setFrame:CGRectMake(20, 100+i*50, HitoScreenW-40, 40)];
+        [btn1.layer setMasksToBounds:YES];
+        [btn1.layer setCornerRadius:4.0];
+        btn1.backgroundColor = [UIColor redColor];
+        [btn1 setTitleColor:[UIColor yellowColor] forState:UIControlStateNormal];
+        [btn1 addTarget:self action:@selector(btnClick:) forControlEvents:UIControlEventTouchUpInside];
+        [self.view addSubview:btn1];
+    }
 }
+
 - (void)btnClick:(UIButton *)btn{
-    if (btn.tag ==100) {
+    if (btn.tag ==1000) {
         HitoAllocInit(thirdViewController, view);
         [self.navigationController pushViewController:view animated:YES];
-    }else if(btn.tag == 200){
+    }else if(btn.tag == 1001){
         HitoAllocInit(fourViewController, view);
+        [self.navigationController pushViewController:view animated:YES];
+    }else if(btn.tag == 1002){
+        HitoAllocInit(fiveViewController, view);
         [self.navigationController pushViewController:view animated:YES];
     }
 }
