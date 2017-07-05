@@ -9,6 +9,25 @@
 //本地化存储
 #define HitoUserDefaults(NSUserDefaults,defu) NSUserDefaults * defu = [NSUserDefaults standardUserDefaults];
 
+//沙盒路径
+#define HitoHomePath NSHomeDirectory()
+//获取沙盒 Document
+#define HitoPathDocument [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) firstObject]
+//获取沙盒 Cache
+#define HitoPathCache [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) firstObject]
+//获取沙盒 temp
+#define HitoPathTemp NSTemporaryDirectory()
+
+//GCD代码只执行一次
+#define HitoDISPATCH_ONCE_BLOCK(onceBlock) static dispatch_once_t onceToken; dispatch_once(&onceToken, onceBlock);
+
+//输出语句
+#ifdef DEBUG
+#define NSLog(fmt, ...) NSLog((@"%s [Line %d] " fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__)
+#else
+#define NSLog(...)
+#endif
+
 //成功标识
 #define HitoSuccess @"success"
 //失败标识
@@ -16,9 +35,6 @@
 
 //WeakSelf
 #define HitoTypeOf(WeakSelf) __weak typeof(self) WeakSelf = self
-
-//输出语句
-#define HitoLog(key) NSLog(@"%@",key)
 
 //主窗口
 #define HitoApplication [UIApplication sharedApplication].keyWindow

@@ -7,6 +7,8 @@
 //
 
 #import "secondViewController.h"
+#import "ViewController.h"
+#import "HeadTools.h"
 
 @interface secondViewController ()
 
@@ -49,7 +51,7 @@
     
     [self colorLabel:lab andFont:20 andRange:NSMakeRange(0, 6) andColor:[UIColor greenColor]];
     
-    [self getRequestWithUrl:@"http://192.168.8.101/PHPExercise/muke/index.php/Home/Index/" andParameter:@{} andReturnBlock:^(NSData *data, NSError *error) {
+    [self getRequestWithUrl:@"http://luckfairy.16mb.com/PHPExercise/PHP_JSON_3.php" andParameter:@{} andReturnBlock:^(NSData *data, NSError *error) {
         if (data!=nil) {
             NSDictionary * dic = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:nil];
             NSLog(@"%@",dic);
@@ -57,6 +59,7 @@
             NSLog(@"===%@===",error.localizedDescription);
         }
     }];
+    
     
 
 }
@@ -68,8 +71,11 @@
 //        [self skipQQ:@"275108586"];
 //        NSString * str = [self getVersionNumber:@"1173184488"];
 //        NSLog(@"current version number:%@",str);
+//        [self clearCache];
+        btn.backgroundColor = self.RandomColor;
         
-        [self clearCache];
+        
+        
         
     }else if(btn.tag==2000) {
 //        [self showAlertMessage:@"按钮1被点击!"];

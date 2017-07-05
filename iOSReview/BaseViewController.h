@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
+
 @interface BaseViewController : UIViewController
 
 typedef void (^ Myblock)(NSData *data, NSError *error);//网络请求
@@ -16,6 +17,9 @@ typedef void (^ alertBlock)(NSString * alertMessage);//UIAlertController
 @property (nonatomic,strong)UITableView *tableView;//列表
 @property (nonatomic,strong)NSMutableArray *dataArr;//数据源
 @property (nonatomic,strong)UITextField * textF;//文本框
+
+//单例模式
++ (BaseViewController *) shareBaseViewController;
 
 #pragma mark UITableView
 /* 创建tableview */
@@ -44,6 +48,12 @@ typedef void (^ alertBlock)(NSString * alertMessage);//UIAlertController
 - (NSString *)isNilOfNumber:(NSString *)string;
 /* 字符型数据返回空 */
 - (NSString *)isNilOfString:(NSString *)string;
+/* 移除字符串中的空格和换行 */
+- (NSString *)removeSpaceAndNewline:(NSString *)str;
+/* 判断字符串中是否有空格*/
+- (BOOL)isBlank:(NSString *)str;
+/* 获取字符串(或汉字)首字母 */
+- (NSString *)firstCharacterWithString:(NSString *)string;
 /* 跳转appStore页面 */
 - (void)skipAppStoreWithID:(NSString *)MyID;
 /* UIAlertView提示框 */
@@ -58,8 +68,6 @@ typedef void (^ alertBlock)(NSString * alertMessage);//UIAlertController
 - (BOOL)isAllNum:(NSString *)string;
 /* 校验身份证号码(老的15位,新的18位) */
 - (BOOL)isAllIDcard:(NSString *)card;
-/* 获取字符串(或汉字)首字母 */
-- (NSString *)firstCharacterWithString:(NSString *)string;
 /* 跳转的打开方法 */
 - (void)openFuncCommd:(NSString*)str;
 /* 跳转QQ客服 */
@@ -81,6 +89,16 @@ typedef void (^ alertBlock)(NSString * alertMessage);//UIAlertController
 - (void)clearCache;
 /* 保存图片的方法 */
 - (void)savePicture:(UIImage *)image;
+/* 颜色转图片 */
+- (UIImage *)colorSwitchImageWidth:(float)imageWidth andImageHeight:(float)imageHeight andColor:(UIColor *)color;
+/* 随机颜色 */
+- (UIColor *)RandomColor;
+/* 拿到当前正在显示的控制器，不管是push进去的，还是present进去的都能拿到 */
+- (UIViewController *)getVisibleViewControllerFrom:(UIViewController*)vc;
+/* 可以将彩色图片变成黑白图片,获得灰度图*/
+- (UIImage*)covertToGrayImageFromImage:(UIImage*)sourceImage;
+/* 获取手机型号 */
+- (NSString *)getDeviceInfo;
 
 #pragma mark 控件封装
 /* UIView封装

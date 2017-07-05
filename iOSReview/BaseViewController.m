@@ -6,6 +6,7 @@
 //  Copyright © 2017年 KennyHito. All rights reserved.
 //
 #import "BaseViewController.h"
+#import "sys/utsname.h"
 #warning 需要导入第三方库的头文件
 #if 1
 #import <MBProgressHUD.h>
@@ -30,6 +31,16 @@
 @end
 
 @implementation BaseViewController
+
+//单例模式
++ (BaseViewController *) shareBaseViewController{
+    static dispatch_once_t onceToken;
+    static BaseViewController * base = nil;
+    dispatch_once(&onceToken, ^{
+        base = [[BaseViewController alloc]init];
+    });
+    return base;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -215,7 +226,24 @@
         return @"";
     }
 }
-
+/* 移除字符串中的空格和换行 */
+- (NSString *)removeSpaceAndNewline:(NSString *)str {
+    NSString *temp = [str stringByReplacingOccurrencesOfString:@" " withString:@""];
+    temp = [temp stringByReplacingOccurrencesOfString:@"\r" withString:@""];
+    temp = [temp stringByReplacingOccurrencesOfString:@"\n" withString:@""];
+    return temp;
+}
+/*判断字符串中是否有空格*/
+- (BOOL)isBlank:(NSString *)str {
+    NSRange _range = [str rangeOfString:@" "];
+    if (_range.location != NSNotFound) {
+        //有空格
+        return YES;
+    } else {
+        //没有空格
+        return NO;
+    }
+}
 /* 跳转appStore页面 */
 //例如NSString * MyID = @"1173184488";
 - (void)skipAppStoreWithID:(NSString *)MyID{
@@ -492,6 +520,132 @@
     }
 }
 
+/* 颜色转图片 */
+- (UIImage *)colorSwitchImageWidth:(float)imageWidth andImageHeight:(float)imageHeight andColor:(UIColor *)color {
+    CGRect rect = CGRectMake(0.0f, 0.0f,imageWidth, imageHeight);
+    UIGraphicsBeginImageContext(rect.size);
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    
+    CGContextSetFillColorWithColor(context, [color CGColor]);
+    CGContextFillRect(context, rect);
+    
+    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    
+    return image;
+}
+/* 随机颜色 */
+- (UIColor *)RandomColor {
+    NSInteger aRedValue = arc4random() % 255;
+    NSInteger aGreenValue = arc4random() % 255;
+    NSInteger aBlueValue = arc4random() % 255;
+    UIColor *randColor = [UIColor colorWithRed:aRedValue / 255.0f green:aGreenValue / 255.0f blue:aBlueValue / 255.0f alpha:1.0f];
+    return randColor;
+}
+/** 是否支持自动转屏 */
+- (BOOL)shouldAutorotate {
+    return NO;
+}
+/** 支持哪些屏幕方向 */
+- (UIInterfaceOrientationMask)supportedInterfaceOrientations {
+    return UIInterfaceOrientationMaskLandscapeLeft | UIInterfaceOrientationMaskLandscapeRight;
+}
+/** 默认的屏幕方向（当前ViewController必须是通过模态出来的UIViewController（模态带导航的无效）方式展现出来的，才会调用这个方法） */
+- (UIInterfaceOrientation)preferredInterfaceOrientationForPresentation {
+    return UIInterfaceOrientationLandscapeLeft | UIInterfaceOrientationLandscapeRight;
+}
+/* 拿到当前正在显示的控制器，不管是push进去的，还是present进去的都能拿到 */
+- (UIViewController *)getVisibleViewControllerFrom:(UIViewController*)vc {
+    if ([vc isKindOfClass:[UINavigationController class]]) {
+        return [self getVisibleViewControllerFrom:[((UINavigationController*) vc) visibleViewController]];
+    }else if ([vc isKindOfClass:[UITabBarController class]]){
+        return [self getVisibleViewControllerFrom:[((UITabBarController*) vc) selectedViewController]];
+    } else {
+        if (vc.presentedViewController) {
+            return [self getVisibleViewControllerFrom:vc.presentedViewController];
+        } else {
+            return vc;
+        }
+    }
+}
+/* 可以将彩色图片变成黑白图片,获得灰度图*/
+- (UIImage*)covertToGrayImageFromImage:(UIImage*)sourceImage{
+    int width = sourceImage.size.width;
+    int height = sourceImage.size.height;
+    
+    CGColorSpaceRef colorSpace = CGColorSpaceCreateDeviceGray();
+    CGContextRef context = CGBitmapContextCreate (nil,width,height,8,0,colorSpace,kCGImageAlphaNone);
+    CGColorSpaceRelease(colorSpace);
+    
+    if (context == NULL) {
+        return nil;
+    }
+    
+    CGContextDrawImage(context,CGRectMake(0, 0, width, height), sourceImage.CGImage);
+    CGImageRef contextRef = CGBitmapContextCreateImage(context);
+    UIImage *grayImage = [UIImage imageWithCGImage:contextRef];
+    CGContextRelease(context);
+    CGImageRelease(contextRef);
+    
+    return grayImage;
+}
+/* 获取手机型号 */
+- (NSString *)getDeviceInfo {
+    struct utsname systemInfo;
+    uname(&systemInfo);
+    NSString *platform = [NSString stringWithCString:systemInfo.machine encoding:NSASCIIStringEncoding];
+    if ([platform isEqualToString:@"iPhone1,1"]) return @"iPhone 2G";
+    if ([platform isEqualToString:@"iPhone1,2"]) return @"iPhone 3G";
+    if ([platform isEqualToString:@"iPhone2,1"]) return @"iPhone 3GS";
+    if ([platform isEqualToString:@"iPhone3,1"]) return @"iPhone 4";
+    if ([platform isEqualToString:@"iPhone3,2"]) return @"iPhone 4";
+    if ([platform isEqualToString:@"iPhone3,3"]) return @"iPhone 4";
+    if ([platform isEqualToString:@"iPhone4,1"]) return @"iPhone 4S";
+    if ([platform isEqualToString:@"iPhone5,1"]) return @"iPhone 5";
+    if ([platform isEqualToString:@"iPhone5,2"]) return @"iPhone 5";
+    if ([platform isEqualToString:@"iPhone5,3"]) return @"iPhone 5c";
+    if ([platform isEqualToString:@"iPhone5,4"]) return @"iPhone 5c";
+    if ([platform isEqualToString:@"iPhone6,1"]) return @"iPhone 5s";
+    if ([platform isEqualToString:@"iPhone6,2"]) return @"iPhone 5s";
+    if ([platform isEqualToString:@"iPhone7,1"]) return @"iPhone 6 Plus";
+    if ([platform isEqualToString:@"iPhone7,2"]) return @"iPhone 6";
+    if ([platform isEqualToString:@"iPhone8,1"]) return @"iPhone 6s";
+    if ([platform isEqualToString:@"iPhone8,2"]) return @"iPhone 6s Plus";
+    // 日行两款手机型号均为日本独占，可能使用索尼FeliCa支付方案而不是苹果支付
+    if ([platform isEqualToString:@"iPhone9,1"])    return @"国行、日版、港行iPhone 7";
+    if ([platform isEqualToString:@"iPhone9,2"])    return @"港行、国行iPhone 7 Plus";
+    if ([platform isEqualToString:@"iPhone9,3"])    return @"美版、台版iPhone 7";
+    if ([platform isEqualToString:@"iPhone9,4"])    return @"美版、台版iPhone 7 Plus";
+    if ([platform isEqualToString:@"iPhone8,4"]) return @"iPhone SE";
+    if ([platform isEqualToString:@"iPod1,1"]) return @"iPod Touch 1G";
+    if ([platform isEqualToString:@"iPod2,1"]) return @"iPod Touch 2G";
+    if ([platform isEqualToString:@"iPod3,1"]) return @"iPod Touch 3G";
+    if ([platform isEqualToString:@"iPod4,1"]) return @"iPod Touch 4G";
+    if ([platform isEqualToString:@"iPod5,1"]) return @"iPod Touch 5G";
+    if ([platform isEqualToString:@"iPad1,1"]) return @"iPad 1G";
+    if ([platform isEqualToString:@"iPad2,1"]) return @"iPad 2";
+    if ([platform isEqualToString:@"iPad2,2"]) return @"iPad 2";
+    if ([platform isEqualToString:@"iPad2,3"]) return @"iPad 2";
+    if ([platform isEqualToString:@"iPad2,4"]) return @"iPad 2";
+    if ([platform isEqualToString:@"iPad2,5"]) return @"iPad Mini 1G";
+    if ([platform isEqualToString:@"iPad2,6"]) return @"iPad Mini 1G";
+    if ([platform isEqualToString:@"iPad2,7"]) return @"iPad Mini 1G";
+    if ([platform isEqualToString:@"iPad3,1"]) return @"iPad 3";
+    if ([platform isEqualToString:@"iPad3,2"]) return @"iPad 3";
+    if ([platform isEqualToString:@"iPad3,3"]) return @"iPad 3";
+    if ([platform isEqualToString:@"iPad3,4"]) return @"iPad 4";
+    if ([platform isEqualToString:@"iPad3,5"]) return @"iPad 4";
+    if ([platform isEqualToString:@"iPad3,6"]) return @"iPad 4";
+    if ([platform isEqualToString:@"iPad4,1"]) return @"iPad Air";
+    if ([platform isEqualToString:@"iPad4,2"]) return @"iPad Air";
+    if ([platform isEqualToString:@"iPad4,3"]) return @"iPad Air";
+    if ([platform isEqualToString:@"iPad4,4"]) return @"iPad Mini 2G";
+    if ([platform isEqualToString:@"iPad4,5"]) return @"iPad Mini 2G";
+    if ([platform isEqualToString:@"iPad4,6"]) return @"iPad Mini 2G";
+    if ([platform isEqualToString:@"i386"]) return @"iPhone Simulator";
+    if ([platform isEqualToString:@"x86_64"]) return @"iPhone Simulator";
+    return platform;
+}
 #pragma mark 控件封装
 /* UIView封装
  * isCircle 是否圆角;

@@ -60,6 +60,11 @@
     [btn1 setTitleColor:[UIColor yellowColor] forState:UIControlStateNormal];
     [btn1 addTarget:self action:@selector(btnClick:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:btn1];
+    
+    NSArray *oldArr = @[@"12",@"123",@"123"];
+    //去除数组中相同的元素
+    NSArray *newArr = [oldArr valueForKeyPath:@"@distinctUnionOfObjects.self"];
+    NSLog(@"====%@====",newArr);
 }
 - (void)btnClick:(UIButton *)btn{
     if (btn.tag ==100) {
@@ -70,6 +75,8 @@
         [self.navigationController pushViewController:view animated:YES];
     }
 }
+
+
 
 -(void)itemClick:(UIBarButtonItem * )item{
 //    NSLog(@"%ld",item.tag);
