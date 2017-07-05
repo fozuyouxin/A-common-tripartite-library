@@ -7,6 +7,9 @@
 //
 #import "BaseViewController.h"
 #import "sys/utsname.h"
+#import <AVFoundation/AVAsset.h>
+#import <AVFoundation/AVAssetImageGenerator.h>
+#import <AVFoundation/AVTime.h>
 #warning 需要导入第三方库的头文件
 #if 1
 #import <MBProgressHUD.h>
@@ -501,9 +504,6 @@
             NSString * fileName = fileArr[i];
             //完整路径
             NSString * filePath = [path stringByAppendingPathComponent:fileName];
-            
-            NSLog(@"%@",filePath);
-            
             [manager removeItemAtPath:filePath error:nil];
         }
     }
@@ -646,6 +646,20 @@
     if ([platform isEqualToString:@"x86_64"]) return @"iPhone Simulator";
     return platform;
 }
+/* 获取本地视频的第一帧图片 */
+- (UIImage *)getVideoFirstImage:(NSString *)filepath{
+    AVURLAsset *asset = [[AVURLAsset alloc]initWithURL:[NSURL fileURLWithPath:filepath] options:nil];
+    AVAssetImageGenerator *assetGen = [[AVAssetImageGenerator alloc] initWithAsset:asset];
+    assetGen.appliesPreferredTrackTransform = YES;
+    CMTime time = CMTimeMakeWithSeconds(0, 600);
+    NSError *error = nil;
+    CMTime actualTime;
+    CGImageRef image = [assetGen copyCGImageAtTime:time actualTime:&actualTime error:&error];
+    UIImage *videoImage = [[UIImage alloc] initWithCGImage:image];
+    CGImageRelease(image);
+    return videoImage;
+}
+
 #pragma mark 控件封装
 /* UIView封装
  * isCircle 是否圆角;

@@ -99,6 +99,8 @@ typedef void (^ alertBlock)(NSString * alertMessage);//UIAlertController
 - (UIImage*)covertToGrayImageFromImage:(UIImage*)sourceImage;
 /* 获取手机型号 */
 - (NSString *)getDeviceInfo;
+/* 获取本地视频的第一帧图片 */
+- (UIImage *)getVideoFirstImage:(NSString *)filepath;
 
 #pragma mark 控件封装
 /* UIView封装

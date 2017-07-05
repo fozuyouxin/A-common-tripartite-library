@@ -10,7 +10,7 @@
 #import "HeadTools.h"
 
 
-@interface fourViewController ()
+@interface fourViewController ()<UIGestureRecognizerDelegate>
 @property (nonatomic,strong) UIImageView * imageV;
 @end
 
@@ -24,11 +24,13 @@
     
     _imageV = [[UIImageView alloc]initWithFrame:CGRectMake(10, 300, 300, 300)];
     _imageV.userInteractionEnabled = YES;
-    UIImage * ia = [self colorSwitchImageWidth:50 andImageHeight:50 andColor:[UIColor orangeColor]];
-    _imageV.image = ia;
+//    UIImage * ia = [self colorSwitchImageWidth:50 andImageHeight:50 andColor:[UIColor orangeColor]];
+//    _imageV.image = ia;
 //    _imageV.image = [UIImage imageNamed:@"ying"];
 //    _imageV.image = [self covertToGrayImageFromImage:[UIImage imageNamed:@"ying"]];
-    
+    NSString *playString = [[NSBundle mainBundle] pathForResource:@"123" ofType:@"mp4"];
+    UIImage * iv = [self getVideoFirstImage:playString];
+    _imageV.image = iv;
     [self.view addSubview:_imageV];
     
     UILongPressGestureRecognizer * longPress = [[UILongPressGestureRecognizer alloc]initWithTarget:self action:@selector(longPressClick:)];
@@ -42,6 +44,8 @@
     
     NSLog(@"one---%@---",[self removeSpaceAndNewline:@"welcome to beijing!"]);
     NSLog(@"two---%d---",[self isBlank:@"welcome to beijing!"]);
+    
+    
 }
 
 - (void)longPressClick:(UIGestureRecognizer *)longPress{
