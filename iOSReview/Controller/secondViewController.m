@@ -7,7 +7,6 @@
 //
 
 #import "secondViewController.h"
-#import "ViewController.h"
 #import "HeadTools.h"
 
 @interface secondViewController ()
@@ -18,7 +17,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-   
     [self setUpUI];
 }
 
@@ -29,7 +27,7 @@
     //    [self addNavRightBarButtonWithImage:@"next"];
     [self addNavRightBarButtonWithText:@"Go!" andTextColor:[UIColor greenColor]];
     
-    UIButton * btn = [[UIButton alloc]initWithFrame:CGRectMake(10, 100, 100, 50)];
+    UIButton * btn = [[UIButton alloc]initWithFrame:CGRectMake(10, 10, 100, 50)];
     [btn setTitle:@"测试一下" forState:UIControlStateNormal];
     [btn setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
     btn.backgroundColor = [UIColor yellowColor];
@@ -40,13 +38,13 @@
     NSLog(@"===%@",[self firstCharacterWithString:@"我们"]);
     NSLog(@"===%@",[self firstCharacterWithString:@"zoedear"]);
     
-    UIButton * btn1 = [self createButtonTitle:@"嗨起来" andFont:18 andTitleColor:[UIColor redColor] andBackColor:[UIColor yellowColor] andTag:2000 andFrame:CGRectMake(10, 200, 140, 50)];
+    UIButton * btn1 = [self createButtonTitle:@"嗨起来" andFont:18 andTitleColor:[UIColor redColor] andBackColor:[UIColor yellowColor] andTag:2000 andFrame:CGRectMake(10,CGRectGetMaxY(btn.frame)+5 , 140, 50)];
     [self.view addSubview:btn1];
     
-    UITextField * tf = [self createTextFieldPlaceholderTitle:@"请输入昵称" andFont:16 andTitleColor:[UIColor redColor] andTag:1000 andFrame:CGRectMake(10, 300, 200,40)andSecureTextEntry:NO];
+    UITextField * tf = [self createTextFieldPlaceholderTitle:@"请输入昵称" andFont:16 andTitleColor:[UIColor redColor] andTag:1000 andFrame:CGRectMake(10,CGRectGetMaxY(btn1.frame)+5, 200,40)andSecureTextEntry:NO];
     [self.view addSubview:tf];
     
-    UILabel * lab = [self createLabelTitle:@"123哈456哈789哈000111" andFont:18 andTitleColor:[UIColor redColor] andBackColor:[UIColor yellowColor] andTag:3000 andFrame:CGRectMake(10, 400, 300,40) andTextAlignment:NSTextAlignmentCenter];
+    UILabel * lab = [self createLabelTitle:@"123哈456哈789哈000111" andFont:18 andTitleColor:[UIColor redColor] andBackColor:[UIColor yellowColor] andTag:3000 andFrame:CGRectMake(10,CGRectGetMaxY(tf.frame)+5, 300,40) andTextAlignment:NSTextAlignmentCenter];
     [self.view addSubview:lab];
     
     [self colorLabel:lab andFont:20 andRange:NSMakeRange(0, 6) andColor:[UIColor greenColor]];
@@ -75,8 +73,6 @@
         btn.backgroundColor = self.RandomColor;
         
         
-        
-        
     }else if(btn.tag==2000) {
 //        [self showAlertMessage:@"按钮1被点击!"];
 //        NSLog(@"%@",[self getCurrentTimeNumber]);
@@ -85,5 +81,7 @@
         NSLog(@"%@",[self showCache]);
     }
 }
+
+
 
 @end

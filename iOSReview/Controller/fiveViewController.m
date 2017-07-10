@@ -16,7 +16,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.automaticallyAdjustsScrollViewInsets = NO;
+    self.navigationItem.title = @"five";
     
     //UIView背景颜色渐变
     UIView *view = [[UIView alloc] initWithFrame:CGRectMake(10, 100, HitoScreenW-20, 200)];

@@ -26,8 +26,8 @@
 //成功标识
 #define SUCCESS @"success"
 //屏幕的宽高
-#define SCREENW [UIScreen mainScreen].bounds.size.width
-#define SCREENH [UIScreen mainScreen].bounds.size.height
+#define HitoScreenW [UIScreen mainScreen].bounds.size.width
+#define HitoScreenH [UIScreen mainScreen].bounds.size.height
 
 @interface BaseViewController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -48,7 +48,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
+    
+    //关于iOS自定义返回按钮右滑返回手势失效的解决
     self.navigationController.interactivePopGestureRecognizer.delegate=(id)self;
+    
     _dataArr = [[NSMutableArray alloc]init];
     //键盘弹出来通知中心
     [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(showKeyboard:) name:UIKeyboardDidShowNotification object:nil];
@@ -71,7 +74,7 @@
 #pragma mark 创建tableview
 /** 创建tableview */
 - (void)setUpTableView{
-    self.tableView = [[UITableView alloc] initWithFrame:CGRectMake(0,0, SCREENW, SCREENH-64-49) style:UITableViewStyleGrouped];
+    self.tableView = [[UITableView alloc] initWithFrame:CGRectMake(0,64, HitoScreenW, HitoScreenH-64-49) style:UITableViewStyleGrouped];
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleSingleLine;
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
@@ -859,6 +862,12 @@
 
 -(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
     [self.textF resignFirstResponder];
+}
+
+/* 自定制navigationBar,返回上个页面时候,translucent必须设置为YES */
+- (void)viewWillDisappear:(BOOL)animated{
+    [super viewWillDisappear:animated];
+    [self.navigationController.navigationBar setTranslucent:YES];
 }
 
 - (void)didReceiveMemoryWarning {

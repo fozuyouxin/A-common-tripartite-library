@@ -16,8 +16,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor orangeColor];
-    self.navigationItem.title = @"second";
+    self.automaticallyAdjustsScrollViewInsets = NO;
+    self.view.backgroundColor = [UIColor whiteColor];
+    self.navigationItem.title = @"block回调";
     self.block(@"my name is KennyHito");
 }
 

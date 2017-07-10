@@ -18,7 +18,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    self.navigationItem.title = @"four";
     UIView * view = [self createUIViewFrame:CGRectMake(10, 100, 200, 80) andBackgroudColor:[UIColor redColor] andCircle:YES andShadow:YES andShadowColor:[UIColor blueColor]];
     [self.view addSubview:view];
     

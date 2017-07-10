@@ -1,26 +1,20 @@
 //
-//  ViewController.m
+//  HitoViewController.m
 //  iOSReview
 //
-//  Created by 于海涛 on 2017/6/22.
+//  Created by Apple on 2017/7/10.
 //  Copyright © 2017年 KennyHito. All rights reserved.
 //
 
-#import "ViewController.h"
-#import "NextViewController.h"
-#import "secondViewController.h"
-#import "HeadTools.h"
-#import "thirdViewController.h"
-#import "fourViewController.h"
-#import "filmViewController.h"
+#import "HitoViewController.h"
 
 #define Alloc_vc(obj,Controller) Controller * obj = [[Controller alloc]init]
 
-@interface ViewController ()
-@property (nonatomic,copy)NSString * stu;
+@interface HitoViewController ()
+
 @end
 
-@implementation ViewController
+@implementation HitoViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -76,7 +70,7 @@
 
 
 -(void)itemClick:(UIBarButtonItem * )item{
-//    NSLog(@"%ld",item.tag);
+    //    NSLog(@"%ld",item.tag);
     if (item.tag == 1000) {
         Alloc_vc(vc,secondViewController);
         vc.hidesBottomBarWhenPushed = YES;
@@ -95,13 +89,20 @@
     }
     
     
-    
 }
-
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
+/*
+#pragma mark - Navigation
+
+// In a storyboard-based application, you will often want to do a little preparation before navigation
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    // Get the new view controller using [segue destinationViewController].
+    // Pass the selected object to the new view controller.
+}
+*/
 
 @end
