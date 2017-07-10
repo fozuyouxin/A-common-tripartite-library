@@ -38,8 +38,8 @@
     NSLog(@"====%@====",newArr);
     
     
-    NSArray * titleArr = @[@"third",@"four",@"five"];
-    for (int i = 0 ; i<3; i++) {
+    NSArray * titleArr = @[@"tableViewCell",@"four",@"会员卡",@"分享",@"Masonry"];
+    for (int i = 0 ; i<titleArr.count; i++) {
         UIButton *btn1 = [UIButton buttonWithType:UIButtonTypeCustom];
         [btn1.titleLabel setFont:[UIFont systemFontOfSize:16]];
         [btn1 setTitle:titleArr[i] forState:UIControlStateNormal];
@@ -64,6 +64,15 @@
     }else if(btn.tag == 1002){
         HitoAllocInit(fiveViewController, view);
         [self.navigationController pushViewController:view animated:YES];
+    }else if(btn.tag == 1003){
+        //苹果系统自带分享功能
+        UIActivityViewController *avc = [[UIActivityViewController alloc]initWithActivityItems:@[@"分享内容名称",[NSURL URLWithString:@"https://github.com/NSLog-YuHaitao/iOSReview"]] applicationActivities:nil];
+        [self presentViewController:avc animated:YES completion:nil];
+        
+    }else if(btn.tag == 1004){
+        HitoAllocInit(shareViewController, view);
+        [self.navigationController pushViewController:view animated:YES];
+        
     }
 }
 

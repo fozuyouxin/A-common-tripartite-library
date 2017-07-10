@@ -58,8 +58,6 @@
         }
     }];
     
-    
-
 }
 
 - (void)btnClick:(UIButton *)btn{
@@ -71,7 +69,6 @@
 //        NSLog(@"current version number:%@",str);
 //        [self clearCache];
         btn.backgroundColor = self.RandomColor;
-        
         
     }else if(btn.tag==2000) {
 //        [self showAlertMessage:@"按钮1被点击!"];

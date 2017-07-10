@@ -20,5 +20,8 @@
 #import "fourViewController.h"
 #import "filmViewController.h"
 #import "fiveViewController.h"
+#import "shareViewController.h"
+
+#import <Masonry.h>
 
 #endif /* PrefixHeader_pch */

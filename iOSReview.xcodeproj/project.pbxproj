@@ -10,6 +10,10 @@
 		1805075B1F0C81B200D52818 /* 123.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 1805075A1F0C81B200D52818 /* 123.mp4 */; };
 		1805075E1F0C876A00D52818 /* fiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1805075D1F0C876A00D52818 /* fiveViewController.m */; };
 		18A680A01F1317D2002F8F73 /* HitoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A6809F1F1317D2002F8F73 /* HitoViewController.m */; };
+		18A680A31F134559002F8F73 /* shareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A680A21F134559002F8F73 /* shareViewController.m */; };
+		18A680A51F1346A4002F8F73 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18A680A41F1346A4002F8F73 /* Social.framework */; };
+		18A680A71F134A96002F8F73 /* t1.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 18A680A61F134A96002F8F73 /* t1.jpeg */; };
+		18A680A91F134A9C002F8F73 /* t2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 18A680A81F134A9C002F8F73 /* t2.jpeg */; };
 		18B554601F0B9B4C00B9B7F3 /* aa.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 18B5545F1F0B9B4C00B9B7F3 /* aa.jpg */; };
 		50502E571F0232A200868306 /* fourViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50502E4E1F0232A200868306 /* fourViewController.m */; };
 		50502E581F0232A200868306 /* NextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50502E501F0232A200868306 /* NextViewController.m */; };
@@ -55,6 +59,11 @@
 		1805075F1F0C879B00D52818 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		18A6809E1F1317D2002F8F73 /* HitoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HitoViewController.h; sourceTree = "<group>"; };
 		18A6809F1F1317D2002F8F73 /* HitoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HitoViewController.m; sourceTree = "<group>"; };
+		18A680A11F134559002F8F73 /* shareViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = shareViewController.h; sourceTree = "<group>"; };
+		18A680A21F134559002F8F73 /* shareViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = shareViewController.m; sourceTree = "<group>"; };
+		18A680A41F1346A4002F8F73 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		18A680A61F134A96002F8F73 /* t1.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = t1.jpeg; sourceTree = "<group>"; };
+		18A680A81F134A9C002F8F73 /* t2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = t2.jpeg; sourceTree = "<group>"; };
 		18B5545F1F0B9B4C00B9B7F3 /* aa.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = aa.jpg; sourceTree = "<group>"; };
 		50275D2A1F00D7C600C3733C /* HeadTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeadTools.h; sourceTree = "<group>"; };
 		50502E4D1F0232A200868306 /* fourViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fourViewController.h; sourceTree = "<group>"; };
@@ -97,6 +106,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18A680A51F1346A4002F8F73 /* Social.framework in Frameworks */,
 				C7E71C500A8B1E936C36857E /* libPods-iOSReview.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,6 +147,8 @@
 				50502E4E1F0232A200868306 /* fourViewController.m */,
 				1805075C1F0C876A00D52818 /* fiveViewController.h */,
 				1805075D1F0C876A00D52818 /* fiveViewController.m */,
+				18A680A11F134559002F8F73 /* shareViewController.h */,
+				18A680A21F134559002F8F73 /* shareViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -144,6 +156,8 @@
 		50502E5C1F0232AE00868306 /* image */ = {
 			isa = PBXGroup;
 			children = (
+				18A680A81F134A9C002F8F73 /* t2.jpeg */,
+				18A680A61F134A96002F8F73 /* t1.jpeg */,
 				50502E5D1F0232AE00868306 /* back.png */,
 				50502E5E1F0232AE00868306 /* next.png */,
 				18B5545F1F0B9B4C00B9B7F3 /* aa.jpg */,
@@ -232,6 +246,7 @@
 		D7D293DCB24624A0727C641E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				18A680A41F1346A4002F8F73 /* Social.framework */,
 				E65799262CF3F95730523830 /* libPods-iOSReview.a */,
 			);
 			name = Frameworks;
@@ -351,10 +366,12 @@
 			files = (
 				50502E601F0232AE00868306 /* back.png in Resources */,
 				50502E611F0232AE00868306 /* next.png in Resources */,
+				18A680A91F134A9C002F8F73 /* t2.jpeg in Resources */,
 				50E48D191F034670005E0088 /* 霍建华、赵丽颖 - 不可说.mp4 in Resources */,
 				50502E621F0232AE00868306 /* ying.png in Resources */,
 				508E516B1EFB54B1007C32B3 /* LaunchScreen.storyboard in Resources */,
 				508E51681EFB54B1007C32B3 /* Assets.xcassets in Resources */,
+				18A680A71F134A96002F8F73 /* t1.jpeg in Resources */,
 				1805075B1F0C81B200D52818 /* 123.mp4 in Resources */,
 				508E51661EFB54B1007C32B3 /* Main.storyboard in Resources */,
 				18B554601F0B9B4C00B9B7F3 /* aa.jpg in Resources */,
@@ -438,6 +455,7 @@
 				508E51601EFB54B1007C32B3 /* AppDelegate.m in Sources */,
 				508719621F02481F00F60FAC /* filmViewController.m in Sources */,
 				50502E571F0232A200868306 /* fourViewController.m in Sources */,
+				18A680A31F134559002F8F73 /* shareViewController.m in Sources */,
 				50502E591F0232A200868306 /* secondViewController.m in Sources */,
 				508E515D1EFB54B1007C32B3 /* main.m in Sources */,
 			);
