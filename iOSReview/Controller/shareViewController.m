@@ -56,11 +56,6 @@
         make.height.mas_equalTo(@50);//高
     }];
     
-//    [_btn mas_makeConstraints:^(MASConstraintMaker *make) {
-//        make.center.equalTo(view2);
-//        make.size.mas_equalTo(CGSizeMake(200, 200));
-//    }];
-    
     
     UIButton * btn1 = [[UIButton alloc]init];
     [view2 addSubview:btn1];
@@ -86,6 +81,27 @@
         make.width.mas_equalTo(btn1);
     }];
     
+    UIButton * btn3 = [[UIButton alloc]init];
+    btn3.backgroundColor = [UIColor cyanColor];
+    [view2 addSubview:btn3];
+    
+    [btn3 mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(btn1.mas_bottom).offset(10);
+        make.centerX.equalTo(btn1);
+        make.width.equalTo(btn1);
+        make.height.equalTo(btn1);
+    }];
+    
+    UIButton * btn4 = [[UIButton alloc]init];
+    btn4.backgroundColor = [UIColor purpleColor];
+    [view2 addSubview:btn4];
+    
+    [btn4 mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.centerX.equalTo(view2);
+        make.bottom.equalTo(btn1.mas_top).offset(-10);
+        make.width.equalTo(btn1);
+        make.height.equalTo(btn1);
+    }];
 }
 
 

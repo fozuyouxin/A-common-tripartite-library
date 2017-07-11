@@ -24,7 +24,7 @@
     [self setNavBackgroudColor:[UIColor whiteColor]];
     [self addNavCenterTitle:@"Second" andColor:[UIColor redColor] andFontSize:16];
     [self addNavLeftBarButtonWithImage:@"back"];
-    //    [self addNavRightBarButtonWithImage:@"next"];
+    //[self addNavRightBarButtonWithImage:@"next"];
     [self addNavRightBarButtonWithText:@"Go!" andTextColor:[UIColor greenColor]];
     
     UIButton * btn = [[UIButton alloc]initWithFrame:CGRectMake(10, 10, 100, 50)];
@@ -34,6 +34,8 @@
     btn.tag= 1000;
     [btn addTarget:self action:@selector(btnClick:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:btn];
+    
+    [self setUnderline:btn];
     
     NSLog(@"===%@",[self firstCharacterWithString:@"我们"]);
     NSLog(@"===%@",[self firstCharacterWithString:@"zoedear"]);

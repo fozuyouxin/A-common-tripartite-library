@@ -20,6 +20,8 @@
     self.view.backgroundColor = [UIColor whiteColor];
     self.navigationItem.title = @"block回调";
     self.block(@"my name is KennyHito");
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {

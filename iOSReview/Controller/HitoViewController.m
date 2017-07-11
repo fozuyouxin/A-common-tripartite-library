@@ -72,11 +72,8 @@
     }else if(btn.tag == 1004){
         HitoAllocInit(shareViewController, view);
         [self.navigationController pushViewController:view animated:YES];
-        
     }
 }
-
-
 
 -(void)itemClick:(UIBarButtonItem * )item{
     //    NSLog(@"%ld",item.tag);
@@ -95,10 +92,11 @@
         Alloc_vc(vc, filmViewController);
         vc.hidesBottomBarWhenPushed = YES;
         [self.navigationController pushViewController:vc animated:YES];
+       
     }
-    
-    
 }
+
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

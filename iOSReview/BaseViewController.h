@@ -119,6 +119,9 @@ typedef void (^ alertBlock)(NSString * alertMessage);//UIAlertController
 - (void)colorLabel:(UILabel *)lab andFont:(int)font andRange:(NSRange)range andColor:(UIColor *)color;
 /* 设置UILabel的高度 */
 - (CGSize)sizeWithString:(NSString *)string size:(CGSize)size andFont:(int)size;
+/* UILabel,UIButton设置下划线 */
+- (void)setUnderline:(id)sender;
+
 
 #pragma mark 三方库的封装
 #if 1

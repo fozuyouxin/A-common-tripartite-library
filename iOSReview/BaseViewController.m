@@ -747,6 +747,21 @@
     CGRect rect = [string boundingRectWithSize:size options:NSStringDrawingTruncatesLastVisibleLine | NSStringDrawingUsesFontLeading  |NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName: [UIFont systemFontOfSize:font]}context:nil];
     return rect.size;
 }
+/* UILabel,UIButton设置下划线 */
+- (void)setUnderline:(id)sender {
+    NSString * title;
+    if ([sender isKindOfClass:[UILabel class]]) {
+        UILabel * lab = (UILabel *)sender;
+        title = lab.text;
+    }else if([sender isKindOfClass:[UIButton class]]){
+        UIButton * btn = (UIButton *)sender;
+        title = btn.titleLabel.text;
+    }
+    NSMutableAttributedString *str = [[NSMutableAttributedString alloc] initWithString:title];
+    NSRange strRange = {0,[str length]};
+    [str addAttribute:NSUnderlineStyleAttributeName value:[NSNumber numberWithInteger:NSUnderlineStyleSingle] range:strRange];
+    [sender setAttributedTitle:str forState:UIControlStateNormal];
+}
 
 #pragma mark 三方库的封装
 #warning 需要导入第三方库的头文件
