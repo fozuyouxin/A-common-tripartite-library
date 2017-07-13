@@ -30,10 +30,10 @@
 * UIButton背景色实时更改;
 * App清理缓存功能;
 * UILable部分文字更改颜色等功能;
-* 2017.7.12 增加MJRefresh,实现刷新功能,下拉功能以文字和动画两种形式进行显示;
+* 2017.7.12 增加MJRefresh,实现刷新功能,下拉功能以文字和动画两种形式进行显示;</br>
   ![下拉动画形式](/donghua.gif)
 
-* 2017.7.13 增加MJExtension和IQKeyboardManager;
+* 2017.7.13 增加MJExtension和IQKeyboardManager;</br>
 ![IQKeyboardManager](/IQKeyboardManager.png)
 
 * 功能持续更新中...
