@@ -33,7 +33,7 @@
 * 2017.7.11 增加三方库Masonry功能;
 
 ~~~
-UIView *superview = self.view;
+    UIView *superview = self.view;
     superview.backgroundColor = [UIColor orangeColor];
     
     UIView *view1 = [[UIView alloc] init];
