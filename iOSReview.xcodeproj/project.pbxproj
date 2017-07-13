@@ -17,6 +17,7 @@
 		18345CE51F1709B400257B87 /* niao_6.png in Resources */ = {isa = PBXBuildFile; fileRef = 18345CDD1F1709B400257B87 /* niao_6.png */; };
 		18345CE61F1709B400257B87 /* niao_7.png in Resources */ = {isa = PBXBuildFile; fileRef = 18345CDE1F1709B400257B87 /* niao_7.png */; };
 		18345CE71F1709B400257B87 /* niao_8.png in Resources */ = {isa = PBXBuildFile; fileRef = 18345CDF1F1709B400257B87 /* niao_8.png */; };
+		18345CEB1F17429A00257B87 /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = 18345CEA1F17429A00257B87 /* Student.m */; };
 		18A680A01F1317D2002F8F73 /* HitoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A6809F1F1317D2002F8F73 /* HitoViewController.m */; };
 		18A680A31F134559002F8F73 /* shareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A680A21F134559002F8F73 /* shareViewController.m */; };
 		18A680A51F1346A4002F8F73 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18A680A41F1346A4002F8F73 /* Social.framework */; };
@@ -73,6 +74,8 @@
 		18345CDD1F1709B400257B87 /* niao_6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = niao_6.png; sourceTree = "<group>"; };
 		18345CDE1F1709B400257B87 /* niao_7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = niao_7.png; sourceTree = "<group>"; };
 		18345CDF1F1709B400257B87 /* niao_8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = niao_8.png; sourceTree = "<group>"; };
+		18345CE91F17429A00257B87 /* Student.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Student.h; sourceTree = "<group>"; };
+		18345CEA1F17429A00257B87 /* Student.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Student.m; sourceTree = "<group>"; };
 		18A6809E1F1317D2002F8F73 /* HitoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HitoViewController.h; sourceTree = "<group>"; };
 		18A6809F1F1317D2002F8F73 /* HitoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HitoViewController.m; sourceTree = "<group>"; };
 		18A680A11F134559002F8F73 /* shareViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = shareViewController.h; sourceTree = "<group>"; };
@@ -159,6 +162,15 @@
 			path = niao;
 			sourceTree = "<group>";
 		};
+		18345CE81F17427200257B87 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				18345CE91F17429A00257B87 /* Student.h */,
+				18345CEA1F17429A00257B87 /* Student.m */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
 		50502E4C1F02325300868306 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -223,6 +235,7 @@
 		508E515A1EFB54B1007C32B3 /* iOSReview */ = {
 			isa = PBXGroup;
 			children = (
+				18345CE81F17427200257B87 /* model */,
 				50502E5C1F0232AE00868306 /* image */,
 				508E515E1EFB54B1007C32B3 /* AppDelegate.h */,
 				508E515F1EFB54B1007C32B3 /* AppDelegate.m */,
@@ -498,6 +511,7 @@
 				18A680A31F134559002F8F73 /* shareViewController.m in Sources */,
 				50502E591F0232A200868306 /* secondViewController.m in Sources */,
 				508E515D1EFB54B1007C32B3 /* main.m in Sources */,
+				18345CEB1F17429A00257B87 /* Student.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

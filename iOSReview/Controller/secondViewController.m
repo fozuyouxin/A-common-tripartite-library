@@ -17,6 +17,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
     [self setUpUI];
 }
 
@@ -50,15 +51,6 @@
     [self.view addSubview:lab];
     
     [self colorLabel:lab andFont:20 andRange:NSMakeRange(0, 6) andColor:[UIColor greenColor]];
-    
-    [self getRequestWithUrl:@"http://luckfairy.16mb.com/PHPExercise/PHP_JSON_3.php" andParameter:@{} andReturnBlock:^(NSData *data, NSError *error) {
-        if (data!=nil) {
-            NSDictionary * dic = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:nil];
-            NSLog(@"%@",dic);
-        }else{
-            NSLog(@"===%@===",error.localizedDescription);
-        }
-    }];
     
 }
 

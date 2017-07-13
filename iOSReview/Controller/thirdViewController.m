@@ -11,29 +11,36 @@
 
 @interface thirdViewController ()
 
+@property (nonatomic,strong) NSMutableArray * dataAr;
+
 @end
 
 @implementation thirdViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    _dataAr = [[NSMutableArray alloc]init];
     self.navigationItem.title = @"third";
     [self setUpTableView];
     self.tableView.frame = CGRectMake(0,0, HitoScreenW, HitoScreenH);
     [self addDropUpRefresh];
     [self addDropDownRefresh];
+    [self AFNetworking];
     
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 30;
+    return _dataAr.count;
 }
 /* cell内容 */
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     static NSString * cellID = @"cellID";
     UITableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:cellID];
-    cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellID];
-    cell.textLabel.text =[NSString stringWithFormat:@"This's %ld data!",indexPath.row];
+    cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:cellID];
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
+    Student * user = _dataAr[indexPath.row];
+    cell.textLabel.text = user.stuName;
+    cell.detailTextLabel.text = user.stuHeight;
     return cell;
 }
 
@@ -51,23 +58,22 @@
 //    self.tableView. mj_header = header;
     
 #pragma mark 动画加载
-//    MJRefreshGifHeader *header = [MJRefreshGifHeader headerWithRefreshingTarget:self refreshingAction:@selector(loadNewData)];
-//    //隐藏刷新时间
-//    header.lastUpdatedTimeLabel.hidden = YES;
-//    //隐藏刷新提示文字
-//    header.stateLabel.hidden = YES;
-//    NSMutableArray * arr = [[NSMutableArray alloc]init];
-//    for (int i=1; i<9; i++) {
-//        [arr addObject:[UIImage imageNamed:[NSString stringWithFormat:@"niao_%d.png",i]]];
-//    }
-//    NSArray * idleImages = arr;
-//    [header setImages:idleImages forState:MJRefreshStatePulling];
-//    self.tableView.mj_header = header;
-    
-
+    MJRefreshGifHeader *header = [MJRefreshGifHeader headerWithRefreshingTarget:self refreshingAction:@selector(loadNewData)];
+    //隐藏刷新时间
+    header.lastUpdatedTimeLabel.hidden = YES;
+    //隐藏刷新提示文字
+    header.stateLabel.hidden = YES;
+    NSMutableArray * arr = [[NSMutableArray alloc]init];
+    for (int i=1; i<9; i++) {
+        [arr addObject:[UIImage imageNamed:[NSString stringWithFormat:@"niao_%d.png",i]]];
+    }
+    NSArray * idleImages = arr;
+    [header setImages:idleImages forState:MJRefreshStatePulling];
+    self.tableView.mj_header = header;
 }
 
 - (void)loadNewData{
+    [self AFNetworking];
     [self.tableView.mj_header endRefreshing];
 }
 
@@ -87,5 +93,24 @@
     self.tableView. mj_footer = footer;
 }
 
+
+- (void)AFNetworking{
+    [self.dataAr removeAllObjects];
+    [self getRequestWithUrl:@"http://luckfairy.16mb.com/PHPExercise/PHP_JSON_3.php" andParameter:@{} andReturnBlock:^(NSData *data, NSError *error) {
+        if (data!=nil) {
+            NSDictionary * dic = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:nil];
+            NSLog(@"%@",dic);
+            NSArray * arr = dic[@"data"];
+            for (NSDictionary * d in arr) {
+                Student *stu = [Student mj_objectWithKeyValues:d];
+                [_dataAr addObject:stu];
+            }
+            NSLog(@"json====%ld",_dataAr.count);
+            [self.tableView reloadData];
+        }else{
+            NSLog(@"===%@===",error.localizedDescription);
+        }
+    }];
+}
 
 @end

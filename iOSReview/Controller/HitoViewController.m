@@ -20,9 +20,9 @@
     [super viewDidLoad];
     self.navigationItem.title = @"首页";
     self.view.backgroundColor = [UIColor whiteColor];
-    UIBarButtonItem * item1 = [[UIBarButtonItem alloc]initWithTitle:@"测试1" style:UIBarButtonItemStylePlain target:self action:@selector(itemClick:)];
+    UIBarButtonItem * item1 = [[UIBarButtonItem alloc]initWithTitle:@"基本" style:UIBarButtonItemStylePlain target:self action:@selector(itemClick:)];
     item1.tag = 1000;
-    UIBarButtonItem * item2 = [[UIBarButtonItem alloc]initWithTitle:@"测试2" style:UIBarButtonItemStylePlain target:self action:@selector(itemClick:)];
+    UIBarButtonItem * item2 = [[UIBarButtonItem alloc]initWithTitle:@"block回调" style:UIBarButtonItemStylePlain target:self action:@selector(itemClick:)];
     item2.tag = 1001;
     self.navigationItem.rightBarButtonItems =@[item1,item2];
     NSLog(@"=====%f",HitoSystemVersion);

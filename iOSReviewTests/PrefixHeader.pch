@@ -21,7 +21,7 @@
 #import "filmViewController.h"
 #import "fiveViewController.h"
 #import "shareViewController.h"
-
+#import "Student.h"
 #ifdef __OBJC__
 #import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
@@ -29,4 +29,8 @@
 
 #import <Masonry.h>
 #import <MJRefresh.h>
+#import <MJExtension.h>
+#import <IQKeyboardManager.h>
+
+
 #endif /* PrefixHeader_pch */
