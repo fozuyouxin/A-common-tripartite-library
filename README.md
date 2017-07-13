@@ -20,7 +20,7 @@
 
 主要实现:
 ----------------
-
+* 2017年7月10日更新内容:
 * 网路视频的播放;
 * UITableViewCell滚动动画加载;
 * UIView阴影加圆角功能;
@@ -30,6 +30,12 @@
 * UIButton背景色实时更改;
 * App清理缓存功能;
 * UILable部分文字更改颜色等功能;
+* 2017.7.12 增加MJRefresh,实现刷新功能,下拉功能以文字和动画两种形式进行显示;
+  ![下拉动画形式](/donghua.gif)
+
+* 2017.7.13 增加MJExtension和IQKeyboardManager;
+![IQKeyboardManager](/IQKeyboardManager.png)
+
 * 功能持续更新中...
 
 实现功能效果图:
