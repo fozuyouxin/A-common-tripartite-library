@@ -9,6 +9,14 @@
 /* Begin PBXBuildFile section */
 		1805075B1F0C81B200D52818 /* 123.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 1805075A1F0C81B200D52818 /* 123.mp4 */; };
 		1805075E1F0C876A00D52818 /* fiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1805075D1F0C876A00D52818 /* fiveViewController.m */; };
+		18345CE01F1709B400257B87 /* niao_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 18345CD81F1709B400257B87 /* niao_1.png */; };
+		18345CE11F1709B400257B87 /* niao_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 18345CD91F1709B400257B87 /* niao_2.png */; };
+		18345CE21F1709B400257B87 /* niao_3.png in Resources */ = {isa = PBXBuildFile; fileRef = 18345CDA1F1709B400257B87 /* niao_3.png */; };
+		18345CE31F1709B400257B87 /* niao_4.png in Resources */ = {isa = PBXBuildFile; fileRef = 18345CDB1F1709B400257B87 /* niao_4.png */; };
+		18345CE41F1709B400257B87 /* niao_5.png in Resources */ = {isa = PBXBuildFile; fileRef = 18345CDC1F1709B400257B87 /* niao_5.png */; };
+		18345CE51F1709B400257B87 /* niao_6.png in Resources */ = {isa = PBXBuildFile; fileRef = 18345CDD1F1709B400257B87 /* niao_6.png */; };
+		18345CE61F1709B400257B87 /* niao_7.png in Resources */ = {isa = PBXBuildFile; fileRef = 18345CDE1F1709B400257B87 /* niao_7.png */; };
+		18345CE71F1709B400257B87 /* niao_8.png in Resources */ = {isa = PBXBuildFile; fileRef = 18345CDF1F1709B400257B87 /* niao_8.png */; };
 		18A680A01F1317D2002F8F73 /* HitoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A6809F1F1317D2002F8F73 /* HitoViewController.m */; };
 		18A680A31F134559002F8F73 /* shareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A680A21F134559002F8F73 /* shareViewController.m */; };
 		18A680A51F1346A4002F8F73 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18A680A41F1346A4002F8F73 /* Social.framework */; };
@@ -57,6 +65,14 @@
 		1805075C1F0C876A00D52818 /* fiveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fiveViewController.h; sourceTree = "<group>"; };
 		1805075D1F0C876A00D52818 /* fiveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = fiveViewController.m; sourceTree = "<group>"; };
 		1805075F1F0C879B00D52818 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		18345CD81F1709B400257B87 /* niao_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = niao_1.png; sourceTree = "<group>"; };
+		18345CD91F1709B400257B87 /* niao_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = niao_2.png; sourceTree = "<group>"; };
+		18345CDA1F1709B400257B87 /* niao_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = niao_3.png; sourceTree = "<group>"; };
+		18345CDB1F1709B400257B87 /* niao_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = niao_4.png; sourceTree = "<group>"; };
+		18345CDC1F1709B400257B87 /* niao_5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = niao_5.png; sourceTree = "<group>"; };
+		18345CDD1F1709B400257B87 /* niao_6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = niao_6.png; sourceTree = "<group>"; };
+		18345CDE1F1709B400257B87 /* niao_7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = niao_7.png; sourceTree = "<group>"; };
+		18345CDF1F1709B400257B87 /* niao_8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = niao_8.png; sourceTree = "<group>"; };
 		18A6809E1F1317D2002F8F73 /* HitoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HitoViewController.h; sourceTree = "<group>"; };
 		18A6809F1F1317D2002F8F73 /* HitoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HitoViewController.m; sourceTree = "<group>"; };
 		18A680A11F134559002F8F73 /* shareViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = shareViewController.h; sourceTree = "<group>"; };
@@ -128,6 +144,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		18345CD71F1709B400257B87 /* niao */ = {
+			isa = PBXGroup;
+			children = (
+				18345CD81F1709B400257B87 /* niao_1.png */,
+				18345CD91F1709B400257B87 /* niao_2.png */,
+				18345CDA1F1709B400257B87 /* niao_3.png */,
+				18345CDB1F1709B400257B87 /* niao_4.png */,
+				18345CDC1F1709B400257B87 /* niao_5.png */,
+				18345CDD1F1709B400257B87 /* niao_6.png */,
+				18345CDE1F1709B400257B87 /* niao_7.png */,
+				18345CDF1F1709B400257B87 /* niao_8.png */,
+			);
+			path = niao;
+			sourceTree = "<group>";
+		};
 		50502E4C1F02325300868306 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -156,6 +187,7 @@
 		50502E5C1F0232AE00868306 /* image */ = {
 			isa = PBXGroup;
 			children = (
+				18345CD71F1709B400257B87 /* niao */,
 				18A680A81F134A9C002F8F73 /* t2.jpeg */,
 				18A680A61F134A96002F8F73 /* t1.jpeg */,
 				50502E5D1F0232AE00868306 /* back.png */,
@@ -364,16 +396,24 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18345CE61F1709B400257B87 /* niao_7.png in Resources */,
+				18345CE31F1709B400257B87 /* niao_4.png in Resources */,
+				18345CE01F1709B400257B87 /* niao_1.png in Resources */,
 				50502E601F0232AE00868306 /* back.png in Resources */,
 				50502E611F0232AE00868306 /* next.png in Resources */,
 				18A680A91F134A9C002F8F73 /* t2.jpeg in Resources */,
 				50E48D191F034670005E0088 /* 霍建华、赵丽颖 - 不可说.mp4 in Resources */,
 				50502E621F0232AE00868306 /* ying.png in Resources */,
 				508E516B1EFB54B1007C32B3 /* LaunchScreen.storyboard in Resources */,
+				18345CE41F1709B400257B87 /* niao_5.png in Resources */,
 				508E51681EFB54B1007C32B3 /* Assets.xcassets in Resources */,
+				18345CE11F1709B400257B87 /* niao_2.png in Resources */,
 				18A680A71F134A96002F8F73 /* t1.jpeg in Resources */,
+				18345CE51F1709B400257B87 /* niao_6.png in Resources */,
 				1805075B1F0C81B200D52818 /* 123.mp4 in Resources */,
 				508E51661EFB54B1007C32B3 /* Main.storyboard in Resources */,
+				18345CE71F1709B400257B87 /* niao_8.png in Resources */,
+				18345CE21F1709B400257B87 /* niao_3.png in Resources */,
 				18B554601F0B9B4C00B9B7F3 /* aa.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
