@@ -120,6 +120,11 @@
 * 2017.7.13 增加MJExtension和IQKeyboardManager;</br>
 ![IQKeyboardManager](/IQKeyboardManager.png)
 
+* 2017.7.14 增加指纹解锁功能;</br>
+![解锁](/3.png)
+![再试一次](/2.png)
+![解锁成功](/1.png)
+
 * 功能持续更新中...
 
 实现功能效果图:
