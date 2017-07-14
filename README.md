@@ -121,9 +121,9 @@
 ![IQKeyboardManager](/IQKeyboardManager.png)
 
 * 2017.7.14 增加指纹解锁功能;</br>
-<img width="300" height="400" src="/3.png" />
-<img width="300" height="400" src="/2.png" />
-<img width="300" height="400" src="/1.png" />
+<img width="250" height="400" src="/3.png" />
+<img width="250" height="400" src="/2.png" />
+<img width="250" height="400" src="/1.png" />
 
 * 功能持续更新中...
 
