@@ -34,7 +34,7 @@
 #define HitoFailure @"failure"
 
 //WeakSelf
-#define HitoWeakSelf __weak typeof(self) WeakSelf = self
+#define HitoWeakSelf __weak typeof(self) WeakSelf = self;
 
 //主窗口
 #define HitoApplication [UIApplication sharedApplication].keyWindow

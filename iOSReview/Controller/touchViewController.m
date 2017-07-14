@@ -28,10 +28,10 @@
 /* 设置登录页面 */
 - (void)setUI{
     
-    _nametf = [self createTextFieldPlaceholderTitle:@"请输入用户名" andFont:16 andTitleColor:[UIColor blackColor] andTag:100 andFrame:CGRectMake(10, 100, HitoScreenW-20 , 30) andSecureTextEntry:NO];
+    _nametf = [self createTextFieldPlaceholderTitle:@"请输入用户名" andFont:16 andTitleColor:[UIColor blackColor] andTag:100 andFrame:CGRectMake(10, 100, HitoScreenW-20 , 50) andSecureTextEntry:NO];
     [self.view addSubview:_nametf];
     
-    _passtf = [self createTextFieldPlaceholderTitle:@"请输入密码" andFont:16 andTitleColor:[UIColor blackColor] andTag:101 andFrame:CGRectMake(10, CGRectGetMaxY(_nametf.frame)+15, HitoScreenW-20 , 30) andSecureTextEntry:YES];
+    _passtf = [self createTextFieldPlaceholderTitle:@"请输入密码" andFont:16 andTitleColor:[UIColor blackColor] andTag:101 andFrame:CGRectMake(10, CGRectGetMaxY(_nametf.frame)+15, HitoScreenW-20 , 50) andSecureTextEntry:YES];
     [self.view addSubview:_passtf];
     
     UIButton * btn = [self createButtonTitle:@"登录" andFont:18 andTitleColor:[UIColor redColor] andBackColor:[UIColor yellowColor] andTag:1000 andFrame:CGRectMake(HitoScreenW/2-50, CGRectGetMaxY(_passtf.frame)+30, 100, 50)];
@@ -41,7 +41,8 @@
 - (void)btnClick:(UIButton *)btn{
     
     if ([_nametf.text isEqual:@"aaa"]&&[_passtf.text isEqual:@"123"]) {
-         [self showAlertMessage:@"登录成功"];
+        HitoAllocInit(sucessViewController, vc);
+        [self pushNextViewController:vc];
     }else{
          [self showAlertMessage:@"登录失败"];
     }
