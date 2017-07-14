@@ -54,7 +54,7 @@
     
     //这个属性是设置指纹输入失败之后的弹出框的选项
     context.localizedFallbackTitle = @"验证密码登录";
-    context.localizedCancelTitle = @"返回";
+    context.localizedCancelTitle = @"取消";
     __weak typeof(self) WeakSelf = self;
     
     NSError *error = nil;
@@ -63,8 +63,11 @@
         [context evaluatePolicy:LAPolicyDeviceOwnerAuthenticationWithBiometrics localizedReason:@"请在此状态下验证你的TouchID的指纹" reply:^(BOOL success, NSError * _Nullable error) {
             if (success) {
                 NSLog(@"验证成功 刷新主界面");
-                HitoAllocInit(sucessViewController, vc);
-                [WeakSelf pushNextViewController:vc];
+                //这里需要开启线程,否则跳转会有问题
+                dispatch_async(dispatch_get_main_queue(), ^{
+                    HitoAllocInit(sucessViewController, vc);
+                    [WeakSelf pushNextViewController:vc];
+                });
             }else{
                 switch (error.code) {
                     case LAErrorSystemCancel:
@@ -104,14 +107,14 @@
                         }];
                         break;
                     }
-//                    default:
-//                    {
-//                        [[NSOperationQueue mainQueue] addOperationWithBlock:^{
-//                            NSLog(@"其他情况，切换主线程处理");
-//                            [self.navigationController popViewControllerAnimated:YES];
-//                        }];
-//                        break;
-//                    }
+                    default:
+                    {
+                        [[NSOperationQueue mainQueue] addOperationWithBlock:^{
+                            NSLog(@"其他情况，切换主线程处理");
+                            [self.navigationController popViewControllerAnimated:YES];
+                        }];
+                        break;
+                    }
                 }
             }
         }];

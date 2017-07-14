@@ -263,6 +263,7 @@
         if (iOS10) {
             [[UIApplication sharedApplication]openURL:urlStr options:@{} completionHandler:nil];
         }else{
+            //10.0以后被废弃
             [[UIApplication sharedApplication]openURL:urlStr];
         }
         
@@ -273,6 +274,7 @@
 
 /* UIAlertView提示框 */
 - (void)showAlertMessage:(NSString *)message{
+    //9.0以后被废弃
     UIAlertView * alert = [[UIAlertView alloc]initWithTitle:@"温馨提示" message:message delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
     [alert show];
 }
