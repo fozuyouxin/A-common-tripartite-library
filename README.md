@@ -115,7 +115,7 @@
 ~~~
 
 * 2017.7.12 增加MJRefresh,实现刷新功能,下拉功能以文字和动画两种形式进行显示;</br>
-  ![下拉动画形式](/donghua.gif)
+<img width="250" height="400" src="/donghua.gif" />
 
 * 2017.7.13 增加MJExtension和IQKeyboardManager;</br>
 <img width="250" height="400" src="/IQKeyboardManager.png" />
@@ -132,5 +132,6 @@
 实现功能效果图:
 ----------------
 
+<img width="250" height="400" src="/result.gif" />
 ![功能图](/result.gif)
 
