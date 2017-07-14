@@ -133,5 +133,4 @@
 ----------------
 
 <img width="250" height="400" src="/result.gif" />
-![功能图](/result.gif)
 
