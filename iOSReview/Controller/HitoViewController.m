@@ -38,7 +38,7 @@
     NSLog(@"====%@====",newArr);
     
     
-    NSArray * titleArr = @[@"tableViewCell",@"four",@"会员卡",@"分享",@"Masonry"];
+    NSArray * titleArr = @[@"tableViewCell",@"four",@"会员卡",@"分享",@"Masonry",@"指纹解锁"];
     for (int i = 0 ; i<titleArr.count; i++) {
         UIButton *btn1 = [UIButton buttonWithType:UIButtonTypeCustom];
         [btn1.titleLabel setFont:[UIFont systemFontOfSize:16]];
@@ -52,6 +52,13 @@
         [btn1 addTarget:self action:@selector(btnClick:) forControlEvents:UIControlEventTouchUpInside];
         [self.view addSubview:btn1];
     }
+    
+    NSDictionary * dic = @{@"id":@"123",@"name":@"xiaoming"};
+    NSLog(@"==0==%@",dic);
+    NSMutableDictionary * dic1 = [[NSMutableDictionary alloc]initWithDictionary:@{@"id":@"456",@"score":@(89)}];
+    NSLog(@"==1==%@",dic1);
+    [dic1 addEntriesFromDictionary:dic];
+    NSLog(@"==2==%@",dic1);
 }
 
 - (void)btnClick:(UIButton *)btn{
@@ -70,7 +77,13 @@
         [self presentViewController:avc animated:YES completion:nil];
         
     }else if(btn.tag == 1004){
+        
         HitoAllocInit(shareViewController, view);
+        [self.navigationController pushViewController:view animated:YES];
+        
+    }else if(btn.tag == 1005){
+        
+        HitoAllocInit(touchViewController, view);
         [self.navigationController pushViewController:view animated:YES];
     }
 }

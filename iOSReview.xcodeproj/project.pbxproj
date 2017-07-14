@@ -18,6 +18,8 @@
 		18345CE61F1709B400257B87 /* niao_7.png in Resources */ = {isa = PBXBuildFile; fileRef = 18345CDE1F1709B400257B87 /* niao_7.png */; };
 		18345CE71F1709B400257B87 /* niao_8.png in Resources */ = {isa = PBXBuildFile; fileRef = 18345CDF1F1709B400257B87 /* niao_8.png */; };
 		18345CEB1F17429A00257B87 /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = 18345CEA1F17429A00257B87 /* Student.m */; };
+		185C7AF31F185823004E2ACF /* touchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 185C7AF21F185823004E2ACF /* touchViewController.m */; };
+		185C7AF61F1866E6004E2ACF /* sucessViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 185C7AF51F1866E6004E2ACF /* sucessViewController.m */; };
 		18A680A01F1317D2002F8F73 /* HitoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A6809F1F1317D2002F8F73 /* HitoViewController.m */; };
 		18A680A31F134559002F8F73 /* shareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A680A21F134559002F8F73 /* shareViewController.m */; };
 		18A680A51F1346A4002F8F73 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18A680A41F1346A4002F8F73 /* Social.framework */; };
@@ -76,6 +78,10 @@
 		18345CDF1F1709B400257B87 /* niao_8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = niao_8.png; sourceTree = "<group>"; };
 		18345CE91F17429A00257B87 /* Student.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Student.h; sourceTree = "<group>"; };
 		18345CEA1F17429A00257B87 /* Student.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Student.m; sourceTree = "<group>"; };
+		185C7AF11F185823004E2ACF /* touchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = touchViewController.h; sourceTree = "<group>"; };
+		185C7AF21F185823004E2ACF /* touchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = touchViewController.m; sourceTree = "<group>"; };
+		185C7AF41F1866E6004E2ACF /* sucessViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sucessViewController.h; sourceTree = "<group>"; };
+		185C7AF51F1866E6004E2ACF /* sucessViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = sucessViewController.m; sourceTree = "<group>"; };
 		18A6809E1F1317D2002F8F73 /* HitoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HitoViewController.h; sourceTree = "<group>"; };
 		18A6809F1F1317D2002F8F73 /* HitoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HitoViewController.m; sourceTree = "<group>"; };
 		18A680A11F134559002F8F73 /* shareViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = shareViewController.h; sourceTree = "<group>"; };
@@ -192,6 +198,10 @@
 				1805075D1F0C876A00D52818 /* fiveViewController.m */,
 				18A680A11F134559002F8F73 /* shareViewController.h */,
 				18A680A21F134559002F8F73 /* shareViewController.m */,
+				185C7AF11F185823004E2ACF /* touchViewController.h */,
+				185C7AF21F185823004E2ACF /* touchViewController.m */,
+				185C7AF41F1866E6004E2ACF /* sucessViewController.h */,
+				185C7AF51F1866E6004E2ACF /* sucessViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -500,6 +510,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				185C7AF61F1866E6004E2ACF /* sucessViewController.m in Sources */,
 				50502E5A1F0232A200868306 /* thirdViewController.m in Sources */,
 				50502E581F0232A200868306 /* NextViewController.m in Sources */,
 				18A680A01F1317D2002F8F73 /* HitoViewController.m in Sources */,
@@ -512,6 +523,7 @@
 				50502E591F0232A200868306 /* secondViewController.m in Sources */,
 				508E515D1EFB54B1007C32B3 /* main.m in Sources */,
 				18345CEB1F17429A00257B87 /* Student.m in Sources */,
+				185C7AF31F185823004E2ACF /* touchViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

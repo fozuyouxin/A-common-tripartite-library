@@ -32,6 +32,7 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     return _dataAr.count;
 }
+
 /* cell内容 */
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     static NSString * cellID = @"cellID";
@@ -44,8 +45,9 @@
     return cell;
 }
 
-#pragma mark --下拉刷新
+#pragma mark 下拉刷新
 - (void)addDropDownRefresh{
+    
 #pragma mark 文字加载
 //    MJRefreshNormalHeader * header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
 //        
