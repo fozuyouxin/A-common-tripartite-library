@@ -118,12 +118,14 @@
   ![下拉动画形式](/donghua.gif)
 
 * 2017.7.13 增加MJExtension和IQKeyboardManager;</br>
-![IQKeyboardManager](/IQKeyboardManager.png)
+<img width="250" height="400" src="/IQKeyboardManager.png" />
 
 * 2017.7.14 增加指纹解锁功能;</br>
+<div>
 <img width="250" height="400" src="/3.png" />
 <img width="250" height="400" src="/2.png" />
 <img width="250" height="400" src="/1.png" />
+</div>
 
 * 功能持续更新中...
 
