@@ -788,7 +788,7 @@
 - (void)showMessage{
     MBProgressHUD *HUD = [MBProgressHUD showHUDAddedTo:[UIApplication sharedApplication].keyWindow animated:YES];
     HUD.labelText = @"正在加载";
-    HUD.mode = MBProgressHUDModeDeterminate;
+    HUD.mode = MBProgressHUDModeIndeterminate;
     [HUD showAnimated:YES whileExecutingBlock:^{
         float progress = 0.0f;
         while (progress < 1.0f) {
