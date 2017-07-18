@@ -12,6 +12,8 @@
 
 @interface HitoViewController ()
 
+@property (nonatomic,strong) UIButton * button;//客服按钮
+
 @end
 
 @implementation HitoViewController
@@ -20,6 +22,9 @@
     [super viewDidLoad];
     self.navigationItem.title = @"首页";
     self.view.backgroundColor = [UIColor whiteColor];
+    
+    [self setUpService];
+    
     UIBarButtonItem * item1 = [[UIBarButtonItem alloc]initWithTitle:@"基本" style:UIBarButtonItemStylePlain target:self action:@selector(itemClick:)];
     item1.tag = 1000;
     UIBarButtonItem * item2 = [[UIBarButtonItem alloc]initWithTitle:@"block回调" style:UIBarButtonItemStylePlain target:self action:@selector(itemClick:)];
@@ -109,20 +114,52 @@
     }
 }
 
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)setUpService{
+    UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+    [button setTitle:@"客服" forState:UIControlStateNormal];
+    button.titleLabel.numberOfLines = 0;
+    button.titleLabel.textAlignment = 1;
+    button.titleLabel.font = [UIFont systemFontOfSize:11];
+    [button setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
+    [button addTarget:self action:@selector(present) forControlEvents:UIControlEventTouchUpInside];
+    button.backgroundColor = [UIColor yellowColor];
+    button.layer.cornerRadius = 20;
+    button.layer.masksToBounds = YES;
+    [HitoApplication addSubview:button];
+    [button mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.size.mas_equalTo(CGSizeMake(40, 40));//设置按钮大小
+        make.right.mas_equalTo(0);//距右边边距
+        make.bottom.mas_lessThanOrEqualTo(0);//小于或等于
+        make.top.mas_greaterThanOrEqualTo(200);//大于或等于
+    }];
+    
+    self.button = button;
+    
+    // 手势
+    UIPanGestureRecognizer *pan = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(pan:)];
+    [button addGestureRecognizer:pan];
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)present{
+    [self skipQQ:@"1154180808"];
 }
-*/
 
+#pragma mark - 手势
+- (void)pan:(UIPanGestureRecognizer *)panGesture{
+//locationInView:获取到的是手指点击屏幕实时的坐标点；
+//translationInView：获取到的是手指移动后，在相对坐标中的偏移量
+
+    UIView *button = panGesture.view;
+    CGPoint newCenter = CGPointMake([panGesture translationInView:panGesture.view].x + button.center.x - [UIScreen mainScreen].bounds.size.width / 2, [panGesture translationInView:panGesture.view].y + button.center.y - [UIScreen mainScreen].bounds.size.height / 2);
+    
+    [button mas_updateConstraints:^(MASConstraintMaker *make) {
+        make.center.mas_equalTo(newCenter).priorityLow();
+    }];
+    [panGesture setTranslation:CGPointZero inView:panGesture.view];
+}
+
+- (void)viewWillDisappear:(BOOL)animated{
+    [super viewWillDisappear:animated];
+    [HitoApplication removeFromSuperview];
+}
 @end
