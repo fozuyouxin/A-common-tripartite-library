@@ -14,6 +14,7 @@
 
 @property (nonatomic,strong) UIButton * button;//客服按钮
 
+
 @end
 
 @implementation HitoViewController
@@ -90,6 +91,7 @@
         
         HitoAllocInit(touchViewController, view);
         [self.navigationController pushViewController:view animated:YES];
+
     }
 }
 
