@@ -1,15 +1,15 @@
 //
-//  NextViewController.h
+//  BlockViewController.h
 //  iOSReview
 //
-//  Created by 于海涛 on 2017/6/22.
+//  Created by Apple on 2017/7/19.
 //  Copyright © 2017年 KennyHito. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "BaseViewController.h"
 typedef void(^ myBlock)(NSString *);
 
-@interface NextViewController : UIViewController
+@interface BlockViewController : BaseViewController
 
 @property (nonatomic,strong)myBlock  block;
 

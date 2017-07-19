@@ -7,12 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1805075E1F0C876A00D52818 /* fiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1805075D1F0C876A00D52818 /* fiveViewController.m */; };
 		18345CEB1F17429A00257B87 /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = 18345CEA1F17429A00257B87 /* Student.m */; };
-		185C7AF31F185823004E2ACF /* touchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 185C7AF21F185823004E2ACF /* touchViewController.m */; };
-		185C7AF61F1866E6004E2ACF /* sucessViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 185C7AF51F1866E6004E2ACF /* sucessViewController.m */; };
-		18A680A01F1317D2002F8F73 /* HitoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A6809F1F1317D2002F8F73 /* HitoViewController.m */; };
-		18A680A31F134559002F8F73 /* shareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A680A21F134559002F8F73 /* shareViewController.m */; };
 		18A680A51F1346A4002F8F73 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18A680A41F1346A4002F8F73 /* Social.framework */; };
 		18FBDBE51F1F3A4A00A4B333 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FBDBE31F1F3A4A00A4B333 /* BaseViewController.m */; };
 		18FBDBE81F1F3A6B00A4B333 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FBDBE71F1F3A6B00A4B333 /* AppDelegate.m */; };
@@ -32,11 +27,20 @@
 		18FBDC091F1F3ACD00A4B333 /* t1.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 18FBDBF91F1F3ACD00A4B333 /* t1.jpeg */; };
 		18FBDC0A1F1F3ACD00A4B333 /* t2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 18FBDBFA1F1F3ACD00A4B333 /* t2.jpeg */; };
 		18FBDC0B1F1F3ACD00A4B333 /* ying.png in Resources */ = {isa = PBXBuildFile; fileRef = 18FBDBFB1F1F3ACD00A4B333 /* ying.png */; };
-		50502E571F0232A200868306 /* fourViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50502E4E1F0232A200868306 /* fourViewController.m */; };
-		50502E581F0232A200868306 /* NextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50502E501F0232A200868306 /* NextViewController.m */; };
-		50502E591F0232A200868306 /* secondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50502E521F0232A200868306 /* secondViewController.m */; };
-		50502E5A1F0232A200868306 /* thirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50502E541F0232A200868306 /* thirdViewController.m */; };
-		508719621F02481F00F60FAC /* filmViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 508719611F02481F00F60FAC /* filmViewController.m */; };
+		18FBDC0E1F1F3E5700A4B333 /* BaseTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FBDC0D1F1F3E5700A4B333 /* BaseTabBarController.m */; };
+		18FBDC111F1F3E8000A4B333 /* BaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FBDC101F1F3E8000A4B333 /* BaseNavigationController.m */; };
+		18FBDC481F1F408F00A4B333 /* MeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FBDC471F1F408F00A4B333 /* MeViewController.m */; };
+		18FBDC4B1F1F409A00A4B333 /* CommunityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FBDC4A1F1F409A00A4B333 /* CommunityViewController.m */; };
+		18FBDC4E1F1F40A400A4B333 /* CategoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FBDC4D1F1F40A400A4B333 /* CategoryViewController.m */; };
+		18FBDC511F1F40B000A4B333 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FBDC501F1F40B000A4B333 /* HomeViewController.m */; };
+		18FBDC541F1F43E300A4B333 /* touchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FBDC531F1F43E300A4B333 /* touchViewController.m */; };
+		18FBDC571F1F440800A4B333 /* sucessViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FBDC561F1F440800A4B333 /* sucessViewController.m */; };
+		18FBDC5A1F1F455600A4B333 /* MasonryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FBDC591F1F455600A4B333 /* MasonryViewController.m */; };
+		18FBDC601F1F4A2600A4B333 /* vipViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FBDC5F1F1F4A2600A4B333 /* vipViewController.m */; };
+		18FBDC631F1F4A7300A4B333 /* ShakeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FBDC621F1F4A7300A4B333 /* ShakeViewController.m */; };
+		18FBDC661F1F4B5200A4B333 /* BlockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FBDC651F1F4B5200A4B333 /* BlockViewController.m */; };
+		18FBDC691F1F4C9E00A4B333 /* AFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FBDC681F1F4C9E00A4B333 /* AFViewController.m */; };
+		18FBDC6C1F1F510200A4B333 /* VideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FBDC6B1F1F510200A4B333 /* VideoViewController.m */; };
 		508E515D1EFB54B1007C32B3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 508E515C1EFB54B1007C32B3 /* main.m */; };
 		508E51661EFB54B1007C32B3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 508E51641EFB54B1007C32B3 /* Main.storyboard */; };
 		508E51681EFB54B1007C32B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 508E51671EFB54B1007C32B3 /* Assets.xcassets */; };
@@ -64,19 +68,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1805075C1F0C876A00D52818 /* fiveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fiveViewController.h; sourceTree = "<group>"; };
-		1805075D1F0C876A00D52818 /* fiveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = fiveViewController.m; sourceTree = "<group>"; };
 		1805075F1F0C879B00D52818 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		18345CE91F17429A00257B87 /* Student.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Student.h; sourceTree = "<group>"; };
 		18345CEA1F17429A00257B87 /* Student.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Student.m; sourceTree = "<group>"; };
-		185C7AF11F185823004E2ACF /* touchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = touchViewController.h; sourceTree = "<group>"; };
-		185C7AF21F185823004E2ACF /* touchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = touchViewController.m; sourceTree = "<group>"; };
-		185C7AF41F1866E6004E2ACF /* sucessViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sucessViewController.h; sourceTree = "<group>"; };
-		185C7AF51F1866E6004E2ACF /* sucessViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = sucessViewController.m; sourceTree = "<group>"; };
-		18A6809E1F1317D2002F8F73 /* HitoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HitoViewController.h; sourceTree = "<group>"; };
-		18A6809F1F1317D2002F8F73 /* HitoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HitoViewController.m; sourceTree = "<group>"; };
-		18A680A11F134559002F8F73 /* shareViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = shareViewController.h; sourceTree = "<group>"; };
-		18A680A21F134559002F8F73 /* shareViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = shareViewController.m; sourceTree = "<group>"; };
 		18A680A41F1346A4002F8F73 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		18FBDBE21F1F3A4A00A4B333 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
 		18FBDBE31F1F3A4A00A4B333 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
@@ -99,16 +93,34 @@
 		18FBDBF91F1F3ACD00A4B333 /* t1.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = t1.jpeg; sourceTree = "<group>"; };
 		18FBDBFA1F1F3ACD00A4B333 /* t2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = t2.jpeg; sourceTree = "<group>"; };
 		18FBDBFB1F1F3ACD00A4B333 /* ying.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ying.png; sourceTree = "<group>"; };
-		50502E4D1F0232A200868306 /* fourViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fourViewController.h; sourceTree = "<group>"; };
-		50502E4E1F0232A200868306 /* fourViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = fourViewController.m; sourceTree = "<group>"; };
-		50502E4F1F0232A200868306 /* NextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NextViewController.h; sourceTree = "<group>"; };
-		50502E501F0232A200868306 /* NextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NextViewController.m; sourceTree = "<group>"; };
-		50502E511F0232A200868306 /* secondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = secondViewController.h; sourceTree = "<group>"; };
-		50502E521F0232A200868306 /* secondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = secondViewController.m; sourceTree = "<group>"; };
-		50502E531F0232A200868306 /* thirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = thirdViewController.h; sourceTree = "<group>"; };
-		50502E541F0232A200868306 /* thirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = thirdViewController.m; sourceTree = "<group>"; };
-		508719601F02481F00F60FAC /* filmViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = filmViewController.h; sourceTree = "<group>"; };
-		508719611F02481F00F60FAC /* filmViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = filmViewController.m; sourceTree = "<group>"; };
+		18FBDC0C1F1F3E5700A4B333 /* BaseTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTabBarController.h; sourceTree = "<group>"; };
+		18FBDC0D1F1F3E5700A4B333 /* BaseTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTabBarController.m; sourceTree = "<group>"; };
+		18FBDC0F1F1F3E8000A4B333 /* BaseNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseNavigationController.h; sourceTree = "<group>"; };
+		18FBDC101F1F3E8000A4B333 /* BaseNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNavigationController.m; sourceTree = "<group>"; };
+		18FBDC461F1F408F00A4B333 /* MeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeViewController.h; sourceTree = "<group>"; };
+		18FBDC471F1F408F00A4B333 /* MeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeViewController.m; sourceTree = "<group>"; };
+		18FBDC491F1F409A00A4B333 /* CommunityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommunityViewController.h; sourceTree = "<group>"; };
+		18FBDC4A1F1F409A00A4B333 /* CommunityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommunityViewController.m; sourceTree = "<group>"; };
+		18FBDC4C1F1F40A400A4B333 /* CategoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoryViewController.h; sourceTree = "<group>"; };
+		18FBDC4D1F1F40A400A4B333 /* CategoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoryViewController.m; sourceTree = "<group>"; };
+		18FBDC4F1F1F40B000A4B333 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		18FBDC501F1F40B000A4B333 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		18FBDC521F1F43E300A4B333 /* touchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = touchViewController.h; sourceTree = "<group>"; };
+		18FBDC531F1F43E300A4B333 /* touchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = touchViewController.m; sourceTree = "<group>"; };
+		18FBDC551F1F440800A4B333 /* sucessViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sucessViewController.h; sourceTree = "<group>"; };
+		18FBDC561F1F440800A4B333 /* sucessViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = sucessViewController.m; sourceTree = "<group>"; };
+		18FBDC581F1F455600A4B333 /* MasonryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MasonryViewController.h; sourceTree = "<group>"; };
+		18FBDC591F1F455600A4B333 /* MasonryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MasonryViewController.m; sourceTree = "<group>"; };
+		18FBDC5E1F1F4A2600A4B333 /* vipViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vipViewController.h; sourceTree = "<group>"; };
+		18FBDC5F1F1F4A2600A4B333 /* vipViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = vipViewController.m; sourceTree = "<group>"; };
+		18FBDC611F1F4A7300A4B333 /* ShakeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShakeViewController.h; sourceTree = "<group>"; };
+		18FBDC621F1F4A7300A4B333 /* ShakeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShakeViewController.m; sourceTree = "<group>"; };
+		18FBDC641F1F4B5200A4B333 /* BlockViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlockViewController.h; sourceTree = "<group>"; };
+		18FBDC651F1F4B5200A4B333 /* BlockViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlockViewController.m; sourceTree = "<group>"; };
+		18FBDC671F1F4C9E00A4B333 /* AFViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFViewController.h; sourceTree = "<group>"; };
+		18FBDC681F1F4C9E00A4B333 /* AFViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFViewController.m; sourceTree = "<group>"; };
+		18FBDC6A1F1F510200A4B333 /* VideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoViewController.h; sourceTree = "<group>"; };
+		18FBDC6B1F1F510200A4B333 /* VideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoViewController.m; sourceTree = "<group>"; };
 		508E51581EFB54B1007C32B3 /* iOSReview.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSReview.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		508E515C1EFB54B1007C32B3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		508E51651EFB54B1007C32B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -175,6 +187,10 @@
 			isa = PBXGroup;
 			children = (
 				18FBDBE41F1F3A4A00A4B333 /* HeadTools.h */,
+				18FBDC0C1F1F3E5700A4B333 /* BaseTabBarController.h */,
+				18FBDC0D1F1F3E5700A4B333 /* BaseTabBarController.m */,
+				18FBDC0F1F1F3E8000A4B333 /* BaseNavigationController.h */,
+				18FBDC101F1F3E8000A4B333 /* BaseNavigationController.m */,
 				18FBDBE21F1F3A4A00A4B333 /* BaseViewController.h */,
 				18FBDBE31F1F3A4A00A4B333 /* BaseViewController.m */,
 			);
@@ -220,29 +236,65 @@
 			path = niao;
 			sourceTree = "<group>";
 		};
+		18FBDC421F1F400000A4B333 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				18FBDC4F1F1F40B000A4B333 /* HomeViewController.h */,
+				18FBDC501F1F40B000A4B333 /* HomeViewController.m */,
+				18FBDC521F1F43E300A4B333 /* touchViewController.h */,
+				18FBDC531F1F43E300A4B333 /* touchViewController.m */,
+				18FBDC551F1F440800A4B333 /* sucessViewController.h */,
+				18FBDC561F1F440800A4B333 /* sucessViewController.m */,
+				18FBDC581F1F455600A4B333 /* MasonryViewController.h */,
+				18FBDC591F1F455600A4B333 /* MasonryViewController.m */,
+				18FBDC6A1F1F510200A4B333 /* VideoViewController.h */,
+				18FBDC6B1F1F510200A4B333 /* VideoViewController.m */,
+				18FBDC5E1F1F4A2600A4B333 /* vipViewController.h */,
+				18FBDC5F1F1F4A2600A4B333 /* vipViewController.m */,
+				18FBDC611F1F4A7300A4B333 /* ShakeViewController.h */,
+				18FBDC621F1F4A7300A4B333 /* ShakeViewController.m */,
+				18FBDC641F1F4B5200A4B333 /* BlockViewController.h */,
+				18FBDC651F1F4B5200A4B333 /* BlockViewController.m */,
+				18FBDC671F1F4C9E00A4B333 /* AFViewController.h */,
+				18FBDC681F1F4C9E00A4B333 /* AFViewController.m */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		18FBDC431F1F401700A4B333 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				18FBDC4C1F1F40A400A4B333 /* CategoryViewController.h */,
+				18FBDC4D1F1F40A400A4B333 /* CategoryViewController.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		18FBDC441F1F403C00A4B333 /* Community */ = {
+			isa = PBXGroup;
+			children = (
+				18FBDC491F1F409A00A4B333 /* CommunityViewController.h */,
+				18FBDC4A1F1F409A00A4B333 /* CommunityViewController.m */,
+			);
+			path = Community;
+			sourceTree = "<group>";
+		};
+		18FBDC451F1F407000A4B333 /* Me */ = {
+			isa = PBXGroup;
+			children = (
+				18FBDC461F1F408F00A4B333 /* MeViewController.h */,
+				18FBDC471F1F408F00A4B333 /* MeViewController.m */,
+			);
+			path = Me;
+			sourceTree = "<group>";
+		};
 		50502E4C1F02325300868306 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				18A6809E1F1317D2002F8F73 /* HitoViewController.h */,
-				18A6809F1F1317D2002F8F73 /* HitoViewController.m */,
-				50502E511F0232A200868306 /* secondViewController.h */,
-				50502E521F0232A200868306 /* secondViewController.m */,
-				50502E4F1F0232A200868306 /* NextViewController.h */,
-				50502E501F0232A200868306 /* NextViewController.m */,
-				508719601F02481F00F60FAC /* filmViewController.h */,
-				508719611F02481F00F60FAC /* filmViewController.m */,
-				50502E531F0232A200868306 /* thirdViewController.h */,
-				50502E541F0232A200868306 /* thirdViewController.m */,
-				50502E4D1F0232A200868306 /* fourViewController.h */,
-				50502E4E1F0232A200868306 /* fourViewController.m */,
-				1805075C1F0C876A00D52818 /* fiveViewController.h */,
-				1805075D1F0C876A00D52818 /* fiveViewController.m */,
-				18A680A11F134559002F8F73 /* shareViewController.h */,
-				18A680A21F134559002F8F73 /* shareViewController.m */,
-				185C7AF11F185823004E2ACF /* touchViewController.h */,
-				185C7AF21F185823004E2ACF /* touchViewController.m */,
-				185C7AF41F1866E6004E2ACF /* sucessViewController.h */,
-				185C7AF51F1866E6004E2ACF /* sucessViewController.m */,
+				18FBDC451F1F407000A4B333 /* Me */,
+				18FBDC441F1F403C00A4B333 /* Community */,
+				18FBDC431F1F401700A4B333 /* Category */,
+				18FBDC421F1F400000A4B333 /* Home */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -534,20 +586,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				185C7AF61F1866E6004E2ACF /* sucessViewController.m in Sources */,
-				50502E5A1F0232A200868306 /* thirdViewController.m in Sources */,
-				50502E581F0232A200868306 /* NextViewController.m in Sources */,
-				18A680A01F1317D2002F8F73 /* HitoViewController.m in Sources */,
-				1805075E1F0C876A00D52818 /* fiveViewController.m in Sources */,
+				18FBDC4E1F1F40A400A4B333 /* CategoryViewController.m in Sources */,
+				18FBDC631F1F4A7300A4B333 /* ShakeViewController.m in Sources */,
+				18FBDC511F1F40B000A4B333 /* HomeViewController.m in Sources */,
+				18FBDC111F1F3E8000A4B333 /* BaseNavigationController.m in Sources */,
+				18FBDC691F1F4C9E00A4B333 /* AFViewController.m in Sources */,
+				18FBDC571F1F440800A4B333 /* sucessViewController.m in Sources */,
+				18FBDC4B1F1F409A00A4B333 /* CommunityViewController.m in Sources */,
 				18FBDBE51F1F3A4A00A4B333 /* BaseViewController.m in Sources */,
 				18FBDBE81F1F3A6B00A4B333 /* AppDelegate.m in Sources */,
-				508719621F02481F00F60FAC /* filmViewController.m in Sources */,
-				50502E571F0232A200868306 /* fourViewController.m in Sources */,
-				18A680A31F134559002F8F73 /* shareViewController.m in Sources */,
-				50502E591F0232A200868306 /* secondViewController.m in Sources */,
+				18FBDC5A1F1F455600A4B333 /* MasonryViewController.m in Sources */,
+				18FBDC6C1F1F510200A4B333 /* VideoViewController.m in Sources */,
+				18FBDC601F1F4A2600A4B333 /* vipViewController.m in Sources */,
+				18FBDC0E1F1F3E5700A4B333 /* BaseTabBarController.m in Sources */,
 				508E515D1EFB54B1007C32B3 /* main.m in Sources */,
+				18FBDC661F1F4B5200A4B333 /* BlockViewController.m in Sources */,
 				18345CEB1F17429A00257B87 /* Student.m in Sources */,
-				185C7AF31F185823004E2ACF /* touchViewController.m in Sources */,
+				18FBDC541F1F43E300A4B333 /* touchViewController.m in Sources */,
+				18FBDC481F1F408F00A4B333 /* MeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

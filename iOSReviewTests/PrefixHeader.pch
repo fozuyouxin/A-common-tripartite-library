@@ -13,17 +13,23 @@
 // You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
 
 #import "HeadTools.h"
-#import "HitoViewController.h"
-#import "NextViewController.h"
-#import "secondViewController.h"
-#import "thirdViewController.h"
-#import "fourViewController.h"
-#import "filmViewController.h"
-#import "fiveViewController.h"
-#import "shareViewController.h"
-#import "Student.h"
+#import "BaseViewController.h"
+#import "BaseTabBarController.h"
+#import "BaseNavigationController.h"
+#import "HomeViewController.h"
+#import "CategoryViewController.h"
+#import "CommunityViewController.h"
+#import "MeViewController.h"
+#import "MasonryViewController.h"
 #import "touchViewController.h"
 #import "sucessViewController.h"
+#import "vipViewController.h"
+#import "ShakeViewController.h"
+#import "BlockViewController.h"
+#import "AFViewController.h"
+#import "VideoViewController.h"
+#import "Student.h"
+
 
 #ifdef __OBJC__
 #import <UIKit/UIKit.h>

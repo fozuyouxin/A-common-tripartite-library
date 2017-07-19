@@ -17,8 +17,9 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
-    UINavigationController * nav = [[UINavigationController alloc]initWithRootViewController:[[HitoViewController alloc]init]];
-    self.window.rootViewController = nav;
+    
+    HitoAllocInit(BaseTabBarController, tabVC);
+    self.window.rootViewController = tabVC;
     [self.window makeKeyAndVisible];
     
     return YES;

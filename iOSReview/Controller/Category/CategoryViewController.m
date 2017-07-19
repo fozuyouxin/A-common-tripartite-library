@@ -1,27 +1,22 @@
 //
-//  NextViewController.m
+//  CategoryViewController.m
 //  iOSReview
 //
-//  Created by 于海涛 on 2017/6/22.
+//  Created by Apple on 2017/7/19.
 //  Copyright © 2017年 KennyHito. All rights reserved.
 //
 
-#import "NextViewController.h"
+#import "CategoryViewController.h"
 
-@interface NextViewController ()
+@interface CategoryViewController ()
 
 @end
 
-@implementation NextViewController
+@implementation CategoryViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.automaticallyAdjustsScrollViewInsets = NO;
-    self.view.backgroundColor = [UIColor whiteColor];
-    self.navigationItem.title = @"block回调";
-    self.block(@"my name is KennyHito");
-    
-    
+    // Do any additional setup after loading the view.
 }
 
 - (void)didReceiveMemoryWarning {

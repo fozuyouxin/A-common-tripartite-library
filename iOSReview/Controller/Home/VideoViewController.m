@@ -1,21 +1,20 @@
 //
-//  filmViewController.m
+//  VideoViewController.m
 //  iOSReview
 //
-//  Created by 于海涛 on 2017/6/27.
+//  Created by Apple on 2017/7/19.
 //  Copyright © 2017年 KennyHito. All rights reserved.
 //
 
-#import "filmViewController.h"
+#import "VideoViewController.h"
 #import <AVFoundation/AVFoundation.h>
-//#import <MediaPlayer/MediaPlayer.h>
-#import "HeadTools.h"
 
-@interface filmViewController ()
+@interface VideoViewController ()
 @property (strong, nonatomic) AVPlayer *avPlayer;
+@property (nonatomic,strong) UIImageView * imageV;
 @end
 
-@implementation filmViewController
+@implementation VideoViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -50,7 +49,42 @@
     [self.avPlayer play];
     //视频暂停
     //[self.avPlayer pause];
+    
+    
+    
+#pragma mark -- 本地视频第一帧图片预加载
+    _imageV = [[UIImageView alloc]initWithFrame:CGRectMake(10, 300, 300, 300)];
+    _imageV.userInteractionEnabled = YES;
+    NSString *playStr = [[NSBundle mainBundle] pathForResource:@"123" ofType:@"mp4"];
+    UIImage * iv = [self getVideoFirstImage:playStr];
+    _imageV.image = iv;
+    [self.view addSubview:_imageV];
+    UILongPressGestureRecognizer * longPress = [[UILongPressGestureRecognizer alloc]initWithTarget:self action:@selector(longPressClick:)];
+    //设置长按时间,默认0.5秒
+    longPress.minimumPressDuration = 1.0;
+    [self.imageV addGestureRecognizer:longPress];
 }
 
+- (void)longPressClick:(UIGestureRecognizer *)longPress{
+    //必须加上判断语句防止多次保存
+    if (longPress.state == UIGestureRecognizerStateBegan ) {
+        [self savePicture:self.imageV.image];
+    }
+}
+
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
+
+/*
+#pragma mark - Navigation
+
+// In a storyboard-based application, you will often want to do a little preparation before navigation
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    // Get the new view controller using [segue destinationViewController].
+    // Pass the selected object to the new view controller.
+}
+*/
 
 @end

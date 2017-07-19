@@ -1,25 +1,21 @@
 //
-//  thirdViewController.m
+//  AFViewController.m
 //  iOSReview
 //
-//  Created by 于海涛 on 2017/6/26.
+//  Created by Apple on 2017/7/19.
 //  Copyright © 2017年 KennyHito. All rights reserved.
 //
 
-#import "thirdViewController.h"
-#import "HeadTools.h"
+#import "AFViewController.h"
 
-@interface thirdViewController ()
-
-@property (nonatomic,strong) NSMutableArray * dataAr;
+@interface AFViewController ()
 
 @end
 
-@implementation thirdViewController
+@implementation AFViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    _dataAr = [[NSMutableArray alloc]init];
     self.navigationItem.title = @"third";
     [self setUpTableView];
     self.tableView.frame = CGRectMake(0,0, HitoScreenW, HitoScreenH);
@@ -30,7 +26,7 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return _dataAr.count;
+    return self.dataArr.count;
 }
 
 /* cell内容 */
@@ -39,7 +35,7 @@
     UITableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:cellID];
     cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:cellID];
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
-    Student * user = _dataAr[indexPath.row];
+    Student * user = self.dataArr[indexPath.row];
     cell.textLabel.text = user.stuName;
     cell.detailTextLabel.text = user.stuHeight;
     return cell;
@@ -49,15 +45,15 @@
 - (void)addDropDownRefresh{
     
 #pragma mark 文字加载
-//    MJRefreshNormalHeader * header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
-//        
-//        //下拉刷新
-//        [self.tableView. mj_header endRefreshing];
-//    }];
-//    
-//    [header setTitle:@"正在刷新" forState:MJRefreshStateRefreshing];
-//    [header setTitle:@"松开刷新" forState:MJRefreshStatePulling];
-//    self.tableView. mj_header = header;
+    //    MJRefreshNormalHeader * header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
+    //
+    //        //下拉刷新
+    //        [self.tableView. mj_header endRefreshing];
+    //    }];
+    //
+    //    [header setTitle:@"正在刷新" forState:MJRefreshStateRefreshing];
+    //    [header setTitle:@"松开刷新" forState:MJRefreshStatePulling];
+    //    self.tableView. mj_header = header;
     
 #pragma mark 动画加载
     MJRefreshGifHeader *header = [MJRefreshGifHeader headerWithRefreshingTarget:self refreshingAction:@selector(loadNewData)];
@@ -97,7 +93,7 @@
 
 
 - (void)AFNetworking{
-    [self.dataAr removeAllObjects];
+    [self.dataArr removeAllObjects];
     [self getRequestWithUrl:@"http://luckfairy.16mb.com/PHPExercise/PHP_JSON_3.php" andParameter:@{} andReturnBlock:^(NSData *data, NSError *error) {
         if (data!=nil) {
             NSDictionary * dic = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:nil];
@@ -105,9 +101,9 @@
             NSArray * arr = dic[@"data"];
             for (NSDictionary * d in arr) {
                 Student *stu = [Student mj_objectWithKeyValues:d];
-                [_dataAr addObject:stu];
+                [self.dataArr addObject:stu];
             }
-            NSLog(@"json====%ld",_dataAr.count);
+            NSLog(@"json====%ld",self.dataArr.count);
             [self.tableView reloadData];
         }else{
             NSLog(@"===%@===",error.localizedDescription);

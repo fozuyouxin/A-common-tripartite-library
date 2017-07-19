@@ -74,10 +74,12 @@
 #pragma mark 创建tableview
 /** 创建tableview */
 - (void)setUpTableView{
-    self.tableView = [[UITableView alloc] initWithFrame:CGRectMake(0,64, HitoScreenW, HitoScreenH-64-49) style:UITableViewStyleGrouped];
+    self.tableView = [[UITableView alloc] initWithFrame:CGRectMake(0,0, HitoScreenW, HitoScreenH) style:UITableViewStyleGrouped];
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleSingleLine;
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
+    self.tableView.showsVerticalScrollIndicator = NO;
+    self.tableView.showsHorizontalScrollIndicator = NO;
     self.tableView.backgroundColor=[UIColor whiteColor];
     [self.view addSubview:self.tableView];
 }
@@ -210,6 +212,7 @@
 }
 /* 导航栏页面跳转 */
 -(void)pushNextViewController:(UIViewController *)controller{
+    controller.hidesBottomBarWhenPushed = YES;
     [self.navigationController pushViewController:controller animated:YES];
 }
 

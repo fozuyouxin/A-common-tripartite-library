@@ -1,13 +1,13 @@
 //
-//  thirdViewController.h
+//  vipViewController.h
 //  iOSReview
 //
-//  Created by 于海涛 on 2017/6/26.
+//  Created by Apple on 2017/7/19.
 //  Copyright © 2017年 KennyHito. All rights reserved.
 //
 
 #import "BaseViewController.h"
 
-@interface thirdViewController : BaseViewController
+@interface vipViewController : BaseViewController
 
 @end

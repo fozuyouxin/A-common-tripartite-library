@@ -1,28 +1,26 @@
 //
-//  shareViewController.m
+//  MasonryViewController.m
 //  iOSReview
 //
-//  Created by Apple on 2017/7/10.
+//  Created by Apple on 2017/7/19.
 //  Copyright © 2017年 KennyHito. All rights reserved.
 //
 
-#import "shareViewController.h"
+#import "MasonryViewController.h"
 
-@interface shareViewController ()
-@property (nonatomic,strong)UIButton * btn;
+@interface MasonryViewController ()
+
 @end
 
-@implementation shareViewController
+@implementation MasonryViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
     [self addNavCenterTitle:@"Masonry使用" andColor: [UIColor orangeColor] andFontSize:15];
-
-    [self setUI];
+    
+    [self setUpUI];
 }
-
-- (void)setUI{
+- (void)setUpUI{
     UIView *superview = self.view;
     superview.backgroundColor = [UIColor orangeColor];
     
@@ -46,10 +44,10 @@
         make.edges.equalTo(superview).with.insets(padding1);
     }];
     
-    self.btn = [[UIButton alloc]init];
-    _btn.backgroundColor = [UIColor redColor];
-    [view2 addSubview:self.btn];
-    [self.btn mas_makeConstraints:^(MASConstraintMaker *make) {
+    UIButton * btn = [[UIButton alloc]init];
+    btn.backgroundColor = [UIColor redColor];
+    [view2 addSubview:btn];
+    [btn mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.mas_equalTo(view2.mas_top);//上
         make.left.mas_equalTo(view2.mas_left);//左
         make.width.mas_equalTo(@100);//宽
@@ -106,5 +104,19 @@
     
 }
 
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
+
+/*
+#pragma mark - Navigation
+
+// In a storyboard-based application, you will often want to do a little preparation before navigation
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    // Get the new view controller using [segue destinationViewController].
+    // Pass the selected object to the new view controller.
+}
+*/
 
 @end

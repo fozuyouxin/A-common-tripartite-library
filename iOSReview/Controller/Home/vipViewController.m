@@ -1,23 +1,21 @@
 //
-//  fiveViewController.m
+//  vipViewController.m
 //  iOSReview
 //
-//  Created by Apple on 2017/7/5.
+//  Created by Apple on 2017/7/19.
 //  Copyright © 2017年 KennyHito. All rights reserved.
 //
 
-#import "fiveViewController.h"
+#import "vipViewController.h"
 
-@interface fiveViewController ()
+@interface vipViewController ()
 
 @end
 
-@implementation fiveViewController
+@implementation vipViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.navigationItem.title = @"five";
-    
     //UIView背景颜色渐变
     UIView *view = [[UIView alloc] initWithFrame:CGRectMake(10, 100, HitoScreenW-20, 200)];
     [self.view addSubview:view];
@@ -32,12 +30,12 @@
     maskLayer.frame = view.bounds;
     maskLayer.path = maskPath.CGPath;
     view.layer.mask = maskLayer;
-
+    
     //会员卡
     UILabel * lab = [self createLabelTitle:@"Zoedear会员卡" andFont:0 andTitleColor:[UIColor redColor] andBackColor:[UIColor clearColor] andTag:50 andFrame:CGRectMake(0, 20, CGRectGetWidth(view.bounds), 30) andTextAlignment:NSTextAlignmentCenter];
-
+    
     [view addSubview:lab];
-
+    
     //为一个view添加虚线边框
     CAShapeLayer *border = [CAShapeLayer layer];
     border.strokeColor = [UIColor colorWithRed:67/255.0f green:37/255.0f blue:83/255.0f alpha:1].CGColor;
@@ -46,24 +44,6 @@
     border.path = [UIBezierPath bezierPathWithRect:view.bounds].CGPath;
     border.frame = view.bounds;
     [view.layer addSublayer:border];
-    
-    //1、打开摇一摇功能
-    [UIApplication sharedApplication].applicationSupportsShakeToEdit = YES;
-    //2、让需要摇动的控制器成为第一响应者
-    [self becomeFirstResponder];
-}
-//3、实现以下方法
-// 开始摇动
-- (void)motionBegan:(UIEventSubtype)motion withEvent:(UIEvent *)event{
-    NSLog(@"开始摇动");
-}
-// 取消摇动
-- (void)motionCancelled:(UIEventSubtype)motion withEvent:(UIEvent *)event{
-    NSLog(@"取消摇动");
-}
-// 摇动结束
-- (void)motionEnded:(UIEventSubtype)motion withEvent:(UIEvent *)event{
-    NSLog(@"摇动结束");
 }
 
 - (void)didReceiveMemoryWarning {
