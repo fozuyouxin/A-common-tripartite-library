@@ -58,9 +58,31 @@
     static NSString * cellID = @"cellID";
     UITableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:cellID];
     cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellID];
+    cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     cell.textLabel.text = _arrData[indexPath.row];
-
+    if (indexPath.row == 8) {
+        cell.accessoryType = UITableViewCellAccessoryNone;
+        UISwitch * sw = [[UISwitch alloc]initWithFrame:CGRectMake(50, 50, 100, 50)];
+        sw.on = NO;//默认关闭状态
+        [sw addTarget:self action:@selector(changeEvent:) forControlEvents:UIControlEventValueChanged];
+        cell.accessoryView = sw;
+    }
     return cell;
+}
+#pragma mark -- UISwitch开关按钮事件实现
+- (void)changeEvent:(UISwitch *)sw{
+    static BOOL flag = NO;
+    flag = !flag;
+    if (sw.on && flag) {
+        self.view.window.backgroundColor = [UIColor blackColor];//设置背景色
+        self.view.window.alpha = 0.8;//透明度
+        
+    }else{
+        self.view.window.backgroundColor = [UIColor whiteColor];
+        self.view.window.alpha = 1.0;
+        
+    }
+    
 }
 
 #pragma mark -- cell点击事件
