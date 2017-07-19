@@ -115,16 +115,16 @@
 ~~~
 
 * 2017.7.12 增加MJRefresh,实现刷新功能,下拉功能以文字和动画两种形式进行显示;</br>
-<img width="250" height="400" src="/donghua.gif" />
+<img width="250" height="400" src="Image/donghua.gif" />
 
 * 2017.7.13 增加MJExtension和IQKeyboardManager;</br>
-<img width="250" height="400" src="/IQKeyboardManager.png" />
+<img width="250" height="400" src="Image/IQKeyboardManager.png" />
 
 * 2017.7.14 增加指纹解锁功能;</br>
 <div>
-<img width="250" height="400" src="/3.png" />
-<img width="250" height="400" src="/2.png" />
-<img width="250" height="400" src="/1.png" />
+<img width="250" height="400" src="Image/3.png" />
+<img width="250" height="400" src="Image/2.png" />
+<img width="250" height="400" src="Image/1.png" />
 </div>
 
 * 功能持续更新中...
@@ -132,5 +132,5 @@
 实现功能效果图:
 ----------------
 
-<img width="250" height="400" src="/result.gif" />
+<img width="250" height="400" src="Image/result.gif" />
 
