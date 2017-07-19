@@ -22,9 +22,9 @@
     button.titleLabel.numberOfLines = 0;
     button.titleLabel.textAlignment = 1;
     button.titleLabel.font = [UIFont systemFontOfSize:11];
-    [button setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
+    [button setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     [button addTarget:self action:@selector(present) forControlEvents:UIControlEventTouchUpInside];
-    button.backgroundColor = [UIColor yellowColor];
+    button.backgroundColor = [UIColor grayColor];
     button.layer.cornerRadius = 20;
     button.layer.masksToBounds = YES;
     [HitoApplication addSubview:button];

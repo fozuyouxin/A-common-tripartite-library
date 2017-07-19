@@ -138,19 +138,19 @@
     
     /* ⚠️ This's 加载cell动画 */
     //从锚点位置出发，逆时针绕 Y 和 Z 坐标轴旋转90度
-    CATransform3D transform3D = CATransform3DMakeRotation(M_PI_2, 0.0, 1.0, 1.0);
-    // 定义 cell 的初始状态
-    cell.alpha = 0.0;
-    cell.layer.transform = transform3D;
-    cell.layer.anchorPoint = CGPointMake(0.0, 0.5); // 设置锚点位置；默认为中心
-    // 方式二：代码块设置动画
-    [UIView animateWithDuration:0.5 animations:^{
-        cell.alpha = 1.0;
-        cell.layer.transform = CATransform3DIdentity;
-        CGRect rect = cell.frame;
-        rect.origin.x = 0.0;
-        cell.frame = rect;
-    }];
+//    CATransform3D transform3D = CATransform3DMakeRotation(M_PI_2, 0.0, 1.0, 1.0);
+//    // 定义 cell 的初始状态
+//    cell.alpha = 0.0;
+//    cell.layer.transform = transform3D;
+//    cell.layer.anchorPoint = CGPointMake(0.0, 0.5); // 设置锚点位置；默认为中心
+//    // 方式二：代码块设置动画
+//    [UIView animateWithDuration:0.5 animations:^{
+//        cell.alpha = 1.0;
+//        cell.layer.transform = CATransform3DIdentity;
+//        CGRect rect = cell.frame;
+//        rect.origin.x = 0.0;
+//        cell.frame = rect;
+//    }];
 }
 
 #pragma mark UINavigationController设置

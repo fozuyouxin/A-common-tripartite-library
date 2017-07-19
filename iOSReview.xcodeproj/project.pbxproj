@@ -41,6 +41,8 @@
 		18FBDC661F1F4B5200A4B333 /* BlockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FBDC651F1F4B5200A4B333 /* BlockViewController.m */; };
 		18FBDC691F1F4C9E00A4B333 /* AFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FBDC681F1F4C9E00A4B333 /* AFViewController.m */; };
 		18FBDC6C1F1F510200A4B333 /* VideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FBDC6B1F1F510200A4B333 /* VideoViewController.m */; };
+		18FBDC6E1F1F532B00A4B333 /* bao.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 18FBDC6D1F1F532B00A4B333 /* bao.jpg */; };
+		18FBDC711F1F634B00A4B333 /* biao.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 18FBDC701F1F634B00A4B333 /* biao.jpg */; };
 		508E515D1EFB54B1007C32B3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 508E515C1EFB54B1007C32B3 /* main.m */; };
 		508E51661EFB54B1007C32B3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 508E51641EFB54B1007C32B3 /* Main.storyboard */; };
 		508E51681EFB54B1007C32B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 508E51671EFB54B1007C32B3 /* Assets.xcassets */; };
@@ -121,6 +123,8 @@
 		18FBDC681F1F4C9E00A4B333 /* AFViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFViewController.m; sourceTree = "<group>"; };
 		18FBDC6A1F1F510200A4B333 /* VideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoViewController.h; sourceTree = "<group>"; };
 		18FBDC6B1F1F510200A4B333 /* VideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoViewController.m; sourceTree = "<group>"; };
+		18FBDC6D1F1F532B00A4B333 /* bao.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bao.jpg; sourceTree = "<group>"; };
+		18FBDC701F1F634B00A4B333 /* biao.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = biao.jpg; sourceTree = "<group>"; };
 		508E51581EFB54B1007C32B3 /* iOSReview.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSReview.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		508E515C1EFB54B1007C32B3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		508E51651EFB54B1007C32B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -200,6 +204,8 @@
 		18FBDBE91F1F3A8400A4B333 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				18FBDC701F1F634B00A4B333 /* biao.jpg */,
+				18FBDC6D1F1F532B00A4B333 /* bao.jpg */,
 				18FBDBEA1F1F3ACD00A4B333 /* 123.mp4 */,
 				18FBDBEB1F1F3ACD00A4B333 /* 霍建华、赵丽颖 - 不可说.mp4 */,
 				18FBDBEC1F1F3ACD00A4B333 /* image */,
@@ -288,6 +294,13 @@
 			path = Me;
 			sourceTree = "<group>";
 		};
+		18FBDC6F1F1F55A100A4B333 /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Lib;
+			sourceTree = "<group>";
+		};
 		50502E4C1F02325300868306 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -324,6 +337,7 @@
 		508E515A1EFB54B1007C32B3 /* iOSReview */ = {
 			isa = PBXGroup;
 			children = (
+				18FBDC6F1F1F55A100A4B333 /* Lib */,
 				18FBDBE91F1F3A8400A4B333 /* Resource */,
 				18FBDBE01F1F39E900A4B333 /* Application */,
 				18FBDBE11F1F3A2200A4B333 /* Base */,
@@ -499,11 +513,13 @@
 				18FBDBFC1F1F3ACD00A4B333 /* 123.mp4 in Resources */,
 				18FBDBFD1F1F3ACD00A4B333 /* 霍建华、赵丽颖 - 不可说.mp4 in Resources */,
 				18FBDC001F1F3ACD00A4B333 /* next.png in Resources */,
+				18FBDC6E1F1F532B00A4B333 /* bao.jpg in Resources */,
 				18FBDC091F1F3ACD00A4B333 /* t1.jpeg in Resources */,
 				18FBDC051F1F3ACD00A4B333 /* niao_5.png in Resources */,
 				18FBDC041F1F3ACD00A4B333 /* niao_4.png in Resources */,
 				508E516B1EFB54B1007C32B3 /* LaunchScreen.storyboard in Resources */,
 				18FBDBFE1F1F3ACD00A4B333 /* aa.jpg in Resources */,
+				18FBDC711F1F634B00A4B333 /* biao.jpg in Resources */,
 				18FBDC0A1F1F3ACD00A4B333 /* t2.jpeg in Resources */,
 				18FBDC021F1F3ACD00A4B333 /* niao_2.png in Resources */,
 				18FBDBFF1F1F3ACD00A4B333 /* back.png in Resources */,
