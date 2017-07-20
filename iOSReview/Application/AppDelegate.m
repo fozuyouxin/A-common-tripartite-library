@@ -22,6 +22,9 @@
     self.window.rootViewController = tabVC;
     [self.window makeKeyAndVisible];
     
+    //本地推送
+    [self requestAuthor];
+    
     return YES;
 }
 
@@ -32,6 +35,17 @@
         return NO;
     }
     return YES;
+}
+
+//创建本地通知
+- (void)requestAuthor
+{
+    if ([UIDevice currentDevice].systemVersion.floatValue >= 8.0) {
+        // 设置通知的类型可以为弹窗提示,声音提示,应用图标数字提示
+        UIUserNotificationSettings *setting = [UIUserNotificationSettings settingsForTypes:UIUserNotificationTypeBadge | UIUserNotificationTypeSound | UIUserNotificationTypeAlert categories:nil];
+        // 授权通知
+        [[UIApplication sharedApplication] registerUserNotificationSettings:setting];
+    }
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
@@ -48,6 +62,8 @@
 
 - (void)applicationWillEnterForeground:(UIApplication *)application {
     // Called as part of the transition from the background to the active state; here you can undo many of the changes made on entering the background.
+#pragma mark --> NSLog(@"\n ===> 程序进入前台 !");
+    [[UIApplication sharedApplication] setApplicationIconBadgeNumber:0];
 }
 
 

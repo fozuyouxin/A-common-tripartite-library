@@ -287,7 +287,7 @@ static CGFloat const maxTitleScale = 1.3;
     hotVC.title = @"热点";
     [self addChildViewController:hotVC];
     
-    VideoViewController * videoVC = [[VideoViewController alloc]init];
+    musicViewController * videoVC = [[musicViewController alloc]init];
     videoVC.title = @"影视";
     [self addChildViewController:videoVC];
     
@@ -299,9 +299,9 @@ static CGFloat const maxTitleScale = 1.3;
     vc4.title = @"订阅";
     [self addChildViewController:vc4];
     
-//    ScienceViewController *vc5 = [[ScienceViewController alloc] init];
-//    vc5.title = @"科技";
-//    [self addChildViewController:vc5];
+    ScienceViewController *vc5 = [[ScienceViewController alloc] init];
+    vc5.title = @"科技";
+    [self addChildViewController:vc5];
 }
 
 #pragma mark - 设置标题

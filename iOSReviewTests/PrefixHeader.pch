@@ -39,8 +39,11 @@
 #import "ReaderViewController.h"
 #import "ScienceViewController.h"
 #import "TopLineViewController.h"
+#import "musicViewController.h"
 #import "MenuModel.h"
 #import "YHTScrollView.h"
+#import "SegViewController.h"
+#import "LocalpushViewController.h"
 
 #ifdef __OBJC__
 #import <UIKit/UIKit.h>
