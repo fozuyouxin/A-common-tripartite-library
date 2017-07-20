@@ -15,6 +15,7 @@
 		186C4DAA1F203BDC00A9A1E2 /* phpModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 186C4DA51F203BDC00A9A1E2 /* phpModel.m */; };
 		186C4DAE1F2046C100A9A1E2 /* aboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 186C4DAD1F2046C100A9A1E2 /* aboutViewController.m */; };
 		186C4DB01F204B2D00A9A1E2 /* zoedear.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 186C4DAF1F204B2D00A9A1E2 /* zoedear.jpg */; };
+		186C4DB31F20560C00A9A1E2 /* photoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 186C4DB21F20560C00A9A1E2 /* photoViewController.m */; };
 		18A680A51F1346A4002F8F73 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18A680A41F1346A4002F8F73 /* Social.framework */; };
 		18FBDBE51F1F3A4A00A4B333 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FBDBE31F1F3A4A00A4B333 /* BaseViewController.m */; };
 		18FBDBE81F1F3A6B00A4B333 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FBDBE71F1F3A6B00A4B333 /* AppDelegate.m */; };
@@ -93,6 +94,8 @@
 		186C4DAC1F2046C100A9A1E2 /* aboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aboutViewController.h; sourceTree = "<group>"; };
 		186C4DAD1F2046C100A9A1E2 /* aboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = aboutViewController.m; sourceTree = "<group>"; };
 		186C4DAF1F204B2D00A9A1E2 /* zoedear.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = zoedear.jpg; sourceTree = "<group>"; };
+		186C4DB11F20560C00A9A1E2 /* photoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = photoViewController.h; sourceTree = "<group>"; };
+		186C4DB21F20560C00A9A1E2 /* photoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = photoViewController.m; sourceTree = "<group>"; };
 		18A680A41F1346A4002F8F73 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		18FBDBE21F1F3A4A00A4B333 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
 		18FBDBE31F1F3A4A00A4B333 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
@@ -319,6 +322,8 @@
 				18FBDC681F1F4C9E00A4B333 /* AFViewController.m */,
 				186C4D9A1F203BDC00A9A1E2 /* 原生定位 */,
 				186C4DA11F203BDC00A9A1E2 /* 自学php */,
+				186C4DB11F20560C00A9A1E2 /* photoViewController.h */,
+				186C4DB21F20560C00A9A1E2 /* photoViewController.m */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -672,6 +677,7 @@
 				18FBDBE51F1F3A4A00A4B333 /* BaseViewController.m in Sources */,
 				18FBDBE81F1F3A6B00A4B333 /* AppDelegate.m in Sources */,
 				18FBDC5A1F1F455600A4B333 /* MasonryViewController.m in Sources */,
+				186C4DB31F20560C00A9A1E2 /* photoViewController.m in Sources */,
 				186C4DA61F203BDC00A9A1E2 /* HitoLocation.m in Sources */,
 				18FBDC6C1F1F510200A4B333 /* VideoViewController.m in Sources */,
 				186C4DA91F203BDC00A9A1E2 /* ownViewController.m in Sources */,

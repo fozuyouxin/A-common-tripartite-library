@@ -32,6 +32,7 @@
 #import "ownViewController.h"
 #import "LocationViewController.h"
 #import "aboutViewController.h"
+#import "photoViewController.h"
 
 #ifdef __OBJC__
 #import <UIKit/UIKit.h>
