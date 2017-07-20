@@ -61,6 +61,7 @@
     cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     cell.textLabel.text = _arrData[indexPath.row];
     if (indexPath.row == 8) {
+        cell.selectionStyle = UITableViewCellSelectionStyleNone;
         cell.accessoryType = UITableViewCellAccessoryNone;
         UISwitch * sw = [[UISwitch alloc]initWithFrame:CGRectMake(50, 50, 100, 50)];
         sw.on = NO;//默认关闭状态
@@ -75,7 +76,7 @@
     flag = !flag;
     if (sw.on && flag) {
         self.view.window.backgroundColor = [UIColor blackColor];//设置背景色
-        self.view.window.alpha = 0.8;//透明度
+        self.view.window.alpha = 0.5;//透明度
         
     }else{
         self.view.window.backgroundColor = [UIColor whiteColor];
@@ -104,17 +105,20 @@
         [self openFuncCommd:@"http://www.jianshu.com/users/c3dc9c3117a5/latest_articles"];
         
     }else if (indexPath.row == 4){
-        //打电话
+        //联系我们
         [self openFuncCommd:@"telprompt://13522131242"];//自带弹出提示框
         //        [self openFuncCommd:@"tel://13522131242"];//不存在提示框
         
     }else if (indexPath.row == 5){
-        //发邮件
+        //反馈信息
         [self openFuncCommd:@"mailto://yht1154180808@163.com"];
         
     }else if(indexPath.row == 6){
+        //我的设备
+        [self showAlertMessage:[self getDeviceInfo]];
         
     }else if(indexPath.row == 7){
+        //清除缓存
         
     }else if(indexPath.row == 8){
         //夜间模式模块

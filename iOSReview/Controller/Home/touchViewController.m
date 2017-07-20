@@ -20,7 +20,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.navigationItem.title = @"指纹解锁";
     [self setUI];
     [self fingerPrint];
 }

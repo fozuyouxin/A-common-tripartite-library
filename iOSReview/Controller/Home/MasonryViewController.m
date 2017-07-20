@@ -16,7 +16,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self addNavCenterTitle:@"Masonry使用" andColor: [UIColor orangeColor] andFontSize:15];
     
     [self setUpUI];
 }

@@ -20,7 +20,7 @@
     [super viewDidLoad];
     self.automaticallyAdjustsScrollViewInsets = NO;
     self.view.backgroundColor = [UIColor whiteColor];
-    self.navigationItem.title = @"视频播放";
+
     //网络视频播放
     NSString *playString = @"http://static.tripbe.com/videofiles/20121214/9533522808.f4v.mp4";
     NSURL *url = [NSURL URLWithString:playString];

@@ -29,7 +29,8 @@
 #import "AFViewController.h"
 #import "VideoViewController.h"
 #import "Student.h"
-
+#import "ownViewController.h"
+#import "LocationViewController.h"
 
 #ifdef __OBJC__
 #import <UIKit/UIKit.h>
@@ -40,6 +41,7 @@
 #import <MJRefresh.h>
 #import <MJExtension.h>
 #import <IQKeyboardManager.h>
-
+#import <MBProgressHUD.h>
+#import <AFNetworking.h>
 
 #endif /* PrefixHeader_pch */

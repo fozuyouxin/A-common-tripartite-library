@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		18345CEB1F17429A00257B87 /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = 18345CEA1F17429A00257B87 /* Student.m */; };
+		186C4DA61F203BDC00A9A1E2 /* HitoLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 186C4D9C1F203BDC00A9A1E2 /* HitoLocation.m */; };
+		186C4DA71F203BDC00A9A1E2 /* Location.m in Sources */ = {isa = PBXBuildFile; fileRef = 186C4D9E1F203BDC00A9A1E2 /* Location.m */; };
+		186C4DA81F203BDC00A9A1E2 /* LocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 186C4DA01F203BDC00A9A1E2 /* LocationViewController.m */; };
+		186C4DA91F203BDC00A9A1E2 /* ownViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 186C4DA31F203BDC00A9A1E2 /* ownViewController.m */; };
+		186C4DAA1F203BDC00A9A1E2 /* phpModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 186C4DA51F203BDC00A9A1E2 /* phpModel.m */; };
 		18A680A51F1346A4002F8F73 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18A680A41F1346A4002F8F73 /* Social.framework */; };
 		18FBDBE51F1F3A4A00A4B333 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FBDBE31F1F3A4A00A4B333 /* BaseViewController.m */; };
 		18FBDBE81F1F3A6B00A4B333 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FBDBE71F1F3A6B00A4B333 /* AppDelegate.m */; };
@@ -73,6 +78,16 @@
 		1805075F1F0C879B00D52818 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		18345CE91F17429A00257B87 /* Student.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Student.h; sourceTree = "<group>"; };
 		18345CEA1F17429A00257B87 /* Student.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Student.m; sourceTree = "<group>"; };
+		186C4D9B1F203BDC00A9A1E2 /* HitoLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HitoLocation.h; sourceTree = "<group>"; };
+		186C4D9C1F203BDC00A9A1E2 /* HitoLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HitoLocation.m; sourceTree = "<group>"; };
+		186C4D9D1F203BDC00A9A1E2 /* Location.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Location.h; sourceTree = "<group>"; };
+		186C4D9E1F203BDC00A9A1E2 /* Location.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Location.m; sourceTree = "<group>"; };
+		186C4D9F1F203BDC00A9A1E2 /* LocationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationViewController.h; sourceTree = "<group>"; };
+		186C4DA01F203BDC00A9A1E2 /* LocationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationViewController.m; sourceTree = "<group>"; };
+		186C4DA21F203BDC00A9A1E2 /* ownViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ownViewController.h; sourceTree = "<group>"; };
+		186C4DA31F203BDC00A9A1E2 /* ownViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ownViewController.m; sourceTree = "<group>"; };
+		186C4DA41F203BDC00A9A1E2 /* phpModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = phpModel.h; sourceTree = "<group>"; };
+		186C4DA51F203BDC00A9A1E2 /* phpModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = phpModel.m; sourceTree = "<group>"; };
 		18A680A41F1346A4002F8F73 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		18FBDBE21F1F3A4A00A4B333 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
 		18FBDBE31F1F3A4A00A4B333 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
@@ -178,6 +193,30 @@
 			path = model;
 			sourceTree = "<group>";
 		};
+		186C4D9A1F203BDC00A9A1E2 /* 原生定位 */ = {
+			isa = PBXGroup;
+			children = (
+				186C4D9F1F203BDC00A9A1E2 /* LocationViewController.h */,
+				186C4DA01F203BDC00A9A1E2 /* LocationViewController.m */,
+				186C4D9B1F203BDC00A9A1E2 /* HitoLocation.h */,
+				186C4D9C1F203BDC00A9A1E2 /* HitoLocation.m */,
+				186C4D9D1F203BDC00A9A1E2 /* Location.h */,
+				186C4D9E1F203BDC00A9A1E2 /* Location.m */,
+			);
+			path = "原生定位";
+			sourceTree = "<group>";
+		};
+		186C4DA11F203BDC00A9A1E2 /* 自学php */ = {
+			isa = PBXGroup;
+			children = (
+				186C4DA21F203BDC00A9A1E2 /* ownViewController.h */,
+				186C4DA31F203BDC00A9A1E2 /* ownViewController.m */,
+				186C4DA41F203BDC00A9A1E2 /* phpModel.h */,
+				186C4DA51F203BDC00A9A1E2 /* phpModel.m */,
+			);
+			path = "自学php";
+			sourceTree = "<group>";
+		};
 		18FBDBE01F1F39E900A4B333 /* Application */ = {
 			isa = PBXGroup;
 			children = (
@@ -263,6 +302,8 @@
 				18FBDC651F1F4B5200A4B333 /* BlockViewController.m */,
 				18FBDC671F1F4C9E00A4B333 /* AFViewController.h */,
 				18FBDC681F1F4C9E00A4B333 /* AFViewController.m */,
+				186C4D9A1F203BDC00A9A1E2 /* 原生定位 */,
+				186C4DA11F203BDC00A9A1E2 /* 自学php */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -608,15 +649,20 @@
 				18FBDC111F1F3E8000A4B333 /* BaseNavigationController.m in Sources */,
 				18FBDC691F1F4C9E00A4B333 /* AFViewController.m in Sources */,
 				18FBDC571F1F440800A4B333 /* sucessViewController.m in Sources */,
+				186C4DA71F203BDC00A9A1E2 /* Location.m in Sources */,
 				18FBDC4B1F1F409A00A4B333 /* CommunityViewController.m in Sources */,
 				18FBDBE51F1F3A4A00A4B333 /* BaseViewController.m in Sources */,
 				18FBDBE81F1F3A6B00A4B333 /* AppDelegate.m in Sources */,
 				18FBDC5A1F1F455600A4B333 /* MasonryViewController.m in Sources */,
+				186C4DA61F203BDC00A9A1E2 /* HitoLocation.m in Sources */,
 				18FBDC6C1F1F510200A4B333 /* VideoViewController.m in Sources */,
+				186C4DA91F203BDC00A9A1E2 /* ownViewController.m in Sources */,
 				18FBDC601F1F4A2600A4B333 /* vipViewController.m in Sources */,
 				18FBDC0E1F1F3E5700A4B333 /* BaseTabBarController.m in Sources */,
 				508E515D1EFB54B1007C32B3 /* main.m in Sources */,
+				186C4DA81F203BDC00A9A1E2 /* LocationViewController.m in Sources */,
 				18FBDC661F1F4B5200A4B333 /* BlockViewController.m in Sources */,
+				186C4DAA1F203BDC00A9A1E2 /* phpModel.m in Sources */,
 				18345CEB1F17429A00257B87 /* Student.m in Sources */,
 				18FBDC541F1F43E300A4B333 /* touchViewController.m in Sources */,
 				18FBDC481F1F408F00A4B333 /* MeViewController.m in Sources */,

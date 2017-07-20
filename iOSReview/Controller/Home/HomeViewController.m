@@ -62,7 +62,7 @@
     [super viewDidLoad];
     [self setUpService];
     [self setUpTableView];
-    [self.dataArr addObjectsFromArray:@[@"Masonry使用",@"指纹解锁",@"网络/本地 视频播放",@"制作会员卡",@"苹果系统自带分享功能",@"苹果自带摇一摇功能",@"Block回调使用",@"AFNetworking网络请求",@"",@"",@"",@"",@"",@"",@""]];
+    [self.dataArr addObjectsFromArray:@[@"Masonry使用",@"指纹解锁",@"网络/本地 视频播放",@"制作会员卡",@"苹果系统自带分享功能",@"苹果自带摇一摇功能",@"Block回调使用",@"AFNetworking网络请求",@"苹果原生定位系统",@"自学PHP后台开发",@"",@"",@"",@"",@""]];
     
     
     NSArray *oldArr = @[@"12",@"123",@"123"];
@@ -86,18 +86,23 @@
     if (indexPath.row == 0) {
         //Masonry使用
         HitoAllocInit(MasonryViewController, view);
+        view.navigationItem.title = @"Masonry使用";
         [self pushNextViewController:view];
         
     }else if(indexPath.row == 1) {
         //指纹解锁
         HitoAllocInit(touchViewController, view);
+        view.navigationItem.title = @"指纹解锁";
         [self pushNextViewController:view];        
     }else if(indexPath.row == 2) {
         //视频播放
         HitoAllocInit(VideoViewController, view);
+        view.navigationItem.title = @"视频播放";
         [self pushNextViewController:view];
     }else if(indexPath.row == 3) {
+        //会员卡制作
         HitoAllocInit(vipViewController, view);
+        view.navigationItem.title = @"会员卡制作";
         [self pushNextViewController:view];        
     }else if(indexPath.row == 4) {
         //苹果系统自带分享功能
@@ -105,37 +110,48 @@
         [self presentViewController:avc animated:YES completion:nil];
 
     }else if(indexPath.row == 5) {
+        //原生摇一摇
         HitoAllocInit(ShakeViewController, view);
+        view.navigationItem.title = @"原生摇一摇";
         [self pushNextViewController:view];
         
     }else if(indexPath.row == 6) {
+        //Block回调
         HitoAllocInit(BlockViewController, view);
-        view.hidesBottomBarWhenPushed = YES;
+        view.navigationItem.title = @"Block回调";
         view.block = ^(NSString * aa) {
             NSLog(@"===%@===",aa);
         };
         [self pushNextViewController:view];
         
     }else if(indexPath.row == 7) {
+        //网络请求
         HitoAllocInit(AFViewController, view);
+        view.navigationItem.title = @"网络请求";
         [self pushNextViewController:view];
         
     }else if(indexPath.row == 8) {
-        
+        //原生定位
+        HitoAllocInit(LocationViewController, view);
+        view.navigationItem.title = @"原生定位";
+        [self pushNextViewController:view];
     }else if(indexPath.row == 9) {
-        
+        //自学php
+        HitoAllocInit(ownViewController, view);
+        view.navigationItem.title = @"自学php";
+        [self pushNextViewController:view];
     }else if(indexPath.row == 10) {
-        
+        //[self pushNextViewController:view];
     }else if(indexPath.row == 11) {
-        
+        //[self pushNextViewController:view];
     }else if(indexPath.row == 12) {
-        
+        //[self pushNextViewController:view];
     }else if(indexPath.row == 13) {
-        
+        //[self pushNextViewController:view];
     }else if(indexPath.row == 14) {
-        
+        //[self pushNextViewController:view];
     }else if(indexPath.row == 15) {
-        
+        //[self pushNextViewController:view];
     }
    
 }

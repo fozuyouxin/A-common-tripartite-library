@@ -16,7 +16,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.navigationItem.title = @"third";
     [self setUpTableView];
     self.tableView.frame = CGRectMake(0,0, HitoScreenW, HitoScreenH);
     [self addDropUpRefresh];
