@@ -45,6 +45,7 @@
 #import "SegViewController.h"
 #import "LocalpushViewController.h"
 #import "QRCodeViewController.h"
+#import "YHTReachability.h"
 
 #ifdef __OBJC__
 #import <UIKit/UIKit.h>

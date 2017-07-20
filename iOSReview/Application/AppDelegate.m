@@ -25,6 +25,10 @@
     //本地推送
     [self requestAuthor];
     
+#pragma mark -- 检测网络状态
+    [YHTReachability reachabilityChanged];
+    
+    
     return YES;
 }
 
