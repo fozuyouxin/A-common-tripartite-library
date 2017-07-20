@@ -33,6 +33,14 @@
 #import "LocationViewController.h"
 #import "aboutViewController.h"
 #import "photoViewController.h"
+#import "HotViewController.h"
+#import "VideoViewController.h"
+#import "SocietyViewController.h"
+#import "ReaderViewController.h"
+#import "ScienceViewController.h"
+#import "TopLineViewController.h"
+#import "MenuModel.h"
+#import "YHTScrollView.h"
 
 #ifdef __OBJC__
 #import <UIKit/UIKit.h>

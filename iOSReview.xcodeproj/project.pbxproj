@@ -16,6 +16,16 @@
 		186C4DAE1F2046C100A9A1E2 /* aboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 186C4DAD1F2046C100A9A1E2 /* aboutViewController.m */; };
 		186C4DB01F204B2D00A9A1E2 /* zoedear.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 186C4DAF1F204B2D00A9A1E2 /* zoedear.jpg */; };
 		186C4DB31F20560C00A9A1E2 /* photoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 186C4DB21F20560C00A9A1E2 /* photoViewController.m */; };
+		186C4DC61F2059CC00A9A1E2 /* HotViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 186C4DB71F2059CC00A9A1E2 /* HotViewController.m */; };
+		186C4DC71F2059CC00A9A1E2 /* ReaderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 186C4DB91F2059CC00A9A1E2 /* ReaderViewController.m */; };
+		186C4DC81F2059CC00A9A1E2 /* ScienceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 186C4DBB1F2059CC00A9A1E2 /* ScienceViewController.m */; };
+		186C4DC91F2059CC00A9A1E2 /* SocietyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 186C4DBD1F2059CC00A9A1E2 /* SocietyViewController.m */; };
+		186C4DCA1F2059CC00A9A1E2 /* TopLineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 186C4DBF1F2059CC00A9A1E2 /* TopLineViewController.m */; };
+		186C4DCC1F2059CC00A9A1E2 /* nextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 186C4DC31F2059CC00A9A1E2 /* nextViewController.m */; };
+		186C4DCD1F2059CC00A9A1E2 /* YHTScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 186C4DC51F2059CC00A9A1E2 /* YHTScrollView.m */; };
+		186C4DD01F205AF500A9A1E2 /* MenuModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 186C4DCF1F205AF500A9A1E2 /* MenuModel.m */; };
+		186C4DD41F205B7800A9A1E2 /* showViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 186C4DD21F205B7800A9A1E2 /* showViewController.m */; };
+		186C4DD51F205B7800A9A1E2 /* showViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 186C4DD31F205B7800A9A1E2 /* showViewController.xib */; };
 		18A680A51F1346A4002F8F73 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18A680A41F1346A4002F8F73 /* Social.framework */; };
 		18FBDBE51F1F3A4A00A4B333 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FBDBE31F1F3A4A00A4B333 /* BaseViewController.m */; };
 		18FBDBE81F1F3A6B00A4B333 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FBDBE71F1F3A6B00A4B333 /* AppDelegate.m */; };
@@ -96,6 +106,25 @@
 		186C4DAF1F204B2D00A9A1E2 /* zoedear.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = zoedear.jpg; sourceTree = "<group>"; };
 		186C4DB11F20560C00A9A1E2 /* photoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = photoViewController.h; sourceTree = "<group>"; };
 		186C4DB21F20560C00A9A1E2 /* photoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = photoViewController.m; sourceTree = "<group>"; };
+		186C4DB61F2059CC00A9A1E2 /* HotViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HotViewController.h; sourceTree = "<group>"; };
+		186C4DB71F2059CC00A9A1E2 /* HotViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HotViewController.m; sourceTree = "<group>"; };
+		186C4DB81F2059CC00A9A1E2 /* ReaderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReaderViewController.h; sourceTree = "<group>"; };
+		186C4DB91F2059CC00A9A1E2 /* ReaderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReaderViewController.m; sourceTree = "<group>"; };
+		186C4DBA1F2059CC00A9A1E2 /* ScienceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScienceViewController.h; sourceTree = "<group>"; };
+		186C4DBB1F2059CC00A9A1E2 /* ScienceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScienceViewController.m; sourceTree = "<group>"; };
+		186C4DBC1F2059CC00A9A1E2 /* SocietyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocietyViewController.h; sourceTree = "<group>"; };
+		186C4DBD1F2059CC00A9A1E2 /* SocietyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SocietyViewController.m; sourceTree = "<group>"; };
+		186C4DBE1F2059CC00A9A1E2 /* TopLineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopLineViewController.h; sourceTree = "<group>"; };
+		186C4DBF1F2059CC00A9A1E2 /* TopLineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopLineViewController.m; sourceTree = "<group>"; };
+		186C4DC21F2059CC00A9A1E2 /* nextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = nextViewController.h; sourceTree = "<group>"; };
+		186C4DC31F2059CC00A9A1E2 /* nextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = nextViewController.m; sourceTree = "<group>"; };
+		186C4DC41F2059CC00A9A1E2 /* YHTScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHTScrollView.h; sourceTree = "<group>"; };
+		186C4DC51F2059CC00A9A1E2 /* YHTScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHTScrollView.m; sourceTree = "<group>"; };
+		186C4DCE1F205AF500A9A1E2 /* MenuModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuModel.h; sourceTree = "<group>"; };
+		186C4DCF1F205AF500A9A1E2 /* MenuModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuModel.m; sourceTree = "<group>"; };
+		186C4DD11F205B7800A9A1E2 /* showViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = showViewController.h; sourceTree = "<group>"; };
+		186C4DD21F205B7800A9A1E2 /* showViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = showViewController.m; sourceTree = "<group>"; };
+		186C4DD31F205B7800A9A1E2 /* showViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = showViewController.xib; sourceTree = "<group>"; };
 		18A680A41F1346A4002F8F73 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		18FBDBE21F1F3A4A00A4B333 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
 		18FBDBE31F1F3A4A00A4B333 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
@@ -234,6 +263,40 @@
 			path = aboutApp;
 			sourceTree = "<group>";
 		};
+		186C4DB41F2059AE00A9A1E2 /* ScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				186C4DB51F2059CC00A9A1E2 /* ChildViewController */,
+				186C4DC21F2059CC00A9A1E2 /* nextViewController.h */,
+				186C4DC31F2059CC00A9A1E2 /* nextViewController.m */,
+				186C4DC41F2059CC00A9A1E2 /* YHTScrollView.h */,
+				186C4DC51F2059CC00A9A1E2 /* YHTScrollView.m */,
+				186C4DCE1F205AF500A9A1E2 /* MenuModel.h */,
+				186C4DCF1F205AF500A9A1E2 /* MenuModel.m */,
+				186C4DD11F205B7800A9A1E2 /* showViewController.h */,
+				186C4DD21F205B7800A9A1E2 /* showViewController.m */,
+				186C4DD31F205B7800A9A1E2 /* showViewController.xib */,
+			);
+			path = ScrollView;
+			sourceTree = "<group>";
+		};
+		186C4DB51F2059CC00A9A1E2 /* ChildViewController */ = {
+			isa = PBXGroup;
+			children = (
+				186C4DB61F2059CC00A9A1E2 /* HotViewController.h */,
+				186C4DB71F2059CC00A9A1E2 /* HotViewController.m */,
+				186C4DB81F2059CC00A9A1E2 /* ReaderViewController.h */,
+				186C4DB91F2059CC00A9A1E2 /* ReaderViewController.m */,
+				186C4DBA1F2059CC00A9A1E2 /* ScienceViewController.h */,
+				186C4DBB1F2059CC00A9A1E2 /* ScienceViewController.m */,
+				186C4DBC1F2059CC00A9A1E2 /* SocietyViewController.h */,
+				186C4DBD1F2059CC00A9A1E2 /* SocietyViewController.m */,
+				186C4DBE1F2059CC00A9A1E2 /* TopLineViewController.h */,
+				186C4DBF1F2059CC00A9A1E2 /* TopLineViewController.m */,
+			);
+			path = ChildViewController;
+			sourceTree = "<group>";
+		};
 		18FBDBE01F1F39E900A4B333 /* Application */ = {
 			isa = PBXGroup;
 			children = (
@@ -324,6 +387,7 @@
 				186C4DA11F203BDC00A9A1E2 /* 自学php */,
 				186C4DB11F20560C00A9A1E2 /* photoViewController.h */,
 				186C4DB21F20560C00A9A1E2 /* photoViewController.m */,
+				186C4DB41F2059AE00A9A1E2 /* ScrollView */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -582,6 +646,7 @@
 				508E516B1EFB54B1007C32B3 /* LaunchScreen.storyboard in Resources */,
 				18FBDBFE1F1F3ACD00A4B333 /* aa.jpg in Resources */,
 				18FBDC711F1F634B00A4B333 /* biao.jpg in Resources */,
+				186C4DD51F205B7800A9A1E2 /* showViewController.xib in Resources */,
 				18FBDC0A1F1F3ACD00A4B333 /* t2.jpeg in Resources */,
 				18FBDC021F1F3ACD00A4B333 /* niao_2.png in Resources */,
 				18FBDBFF1F1F3ACD00A4B333 /* back.png in Resources */,
@@ -665,22 +730,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				186C4DCA1F2059CC00A9A1E2 /* TopLineViewController.m in Sources */,
 				18FBDC4E1F1F40A400A4B333 /* CategoryViewController.m in Sources */,
 				18FBDC631F1F4A7300A4B333 /* ShakeViewController.m in Sources */,
 				186C4DAE1F2046C100A9A1E2 /* aboutViewController.m in Sources */,
+				186C4DC81F2059CC00A9A1E2 /* ScienceViewController.m in Sources */,
+				186C4DC71F2059CC00A9A1E2 /* ReaderViewController.m in Sources */,
 				18FBDC511F1F40B000A4B333 /* HomeViewController.m in Sources */,
+				186C4DC91F2059CC00A9A1E2 /* SocietyViewController.m in Sources */,
 				18FBDC111F1F3E8000A4B333 /* BaseNavigationController.m in Sources */,
 				18FBDC691F1F4C9E00A4B333 /* AFViewController.m in Sources */,
 				18FBDC571F1F440800A4B333 /* sucessViewController.m in Sources */,
+				186C4DCD1F2059CC00A9A1E2 /* YHTScrollView.m in Sources */,
 				186C4DA71F203BDC00A9A1E2 /* Location.m in Sources */,
+				186C4DCC1F2059CC00A9A1E2 /* nextViewController.m in Sources */,
 				18FBDC4B1F1F409A00A4B333 /* CommunityViewController.m in Sources */,
 				18FBDBE51F1F3A4A00A4B333 /* BaseViewController.m in Sources */,
 				18FBDBE81F1F3A6B00A4B333 /* AppDelegate.m in Sources */,
+				186C4DD01F205AF500A9A1E2 /* MenuModel.m in Sources */,
 				18FBDC5A1F1F455600A4B333 /* MasonryViewController.m in Sources */,
+				186C4DC61F2059CC00A9A1E2 /* HotViewController.m in Sources */,
 				186C4DB31F20560C00A9A1E2 /* photoViewController.m in Sources */,
 				186C4DA61F203BDC00A9A1E2 /* HitoLocation.m in Sources */,
 				18FBDC6C1F1F510200A4B333 /* VideoViewController.m in Sources */,
 				186C4DA91F203BDC00A9A1E2 /* ownViewController.m in Sources */,
+				186C4DD41F205B7800A9A1E2 /* showViewController.m in Sources */,
 				18FBDC601F1F4A2600A4B333 /* vipViewController.m in Sources */,
 				18FBDC0E1F1F3E5700A4B333 /* BaseTabBarController.m in Sources */,
 				508E515D1EFB54B1007C32B3 /* main.m in Sources */,
