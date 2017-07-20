@@ -13,6 +13,8 @@
 		186C4DA81F203BDC00A9A1E2 /* LocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 186C4DA01F203BDC00A9A1E2 /* LocationViewController.m */; };
 		186C4DA91F203BDC00A9A1E2 /* ownViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 186C4DA31F203BDC00A9A1E2 /* ownViewController.m */; };
 		186C4DAA1F203BDC00A9A1E2 /* phpModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 186C4DA51F203BDC00A9A1E2 /* phpModel.m */; };
+		186C4DAE1F2046C100A9A1E2 /* aboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 186C4DAD1F2046C100A9A1E2 /* aboutViewController.m */; };
+		186C4DB01F204B2D00A9A1E2 /* zoedear.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 186C4DAF1F204B2D00A9A1E2 /* zoedear.jpg */; };
 		18A680A51F1346A4002F8F73 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18A680A41F1346A4002F8F73 /* Social.framework */; };
 		18FBDBE51F1F3A4A00A4B333 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FBDBE31F1F3A4A00A4B333 /* BaseViewController.m */; };
 		18FBDBE81F1F3A6B00A4B333 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FBDBE71F1F3A6B00A4B333 /* AppDelegate.m */; };
@@ -88,6 +90,9 @@
 		186C4DA31F203BDC00A9A1E2 /* ownViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ownViewController.m; sourceTree = "<group>"; };
 		186C4DA41F203BDC00A9A1E2 /* phpModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = phpModel.h; sourceTree = "<group>"; };
 		186C4DA51F203BDC00A9A1E2 /* phpModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = phpModel.m; sourceTree = "<group>"; };
+		186C4DAC1F2046C100A9A1E2 /* aboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aboutViewController.h; sourceTree = "<group>"; };
+		186C4DAD1F2046C100A9A1E2 /* aboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = aboutViewController.m; sourceTree = "<group>"; };
+		186C4DAF1F204B2D00A9A1E2 /* zoedear.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = zoedear.jpg; sourceTree = "<group>"; };
 		18A680A41F1346A4002F8F73 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		18FBDBE21F1F3A4A00A4B333 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
 		18FBDBE31F1F3A4A00A4B333 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
@@ -217,6 +222,15 @@
 			path = "自学php";
 			sourceTree = "<group>";
 		};
+		186C4DAB1F20469B00A9A1E2 /* aboutApp */ = {
+			isa = PBXGroup;
+			children = (
+				186C4DAC1F2046C100A9A1E2 /* aboutViewController.h */,
+				186C4DAD1F2046C100A9A1E2 /* aboutViewController.m */,
+			);
+			path = aboutApp;
+			sourceTree = "<group>";
+		};
 		18FBDBE01F1F39E900A4B333 /* Application */ = {
 			isa = PBXGroup;
 			children = (
@@ -243,6 +257,7 @@
 		18FBDBE91F1F3A8400A4B333 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				186C4DAF1F204B2D00A9A1E2 /* zoedear.jpg */,
 				18FBDC701F1F634B00A4B333 /* biao.jpg */,
 				18FBDC6D1F1F532B00A4B333 /* bao.jpg */,
 				18FBDBEA1F1F3ACD00A4B333 /* 123.mp4 */,
@@ -331,6 +346,7 @@
 			children = (
 				18FBDC461F1F408F00A4B333 /* MeViewController.h */,
 				18FBDC471F1F408F00A4B333 /* MeViewController.m */,
+				186C4DAB1F20469B00A9A1E2 /* aboutApp */,
 			);
 			path = Me;
 			sourceTree = "<group>";
@@ -568,6 +584,7 @@
 				18FBDC061F1F3ACD00A4B333 /* niao_6.png in Resources */,
 				18FBDC081F1F3ACD00A4B333 /* niao_8.png in Resources */,
 				18FBDC011F1F3ACD00A4B333 /* niao_1.png in Resources */,
+				186C4DB01F204B2D00A9A1E2 /* zoedear.jpg in Resources */,
 				18FBDC031F1F3ACD00A4B333 /* niao_3.png in Resources */,
 				508E51681EFB54B1007C32B3 /* Assets.xcassets in Resources */,
 				508E51661EFB54B1007C32B3 /* Main.storyboard in Resources */,
@@ -645,6 +662,7 @@
 			files = (
 				18FBDC4E1F1F40A400A4B333 /* CategoryViewController.m in Sources */,
 				18FBDC631F1F4A7300A4B333 /* ShakeViewController.m in Sources */,
+				186C4DAE1F2046C100A9A1E2 /* aboutViewController.m in Sources */,
 				18FBDC511F1F40B000A4B333 /* HomeViewController.m in Sources */,
 				18FBDC111F1F3E8000A4B333 /* BaseNavigationController.m in Sources */,
 				18FBDC691F1F4C9E00A4B333 /* AFViewController.m in Sources */,

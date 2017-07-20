@@ -21,6 +21,11 @@
 - (instancetype)init{
     self = [super init];
     if (self) {
+        
+        //统一设置某控件的样式/默认样式
+        [[UINavigationBar appearance] setBarStyle:UIBarStyleBlack];
+        [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
+        
         [self setUpChildViewControllers];
     }
     return self;

@@ -19,10 +19,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    _arrData = @[@"GitHub",@"我的博客",@"我的微博",@"我的简书",@"联系我们",@"反馈信息",@"我的设备",@"清除缓存",@"夜间模式"];
-    
+    _arrData = @[@"GitHub",@"我的博客",@"我的微博",@"我的简书",@"联系我们",@"反馈信息",@"我的设备",@"清除缓存",@"夜间模式",@"关于App"];
     [self setUpTableView];
-    self.navigationItem.title = @"";
     [self createTopImageView];
 }
 
@@ -30,23 +28,16 @@
 - (void)createTopImageView{
     //顶部试图
     _topImageView = [[UIImageView alloc]initWithFrame:CGRectMake(0, -200, [UIScreen mainScreen].bounds.size.width, 200)];
-    
     _topImageView.image = [UIImage imageNamed:@"biao.jpg"];
-    
     //[_topImageView sd_setImageWithURL:[NSURL URLWithString:@"https://image.yiwencaifu.com/upload/20161202/1480654937932.jpg"] placeholderImage:nil options:SDWebImageAllowInvalidSSLCertificates];
-    
     _topImageView.clipsToBounds = YES;
-    
     _topImageView.contentMode = UIViewContentModeScaleAspectFill;
     //始终保持原有宽高比例
-    
     //添加到tableView上
     [self.tableView addSubview:_topImageView];
-    
     //contentInset 额外滑动区域
     self.tableView.contentInset = UIEdgeInsetsMake(200, 0, 0, 0);
     //现在tableView的偏移量的y变成了-200
-    
 }
 
 /* 行数 */
@@ -57,10 +48,13 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     static NSString * cellID = @"cellID";
     UITableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:cellID];
-    cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellID];
+    cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:cellID];
     cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     cell.textLabel.text = _arrData[indexPath.row];
-    if (indexPath.row == 8) {
+    if (indexPath.row ==7) {
+        cell.detailTextLabel.text = [self showCache];
+        
+    }else if (indexPath.row == 8) {
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
         cell.accessoryType = UITableViewCellAccessoryNone;
         UISwitch * sw = [[UISwitch alloc]initWithFrame:CGRectMake(50, 50, 100, 50)];
@@ -70,6 +64,7 @@
     }
     return cell;
 }
+
 #pragma mark -- UISwitch开关按钮事件实现
 - (void)changeEvent:(UISwitch *)sw{
     static BOOL flag = NO;
@@ -77,13 +72,10 @@
     if (sw.on && flag) {
         self.view.window.backgroundColor = [UIColor blackColor];//设置背景色
         self.view.window.alpha = 0.5;//透明度
-        
     }else{
         self.view.window.backgroundColor = [UIColor whiteColor];
         self.view.window.alpha = 1.0;
-        
     }
-    
 }
 
 #pragma mark -- cell点击事件
@@ -107,7 +99,7 @@
     }else if (indexPath.row == 4){
         //联系我们
         [self openFuncCommd:@"telprompt://13522131242"];//自带弹出提示框
-        //        [self openFuncCommd:@"tel://13522131242"];//不存在提示框
+        //[self openFuncCommd:@"tel://13522131242"];//不存在提示框
         
     }else if (indexPath.row == 5){
         //反馈信息
@@ -119,9 +111,16 @@
         
     }else if(indexPath.row == 7){
         //清除缓存
+        [self clearCache];
+        [self reloadCellForRow:7 andSection:0];
         
     }else if(indexPath.row == 8){
         //夜间模式模块
+    }else if(indexPath.row == 9){
+        //关于app
+        HitoAllocInit(aboutViewController, view);
+        view.navigationItem.title = @"关于App";
+        [self pushNextViewController:view];
     }
     
 }
@@ -142,6 +141,7 @@
         
     }
 }
+
 #pragma mark -- 将导航栏隐藏
 -(void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
@@ -152,12 +152,10 @@
 #pragma mark -- 将导航栏归还原样
 -(void)viewWillDisappear:(BOOL)animated{
     [super viewWillDisappear:animated];
-    
     //显示导航栏
     [self.navigationController.navigationBar setBackgroundImage:nil forBarMetrics:UIBarMetricsDefault];
     //加上黑线
     [self.navigationController.navigationBar setShadowImage:nil];
-    
 }
 
 
