@@ -32,6 +32,8 @@
 		186C4DDE1F205D7100A9A1E2 /* musicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 186C4DDD1F205D7100A9A1E2 /* musicViewController.m */; };
 		186C4DE61F205E7B00A9A1E2 /* SegViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 186C4DE51F205E7B00A9A1E2 /* SegViewController.m */; };
 		186C4DE91F205F0700A9A1E2 /* LocalpushViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 186C4DE81F205F0700A9A1E2 /* LocalpushViewController.m */; };
+		186C4DED1F20A2AB00A9A1E2 /* QRCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 186C4DEB1F20A2AB00A9A1E2 /* QRCodeViewController.m */; };
+		186C4DEE1F20A2AB00A9A1E2 /* QRCodeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 186C4DEC1F20A2AB00A9A1E2 /* QRCodeViewController.xib */; };
 		18A680A51F1346A4002F8F73 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18A680A41F1346A4002F8F73 /* Social.framework */; };
 		18FBDBE51F1F3A4A00A4B333 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FBDBE31F1F3A4A00A4B333 /* BaseViewController.m */; };
 		18FBDBE81F1F3A6B00A4B333 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FBDBE71F1F3A6B00A4B333 /* AppDelegate.m */; };
@@ -140,6 +142,9 @@
 		186C4DE51F205E7B00A9A1E2 /* SegViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SegViewController.m; sourceTree = "<group>"; };
 		186C4DE71F205F0700A9A1E2 /* LocalpushViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocalpushViewController.h; sourceTree = "<group>"; };
 		186C4DE81F205F0700A9A1E2 /* LocalpushViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocalpushViewController.m; sourceTree = "<group>"; };
+		186C4DEA1F20A2AB00A9A1E2 /* QRCodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRCodeViewController.h; sourceTree = "<group>"; };
+		186C4DEB1F20A2AB00A9A1E2 /* QRCodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QRCodeViewController.m; sourceTree = "<group>"; };
+		186C4DEC1F20A2AB00A9A1E2 /* QRCodeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QRCodeViewController.xib; sourceTree = "<group>"; };
 		18A680A41F1346A4002F8F73 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		18FBDBE21F1F3A4A00A4B333 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
 		18FBDBE31F1F3A4A00A4B333 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
@@ -420,6 +425,9 @@
 				186C4DB41F2059AE00A9A1E2 /* ScrollView */,
 				186C4DE71F205F0700A9A1E2 /* LocalpushViewController.h */,
 				186C4DE81F205F0700A9A1E2 /* LocalpushViewController.m */,
+				186C4DEA1F20A2AB00A9A1E2 /* QRCodeViewController.h */,
+				186C4DEB1F20A2AB00A9A1E2 /* QRCodeViewController.m */,
+				186C4DEC1F20A2AB00A9A1E2 /* QRCodeViewController.xib */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -685,6 +693,7 @@
 				18FBDC0A1F1F3ACD00A4B333 /* t2.jpeg in Resources */,
 				18FBDC021F1F3ACD00A4B333 /* niao_2.png in Resources */,
 				18FBDBFF1F1F3ACD00A4B333 /* back.png in Resources */,
+				186C4DEE1F20A2AB00A9A1E2 /* QRCodeViewController.xib in Resources */,
 				18FBDC0B1F1F3ACD00A4B333 /* ying.png in Resources */,
 				18FBDC061F1F3ACD00A4B333 /* niao_6.png in Resources */,
 				18FBDC081F1F3ACD00A4B333 /* niao_8.png in Resources */,
@@ -795,6 +804,7 @@
 				18FBDC601F1F4A2600A4B333 /* vipViewController.m in Sources */,
 				18FBDC0E1F1F3E5700A4B333 /* BaseTabBarController.m in Sources */,
 				186C4DE61F205E7B00A9A1E2 /* SegViewController.m in Sources */,
+				186C4DED1F20A2AB00A9A1E2 /* QRCodeViewController.m in Sources */,
 				508E515D1EFB54B1007C32B3 /* main.m in Sources */,
 				186C4DA81F203BDC00A9A1E2 /* LocationViewController.m in Sources */,
 				18FBDC661F1F4B5200A4B333 /* BlockViewController.m in Sources */,

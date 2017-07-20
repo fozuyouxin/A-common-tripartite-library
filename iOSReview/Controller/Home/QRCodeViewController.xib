@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="QRCodeViewController">
+            <connections>
+                <outlet property="view" destination="iN0-l3-epB" id="rS2-qq-zxD"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GbI-zy-T33">
+                    <rect key="frame" x="120" y="587" width="135" height="30"/>
+                    <state key="normal" title="iOS原生扫描二维码"/>
+                    <connections>
+                        <action selector="ScanClick:" destination="-1" eventType="touchUpInside" id="XcR-L4-lz9"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="GbI-zy-T33" secondAttribute="bottom" constant="50" id="9ly-iN-klf"/>
+                <constraint firstAttribute="trailing" secondItem="GbI-zy-T33" secondAttribute="trailing" constant="120" id="C1o-od-M2S"/>
+                <constraint firstItem="GbI-zy-T33" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="120" id="Qgr-Hh-Ol5"/>
+            </constraints>
+            <point key="canvasLocation" x="34.5" y="68.5"/>
+        </view>
+    </objects>
+</document>
