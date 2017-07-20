@@ -17,19 +17,15 @@
                 NSLog(@"手机流量上网");
                 break;
             }
-                
             case 2:{
                 NSLog(@"WIFI上网");
                 break;
             }
-                
             default:{
                 NSLog(@"没网");
                 break;
             }
-                
         }
-
     }];
 
 }
