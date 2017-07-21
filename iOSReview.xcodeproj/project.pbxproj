@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		18345CEB1F17429A00257B87 /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = 18345CEA1F17429A00257B87 /* Student.m */; };
+		1844DDEA1F2191C100A44BE3 /* GuidanceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1844DDE91F2191C100A44BE3 /* GuidanceController.m */; };
+		1844DDEE1F2191ED00A44BE3 /* Guidance01.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1844DDEB1F2191ED00A44BE3 /* Guidance01.jpg */; };
+		1844DDEF1F2191ED00A44BE3 /* Guidance02.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1844DDEC1F2191ED00A44BE3 /* Guidance02.jpg */; };
+		1844DDF01F2191ED00A44BE3 /* Guidance03.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1844DDED1F2191ED00A44BE3 /* Guidance03.jpg */; };
 		186C4DA61F203BDC00A9A1E2 /* HitoLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 186C4D9C1F203BDC00A9A1E2 /* HitoLocation.m */; };
 		186C4DA71F203BDC00A9A1E2 /* Location.m in Sources */ = {isa = PBXBuildFile; fileRef = 186C4D9E1F203BDC00A9A1E2 /* Location.m */; };
 		186C4DA81F203BDC00A9A1E2 /* LocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 186C4DA01F203BDC00A9A1E2 /* LocationViewController.m */; };
@@ -100,6 +104,11 @@
 		1805075F1F0C879B00D52818 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		18345CE91F17429A00257B87 /* Student.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Student.h; sourceTree = "<group>"; };
 		18345CEA1F17429A00257B87 /* Student.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Student.m; sourceTree = "<group>"; };
+		1844DDE81F2191C100A44BE3 /* GuidanceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GuidanceController.h; sourceTree = "<group>"; };
+		1844DDE91F2191C100A44BE3 /* GuidanceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GuidanceController.m; sourceTree = "<group>"; };
+		1844DDEB1F2191ED00A44BE3 /* Guidance01.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Guidance01.jpg; sourceTree = "<group>"; };
+		1844DDEC1F2191ED00A44BE3 /* Guidance02.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Guidance02.jpg; sourceTree = "<group>"; };
+		1844DDED1F2191ED00A44BE3 /* Guidance03.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Guidance03.jpg; sourceTree = "<group>"; };
 		186C4D9B1F203BDC00A9A1E2 /* HitoLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HitoLocation.h; sourceTree = "<group>"; };
 		186C4D9C1F203BDC00A9A1E2 /* HitoLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HitoLocation.m; sourceTree = "<group>"; };
 		186C4D9D1F203BDC00A9A1E2 /* Location.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Location.h; sourceTree = "<group>"; };
@@ -345,6 +354,8 @@
 			children = (
 				18FBDBE61F1F3A6B00A4B333 /* AppDelegate.h */,
 				18FBDBE71F1F3A6B00A4B333 /* AppDelegate.m */,
+				1844DDE81F2191C100A44BE3 /* GuidanceController.h */,
+				1844DDE91F2191C100A44BE3 /* GuidanceController.m */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -366,6 +377,9 @@
 		18FBDBE91F1F3A8400A4B333 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				1844DDEB1F2191ED00A44BE3 /* Guidance01.jpg */,
+				1844DDEC1F2191ED00A44BE3 /* Guidance02.jpg */,
+				1844DDED1F2191ED00A44BE3 /* Guidance03.jpg */,
 				186C4DD61F205CD500A9A1E2 /* 电脑的壁纸.jpg */,
 				186C4DD71F205CD500A9A1E2 /* 飞机的壁纸.jpg */,
 				186C4DD81F205CD500A9A1E2 /* 手表的壁纸.jpg */,
@@ -697,11 +711,14 @@
 				186C4DDA1F205CD500A9A1E2 /* 飞机的壁纸.jpg in Resources */,
 				18FBDC051F1F3ACD00A4B333 /* niao_5.png in Resources */,
 				18FBDC041F1F3ACD00A4B333 /* niao_4.png in Resources */,
+				1844DDEF1F2191ED00A44BE3 /* Guidance02.jpg in Resources */,
 				508E516B1EFB54B1007C32B3 /* LaunchScreen.storyboard in Resources */,
+				1844DDEE1F2191ED00A44BE3 /* Guidance01.jpg in Resources */,
 				186C4DDB1F205CD500A9A1E2 /* 手表的壁纸.jpg in Resources */,
 				18FBDBFE1F1F3ACD00A4B333 /* aa.jpg in Resources */,
 				18FBDC711F1F634B00A4B333 /* biao.jpg in Resources */,
 				186C4DD91F205CD500A9A1E2 /* 电脑的壁纸.jpg in Resources */,
+				1844DDF01F2191ED00A44BE3 /* Guidance03.jpg in Resources */,
 				186C4DD51F205B7800A9A1E2 /* showViewController.xib in Resources */,
 				18FBDC0A1F1F3ACD00A4B333 /* t2.jpeg in Resources */,
 				18FBDC021F1F3ACD00A4B333 /* niao_2.png in Resources */,
@@ -790,6 +807,7 @@
 				186C4DCA1F2059CC00A9A1E2 /* TopLineViewController.m in Sources */,
 				18FBDC4E1F1F40A400A4B333 /* CategoryViewController.m in Sources */,
 				186C4DE91F205F0700A9A1E2 /* LocalpushViewController.m in Sources */,
+				1844DDEA1F2191C100A44BE3 /* GuidanceController.m in Sources */,
 				18FBDC631F1F4A7300A4B333 /* ShakeViewController.m in Sources */,
 				186C4DAE1F2046C100A9A1E2 /* aboutViewController.m in Sources */,
 				186C4DC81F2059CC00A9A1E2 /* ScienceViewController.m in Sources */,

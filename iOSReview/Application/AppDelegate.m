@@ -18,17 +18,27 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
     
-    HitoAllocInit(BaseTabBarController, tabVC);
-    self.window.rootViewController = tabVC;
-    [self.window makeKeyAndVisible];
+
+    //1.从本地读取安装的标记
+    BOOL isInstall = [[NSUserDefaults standardUserDefaults]integerForKey:@"IS_INSTALL"];
     
+    if (!isInstall) {
+        
+        self.window.rootViewController = [self createGuidanceController];
+        
+    }else{
+        
+        HitoAllocInit(BaseTabBarController, tabVC);
+        self.window.rootViewController = tabVC;
+    }
+
     //本地推送
     [self requestAuthor];
     
 #pragma mark -- 检测网络状态
     [YHTReachability reachabilityChanged];
     
-    
+     [self.window makeKeyAndVisible];
     return YES;
 }
 
@@ -50,6 +60,22 @@
         // 授权通知
         [[UIApplication sharedApplication] registerUserNotificationSettings:setting];
     }
+}
+
+
+#pragma mark -- 创建引导页
+- (GuidanceController *)createGuidanceController{
+    NSArray * images = @[@"Guidance01.jpg",@"Guidance02.jpg",@"Guidance03.jpg"];
+    
+    MyBlock blcok = ^{
+        //回调是将根控制器改为分栏
+        HitoAllocInit(BaseTabBarController, tabVC);
+        self.window.rootViewController = tabVC;
+        
+    };
+    GuidanceController * guidance = [[GuidanceController alloc]initWithImages:images andBlock:blcok];
+    
+    return guidance;
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
