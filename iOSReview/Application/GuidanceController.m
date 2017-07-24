@@ -2,7 +2,7 @@
 //  GuidanceController.m
 //  LoveLimiteFree
 //
-//  Created by CodeMonkey on 16-5-11.
+//  Created by KennyHito on 16-5-11.
 //  Copyright (c) 2016年 YuHaitao. All rights reserved.
 //
 

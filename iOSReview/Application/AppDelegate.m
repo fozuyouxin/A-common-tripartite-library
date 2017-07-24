@@ -18,16 +18,14 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
     
-
+    //使用app中,屏幕不允许常亮状态
+    [[UIApplication sharedApplication] setIdleTimerDisabled:NO];
+    
     //1.从本地读取安装的标记
     BOOL isInstall = [[NSUserDefaults standardUserDefaults]integerForKey:@"IS_INSTALL"];
-    
     if (!isInstall) {
-        
         self.window.rootViewController = [self createGuidanceController];
-        
     }else{
-        
         HitoAllocInit(BaseTabBarController, tabVC);
         self.window.rootViewController = tabVC;
     }

@@ -19,6 +19,17 @@
     // Do any additional setup after loading the view.
 }
 
+
+- (instancetype)initWithRootViewController:(UIViewController *)rootViewController{
+    self = [super initWithRootViewController:rootViewController];
+    if (self) {
+        //统一设置某控件的样式/默认样式
+        [self.navigationBar setBarStyle:UIBarStyleBlack];
+        [self.navigationBar setTintColor:[UIColor whiteColor]];
+    }
+    return self;
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

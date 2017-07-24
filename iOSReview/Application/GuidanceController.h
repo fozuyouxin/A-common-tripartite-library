@@ -2,7 +2,7 @@
 //  GuidanceController.h
 //  LoveLimiteFree
 //
-//  Created by CodeMonkey on 16-5-11.
+//  Created by KennyHito on 16-5-11.
 //  Copyright (c) 2016年 YuHaitao. All rights reserved.
 /*
  实现引导页功能,当显示最后一张图片时,点击button跳转到分栏控制器.

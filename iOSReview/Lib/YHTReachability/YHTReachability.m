@@ -3,7 +3,7 @@
 //  SZKNetWorkUtils
 //
 //  Created by 于海涛 on 16/7/23.
-//  Copyright © 2016年 孙赵凯. All rights reserved.
+//  Copyright © 2016年 于海涛. All rights reserved.
 //
 
 #import "YHTReachability.h"
@@ -11,18 +11,25 @@
 @implementation YHTReachability
 
 + (void)reachabilityChanged{
+    __block typeof(self) WeakSelf = self;
     [YHTReachability netWorkState:^(NSInteger netState) {
         switch (netState) {
             case 1:{
-                NSLog(@"手机流量上网");
+                //NSLog(@"手机流量上网");
+                //弹出提示框
+                [WeakSelf showWarningViewAndTitle:@"您正在使用3G/4G流量"];
                 break;
             }
             case 2:{
-                NSLog(@"WIFI上网");
+                //NSLog(@"WIFI上网");
+                //弹出提示框
+                [WeakSelf showWarningViewAndTitle:@"您使用的是WiFi"];
                 break;
             }
             default:{
-                NSLog(@"没网");
+                //NSLog(@"没网");
+                //弹出提示框
+                [WeakSelf showWarningViewAndTitle:@"当前没有网络,请检查网络!"];
                 break;
             }
         }
@@ -37,11 +44,8 @@
     // 提示：要监控网络连接状态，必须要先调用单例的startMonitoring方法
     [manager startMonitoring];
     //检测的结果
-    __block typeof(self) WeakSelf = self;
     [manager setReachabilityStatusChangeBlock:^(AFNetworkReachabilityStatus status) {
         if (status==0||status==-1) {
-            //弹出提示框
-            [WeakSelf showWarningView];
             //将netState值传入block中
             block(status);
         }else{
@@ -51,10 +55,9 @@
     }];
 }
 #pragma mark---网络断开时弹出提示框
-+(void)showWarningView
-{
++(void)showWarningViewAndTitle:(NSString *)title{
     
-    UIAlertView * alert =[[UIAlertView alloc]initWithTitle:@"提示" message:@"网络断开，请检查网络设置" delegate:self cancelButtonTitle:@"取消" otherButtonTitles:@"去设置", nil];
+    UIAlertView * alert =[[UIAlertView alloc]initWithTitle:@"提示" message:title delegate:self cancelButtonTitle:@"取消" otherButtonTitles:@"去设置", nil];
     [alert show];
     
 }

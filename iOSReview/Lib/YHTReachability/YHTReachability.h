@@ -3,7 +3,7 @@
 //  SZKNetWorkUtils
 //
 //  Created by 于海涛 on 16/7/23.
-//  Copyright © 2016年 孙赵凯. All rights reserved.
+//  Copyright © 2016年 于海涛. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
