@@ -36,7 +36,11 @@
 #pragma mark -- 检测网络状态
     [YHTReachability reachabilityChanged];
     
-     [self.window makeKeyAndVisible];
+    //1.新版本检测(使用默认提示框)
+    [XHVersion checkNewVersion];
+
+    
+    [self.window makeKeyAndVisible];
     return YES;
 }
 

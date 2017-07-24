@@ -51,7 +51,7 @@
     cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:cellID];
     cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     cell.textLabel.text = _arrData[indexPath.row];
-    if (indexPath.row ==7) {
+    if (indexPath.row == 7) {
         cell.detailTextLabel.text = [self showCache];
         
     }else if (indexPath.row == 8) {
@@ -112,7 +112,7 @@
     }else if(indexPath.row == 7){
         //清除缓存
         [self clearCache];
-        [self reloadCellForRow:7 andSection:0];
+        [self reloadTableView];
         
     }else if(indexPath.row == 8){
         //夜间模式模块
