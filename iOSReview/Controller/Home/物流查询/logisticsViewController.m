@@ -34,12 +34,14 @@
     _orderNumText.placeholder = @"请输入订单号";
     _orderNumText.borderStyle = UITextBorderStyleLine;
     _orderNumText.delegate = self;
+    _orderNumText.clearButtonMode = UITextFieldViewModeWhileEditing;
     [self.view addSubview:_orderNumText];
     
     _logistCompanyText = [[UITextField alloc]initWithFrame:CGRectMake(HitoScreenW/2-75, 140, 200, 30)];
     _logistCompanyText.delegate = self;
     _logistCompanyText.placeholder = @"请输入物流公司";
     _logistCompanyText.borderStyle = UITextBorderStyleLine;
+    _logistCompanyText.clearButtonMode = UITextFieldViewModeWhileEditing;
     [self.view addSubview:_logistCompanyText];
     
     UILabel * lab1 = [[UILabel alloc]initWithFrame:CGRectMake(CGRectGetMinX(self.orderNumText.frame)-80, 100, 80, 30)];

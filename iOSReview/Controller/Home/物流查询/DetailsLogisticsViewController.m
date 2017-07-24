@@ -41,6 +41,7 @@
     manager.responseSerializer = [AFHTTPResponseSerializer serializer];
     manager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"text/html",@"application/json", nil];
     NSMutableDictionary *params=[NSMutableDictionary dictionary];
+    //self.logistCompany  self.logistNum
     [params addEntriesFromDictionary:@{@"type":self.logistCompany,@"postid":self.logistNum,@"id":@"1",@"valicode":@"",@"temp":@"12345"}];
 
     [manager GET:Base_URL parameters:params progress:^(NSProgress * _Nonnull downloadProgress) {
@@ -74,6 +75,7 @@
     _tabelView = [[UITableView alloc]initWithFrame:CGRectMake(0, 64, HitoScreenW, HitoScreenH-64) style:UITableViewStylePlain];
     _tabelView.delegate = self;
     _tabelView.dataSource = self;
+    _tabelView.separatorStyle = UITableViewCellSeparatorStyleNone;
     [self.view addSubview:_tabelView];
 }
 
@@ -90,22 +92,27 @@
     static NSString *CellIdentifier = @"cell1";
     
     BaseTableViewCell * cell =[tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-    cell.selectionStyle  = UITableViewCellSelectionStyleNone;
     
     if (cell == nil) {
         cell = [[BaseTableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
     }
-    
+
     dataModel * model = self.dataArr[indexPath.row];
-    cell.lab.text = [NSString stringWithFormat:@"%@ %@",model.time,model.context];
+    [cell setText:model.context andTime:model.time];
     
     return cell;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    return 100.00;
+    dataModel * model = self.dataArr[indexPath.row];
+    CGSize size = [self sizeWithString:model.context size:CGSizeMake(HitoScreenW-30, MAXFLOAT) font:[UIFont systemFontOfSize:14]];
+    return size.height+40;
 }
 
+- (CGSize)sizeWithString:(NSString *)string size:(CGSize)size1 font:(UIFont *)font{
+    CGRect rect = [string boundingRectWithSize:size1 options:NSStringDrawingTruncatesLastVisibleLine | NSStringDrawingUsesFontLeading  |NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName: font} context:nil];
+    return rect.size;
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

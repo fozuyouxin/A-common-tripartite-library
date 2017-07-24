@@ -13,4 +13,5 @@
 @property (nonatomic,strong) UILabel * lab;
 @property (nonatomic,strong) UILabel * lab1;
 
+- (void)setText:(NSString *)text andTime:(NSString *)time;
 @end

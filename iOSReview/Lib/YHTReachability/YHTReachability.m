@@ -15,20 +15,15 @@
     [YHTReachability netWorkState:^(NSInteger netState) {
         switch (netState) {
             case 1:{
-                //NSLog(@"手机流量上网");
-                //弹出提示框
-                [WeakSelf showWarningViewAndTitle:@"您正在使用3G/4G流量"];
-                break;
+                //NSLog(@"您正在使用3G/4G流量");
+               break;
             }
             case 2:{
-                //NSLog(@"WIFI上网");
-                //弹出提示框
-                [WeakSelf showWarningViewAndTitle:@"您使用的是WiFi"];
+                //NSLog(@"您正在使用的是WiFi");
                 break;
             }
             default:{
                 //NSLog(@"没网");
-                //弹出提示框
                 [WeakSelf showWarningViewAndTitle:@"当前没有网络,请检查网络!"];
                 break;
             }
