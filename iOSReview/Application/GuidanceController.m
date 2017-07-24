@@ -9,18 +9,17 @@
 #import "GuidanceController.h"
 
 //屏幕宽
-#define SCREEN_W [UIScreen mainScreen].bounds.size.width
+#define HitoScreenW [UIScreen mainScreen].bounds.size.width
 //屏幕高
-#define SCREEN_H [UIScreen mainScreen].bounds.size.height
-//屏幕大小
-#define SCREEN_SIZE [UIScreen mainScreen].bounds
+#define HitoScreenH [UIScreen mainScreen].bounds.size.height
+
 
 @interface GuidanceController ()<UIScrollViewDelegate>
 
-@property(nonatomic,strong)UIScrollView * scrollView;
-@property(nonatomic,strong)NSMutableArray * imagesArr;
-@property(nonatomic,copy)MyBlock block;
-@property(nonatomic,strong)UIPageControl * pageControl;
+@property(nonatomic,strong) UIScrollView * scrollView;
+@property(nonatomic,strong) NSMutableArray * imagesArr;
+@property(nonatomic,copy)   MyBlock block;
+@property(nonatomic,strong) UIPageControl * pageControl;
 
 
 @end
@@ -55,10 +54,10 @@
 
 - (void)createScrollView{
     //1.创建ScrollView
-    _scrollView = [[UIScrollView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_W, SCREEN_H)];
+    _scrollView = [[UIScrollView alloc]initWithFrame:CGRectMake(0, 0, HitoScreenW, HitoScreenH)];
     
     //设置大小
-    _scrollView.contentSize = CGSizeMake(SCREEN_W * _imagesArr.count, SCREEN_H);
+    _scrollView.contentSize = CGSizeMake(HitoScreenW * _imagesArr.count, HitoScreenH);
     
     //设置代理
     _scrollView.delegate = self;
@@ -72,7 +71,7 @@
     [self.view addSubview:_scrollView];
     
     
-    _pageControl = [[UIPageControl alloc]initWithFrame:CGRectMake(SCREEN_W/2-50, SCREEN_H-150, 100, 20)];
+    _pageControl = [[UIPageControl alloc]initWithFrame:CGRectMake(HitoScreenW/2-50, HitoScreenH-150, 100, 20)];
     
     _pageControl.currentPage = 0;
     
@@ -94,7 +93,7 @@
     
     //1.添加ScrollView上的图片
     for (int  i = 0; i < _imagesArr.count; i++) {
-        UIImageView * imageV = [[UIImageView alloc]initWithFrame:CGRectMake(SCREEN_W * i,0, SCREEN_W, SCREEN_H)];
+        UIImageView * imageV = [[UIImageView alloc]initWithFrame:CGRectMake(HitoScreenW * i,0, HitoScreenW, HitoScreenH)];
         
         imageV.image = [UIImage imageNamed:_imagesArr[i]];
         
@@ -105,7 +104,7 @@
     //将button放到ScrollView的最后一个图片上面
     //所以:宽 = (count-1个屏幕宽)+(一个屏幕宽减去button宽 再除以2);
     //高 = (屏幕高)- button的高 再除以2
-    UIButton * btn = [[UIButton alloc]initWithFrame:CGRectMake((SCREEN_W - 150)/2.0 + SCREEN_W * (_imagesArr.count - 1), SCREEN_H - 100, 150, 60)];
+    UIButton * btn = [[UIButton alloc]initWithFrame:CGRectMake((HitoScreenW - 150)/2.0 + HitoScreenW * (_imagesArr.count - 1), HitoScreenH - 100, 150, 60)];
     
     [btn setTitleColor:[UIColor greenColor] forState:UIControlStateNormal];
     btn.titleLabel.font = [UIFont boldSystemFontOfSize:20];
@@ -125,7 +124,7 @@
 
 -(void)scrollViewDidScroll:(UIScrollView *)scrollView{
     
-    NSInteger pageIndex = scrollView.contentOffset.x/SCREEN_W;
+    NSInteger pageIndex = scrollView.contentOffset.x/HitoScreenW;
     
     //指示按钮显示在第几页
     _pageControl.currentPage =pageIndex;

@@ -45,6 +45,8 @@
 //屏幕的宽高
 #define HitoScreenW [UIScreen mainScreen].bounds.size.width
 #define HitoScreenH [UIScreen mainScreen].bounds.size.height
+//屏幕大小
+#define HitoScreenSize [UIScreen mainScreen].bounds
 //比例宽和高(以6s为除数)
 #define HitoScreenWS HitoScreenW/375
 #define HitoScreenWH HitoScreenH/667

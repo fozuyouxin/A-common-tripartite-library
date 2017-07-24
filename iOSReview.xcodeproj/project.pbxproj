@@ -39,6 +39,11 @@
 		186C4DED1F20A2AB00A9A1E2 /* QRCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 186C4DEB1F20A2AB00A9A1E2 /* QRCodeViewController.m */; };
 		186C4DEE1F20A2AB00A9A1E2 /* QRCodeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 186C4DEC1F20A2AB00A9A1E2 /* QRCodeViewController.xib */; };
 		18A680A51F1346A4002F8F73 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18A680A41F1346A4002F8F73 /* Social.framework */; };
+		18B0C31C1F25894A00E1448A /* DetailsLogisticsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B0C3191F25894A00E1448A /* DetailsLogisticsViewController.m */; };
+		18B0C31D1F25894A00E1448A /* logisticsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B0C31B1F25894A00E1448A /* logisticsViewController.m */; };
+		18B0C3201F2589CA00E1448A /* BaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B0C31F1F2589CA00E1448A /* BaseTableViewCell.m */; };
+		18B0C3241F258A1D00E1448A /* taoAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B0C3231F258A1D00E1448A /* taoAlert.m */; };
+		18B0C3271F258A4200E1448A /* dataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B0C3261F258A4200E1448A /* dataModel.m */; };
 		18D71A991F20B4530039FACD /* YHTReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D71A981F20B4530039FACD /* YHTReachability.m */; };
 		18FBDBE51F1F3A4A00A4B333 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FBDBE31F1F3A4A00A4B333 /* BaseViewController.m */; };
 		18FBDBE81F1F3A6B00A4B333 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FBDBE71F1F3A6B00A4B333 /* AppDelegate.m */; };
@@ -156,6 +161,16 @@
 		186C4DEB1F20A2AB00A9A1E2 /* QRCodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QRCodeViewController.m; sourceTree = "<group>"; };
 		186C4DEC1F20A2AB00A9A1E2 /* QRCodeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QRCodeViewController.xib; sourceTree = "<group>"; };
 		18A680A41F1346A4002F8F73 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		18B0C3181F25894A00E1448A /* DetailsLogisticsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailsLogisticsViewController.h; sourceTree = "<group>"; };
+		18B0C3191F25894A00E1448A /* DetailsLogisticsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailsLogisticsViewController.m; sourceTree = "<group>"; };
+		18B0C31A1F25894A00E1448A /* logisticsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = logisticsViewController.h; sourceTree = "<group>"; };
+		18B0C31B1F25894A00E1448A /* logisticsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = logisticsViewController.m; sourceTree = "<group>"; };
+		18B0C31E1F2589CA00E1448A /* BaseTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTableViewCell.h; sourceTree = "<group>"; };
+		18B0C31F1F2589CA00E1448A /* BaseTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTableViewCell.m; sourceTree = "<group>"; };
+		18B0C3221F258A1D00E1448A /* taoAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = taoAlert.h; sourceTree = "<group>"; };
+		18B0C3231F258A1D00E1448A /* taoAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = taoAlert.m; sourceTree = "<group>"; };
+		18B0C3251F258A4200E1448A /* dataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dataModel.h; sourceTree = "<group>"; };
+		18B0C3261F258A4200E1448A /* dataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = dataModel.m; sourceTree = "<group>"; };
 		18D71A971F20B4530039FACD /* YHTReachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHTReachability.h; sourceTree = "<group>"; };
 		18D71A981F20B4530039FACD /* YHTReachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHTReachability.m; sourceTree = "<group>"; };
 		18FBDBE21F1F3A4A00A4B333 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
@@ -340,6 +355,30 @@
 			path = UISegmentedControl;
 			sourceTree = "<group>";
 		};
+		18B0C3171F25892F00E1448A /* 物流查询 */ = {
+			isa = PBXGroup;
+			children = (
+				18B0C31A1F25894A00E1448A /* logisticsViewController.h */,
+				18B0C31B1F25894A00E1448A /* logisticsViewController.m */,
+				18B0C3181F25894A00E1448A /* DetailsLogisticsViewController.h */,
+				18B0C3191F25894A00E1448A /* DetailsLogisticsViewController.m */,
+				18B0C31E1F2589CA00E1448A /* BaseTableViewCell.h */,
+				18B0C31F1F2589CA00E1448A /* BaseTableViewCell.m */,
+				18B0C3251F258A4200E1448A /* dataModel.h */,
+				18B0C3261F258A4200E1448A /* dataModel.m */,
+			);
+			path = "物流查询";
+			sourceTree = "<group>";
+		};
+		18B0C3211F258A1D00E1448A /* Alert */ = {
+			isa = PBXGroup;
+			children = (
+				18B0C3221F258A1D00E1448A /* taoAlert.h */,
+				18B0C3231F258A1D00E1448A /* taoAlert.m */,
+			);
+			path = Alert;
+			sourceTree = "<group>";
+		};
 		18D71A961F20B4530039FACD /* YHTReachability */ = {
 			isa = PBXGroup;
 			children = (
@@ -425,6 +464,7 @@
 		18FBDC421F1F400000A4B333 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				18B0C3171F25892F00E1448A /* 物流查询 */,
 				18FBDC4F1F1F40B000A4B333 /* HomeViewController.h */,
 				18FBDC501F1F40B000A4B333 /* HomeViewController.m */,
 				18FBDC521F1F43E300A4B333 /* touchViewController.h */,
@@ -489,6 +529,7 @@
 		18FBDC6F1F1F55A100A4B333 /* Lib */ = {
 			isa = PBXGroup;
 			children = (
+				18B0C3211F258A1D00E1448A /* Alert */,
 				18D71A961F20B4530039FACD /* YHTReachability */,
 			);
 			path = Lib;
@@ -809,9 +850,11 @@
 				186C4DE91F205F0700A9A1E2 /* LocalpushViewController.m in Sources */,
 				1844DDEA1F2191C100A44BE3 /* GuidanceController.m in Sources */,
 				18FBDC631F1F4A7300A4B333 /* ShakeViewController.m in Sources */,
+				18B0C3241F258A1D00E1448A /* taoAlert.m in Sources */,
 				186C4DAE1F2046C100A9A1E2 /* aboutViewController.m in Sources */,
 				186C4DC81F2059CC00A9A1E2 /* ScienceViewController.m in Sources */,
 				18D71A991F20B4530039FACD /* YHTReachability.m in Sources */,
+				18B0C31C1F25894A00E1448A /* DetailsLogisticsViewController.m in Sources */,
 				186C4DC71F2059CC00A9A1E2 /* ReaderViewController.m in Sources */,
 				18FBDC511F1F40B000A4B333 /* HomeViewController.m in Sources */,
 				186C4DC91F2059CC00A9A1E2 /* SocietyViewController.m in Sources */,
@@ -831,18 +874,21 @@
 				186C4DA61F203BDC00A9A1E2 /* HitoLocation.m in Sources */,
 				18FBDC6C1F1F510200A4B333 /* VideoViewController.m in Sources */,
 				186C4DA91F203BDC00A9A1E2 /* ownViewController.m in Sources */,
+				18B0C3201F2589CA00E1448A /* BaseTableViewCell.m in Sources */,
 				186C4DDE1F205D7100A9A1E2 /* musicViewController.m in Sources */,
 				186C4DD41F205B7800A9A1E2 /* showViewController.m in Sources */,
 				18FBDC601F1F4A2600A4B333 /* vipViewController.m in Sources */,
 				18FBDC0E1F1F3E5700A4B333 /* BaseTabBarController.m in Sources */,
 				186C4DE61F205E7B00A9A1E2 /* SegViewController.m in Sources */,
 				186C4DED1F20A2AB00A9A1E2 /* QRCodeViewController.m in Sources */,
+				18B0C3271F258A4200E1448A /* dataModel.m in Sources */,
 				508E515D1EFB54B1007C32B3 /* main.m in Sources */,
 				186C4DA81F203BDC00A9A1E2 /* LocationViewController.m in Sources */,
 				18FBDC661F1F4B5200A4B333 /* BlockViewController.m in Sources */,
 				186C4DAA1F203BDC00A9A1E2 /* phpModel.m in Sources */,
 				18345CEB1F17429A00257B87 /* Student.m in Sources */,
 				18FBDC541F1F43E300A4B333 /* touchViewController.m in Sources */,
+				18B0C31D1F25894A00E1448A /* logisticsViewController.m in Sources */,
 				18FBDC481F1F408F00A4B333 /* MeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

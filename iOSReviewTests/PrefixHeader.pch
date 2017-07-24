@@ -47,6 +47,11 @@
 #import "LocalpushViewController.h"
 #import "QRCodeViewController.h"
 #import "YHTReachability.h"
+#import "DetailsLogisticsViewController.h"
+#import "logisticsViewController.h"
+#import "BaseTableViewCell.h"
+#import "taoAlert.h"
+#import "dataModel.h"
 
 #ifdef __OBJC__
 #import <UIKit/UIKit.h>
