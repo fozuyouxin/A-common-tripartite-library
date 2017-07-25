@@ -69,6 +69,9 @@
     //去除数组中相同的元素
     NSArray *newArr = [oldArr valueForKeyPath:@"@distinctUnionOfObjects.self"];
     NSLog(@"====%@====",newArr);
+    
+    [self addDropUpRefresh];
+    [self addDropDownRefresh];
 }
 
 
@@ -169,6 +172,31 @@
     }
    
 }
+
+#pragma mark --下拉刷新
+- (void)addDropDownRefresh{
+    MJRefreshNormalHeader * header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
+        //下拉刷新
+        [self.tableView. mj_header endRefreshing];
+    }];
+    [header setTitle:@"正在刷新" forState:MJRefreshStateRefreshing];
+    [header setTitle:@"松开刷新" forState:MJRefreshStatePulling];
+    self.tableView. mj_header = header;
+}
+
+#pragma mark -- 上拉加载
+- (void)addDropUpRefresh{
+    MJRefreshBackNormalFooter * footer = [MJRefreshBackNormalFooter footerWithRefreshingBlock:^{
+        
+        //加载更多方法调用
+        [self.tableView. mj_footer endRefreshing];
+    }];
+    [footer setTitle:@"正在加载" forState:MJRefreshStateRefreshing ];
+    [footer setTitle:@"松开加载" forState:MJRefreshStatePulling];
+    self.tableView. mj_footer = footer;
+}
+
+
 
 - (void)viewWillDisappear:(BOOL)animated{
     [super viewWillDisappear:animated];
