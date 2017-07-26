@@ -53,6 +53,8 @@
 #import "BaseTableViewCell.h"
 #import "taoAlert.h"
 #import "dataModel.h"
+#import "DBViewController.h"
+#import "SQliteManager.h"
 
 #ifdef __OBJC__
 #import <UIKit/UIKit.h>
@@ -65,5 +67,6 @@
 #import <IQKeyboardManager.h>
 #import <MBProgressHUD.h>
 #import <AFNetworking.h>
+#import <FMDB.h>
 
 #endif /* PrefixHeader_pch */

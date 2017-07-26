@@ -12,6 +12,8 @@
 		1844DDEE1F2191ED00A44BE3 /* Guidance01.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1844DDEB1F2191ED00A44BE3 /* Guidance01.jpg */; };
 		1844DDEF1F2191ED00A44BE3 /* Guidance02.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1844DDEC1F2191ED00A44BE3 /* Guidance02.jpg */; };
 		1844DDF01F2191ED00A44BE3 /* Guidance03.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1844DDED1F2191ED00A44BE3 /* Guidance03.jpg */; };
+		1865E5E61F2874A6005A1189 /* DBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1865E5E51F2874A6005A1189 /* DBViewController.m */; };
+		1865E5EA1F2875BF005A1189 /* SQliteManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1865E5E91F2875BF005A1189 /* SQliteManager.m */; };
 		186C4DA61F203BDC00A9A1E2 /* HitoLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 186C4D9C1F203BDC00A9A1E2 /* HitoLocation.m */; };
 		186C4DA71F203BDC00A9A1E2 /* Location.m in Sources */ = {isa = PBXBuildFile; fileRef = 186C4D9E1F203BDC00A9A1E2 /* Location.m */; };
 		186C4DA81F203BDC00A9A1E2 /* LocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 186C4DA01F203BDC00A9A1E2 /* LocationViewController.m */; };
@@ -117,6 +119,10 @@
 		1844DDEB1F2191ED00A44BE3 /* Guidance01.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Guidance01.jpg; sourceTree = "<group>"; };
 		1844DDEC1F2191ED00A44BE3 /* Guidance02.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Guidance02.jpg; sourceTree = "<group>"; };
 		1844DDED1F2191ED00A44BE3 /* Guidance03.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Guidance03.jpg; sourceTree = "<group>"; };
+		1865E5E41F2874A6005A1189 /* DBViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBViewController.h; sourceTree = "<group>"; };
+		1865E5E51F2874A6005A1189 /* DBViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBViewController.m; sourceTree = "<group>"; };
+		1865E5E81F2875BF005A1189 /* SQliteManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQliteManager.h; sourceTree = "<group>"; };
+		1865E5E91F2875BF005A1189 /* SQliteManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQliteManager.m; sourceTree = "<group>"; };
 		186C4D9B1F203BDC00A9A1E2 /* HitoLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HitoLocation.h; sourceTree = "<group>"; };
 		186C4D9C1F203BDC00A9A1E2 /* HitoLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HitoLocation.m; sourceTree = "<group>"; };
 		186C4D9D1F203BDC00A9A1E2 /* Location.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Location.h; sourceTree = "<group>"; };
@@ -284,6 +290,15 @@
 				18345CEA1F17429A00257B87 /* Student.m */,
 			);
 			path = model;
+			sourceTree = "<group>";
+		};
+		1865E5E71F2875AA005A1189 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1865E5E81F2875BF005A1189 /* SQliteManager.h */,
+				1865E5E91F2875BF005A1189 /* SQliteManager.m */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		186C4D9A1F203BDC00A9A1E2 /* 原生定位 */ = {
@@ -517,6 +532,8 @@
 				186C4DEA1F20A2AB00A9A1E2 /* QRCodeViewController.h */,
 				186C4DEB1F20A2AB00A9A1E2 /* QRCodeViewController.m */,
 				186C4DEC1F20A2AB00A9A1E2 /* QRCodeViewController.xib */,
+				1865E5E41F2874A6005A1189 /* DBViewController.h */,
+				1865E5E51F2874A6005A1189 /* DBViewController.m */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -594,6 +611,7 @@
 		508E515A1EFB54B1007C32B3 /* iOSReview */ = {
 			isa = PBXGroup;
 			children = (
+				1865E5E71F2875AA005A1189 /* View */,
 				18FBDC6F1F1F55A100A4B333 /* Lib */,
 				18FBDBE91F1F3A8400A4B333 /* Resource */,
 				18FBDBE01F1F39E900A4B333 /* Application */,
@@ -877,6 +895,7 @@
 				186C4DAE1F2046C100A9A1E2 /* aboutViewController.m in Sources */,
 				186C4DC81F2059CC00A9A1E2 /* ScienceViewController.m in Sources */,
 				18D71A991F20B4530039FACD /* YHTReachability.m in Sources */,
+				1865E5E61F2874A6005A1189 /* DBViewController.m in Sources */,
 				18E8D9301F25E03A0051BF53 /* XHAppInfo.m in Sources */,
 				18B0C31C1F25894A00E1448A /* DetailsLogisticsViewController.m in Sources */,
 				186C4DC71F2059CC00A9A1E2 /* ReaderViewController.m in Sources */,
@@ -898,6 +917,7 @@
 				186C4DC61F2059CC00A9A1E2 /* HotViewController.m in Sources */,
 				186C4DB31F20560C00A9A1E2 /* photoViewController.m in Sources */,
 				186C4DA61F203BDC00A9A1E2 /* HitoLocation.m in Sources */,
+				1865E5EA1F2875BF005A1189 /* SQliteManager.m in Sources */,
 				18FBDC6C1F1F510200A4B333 /* VideoViewController.m in Sources */,
 				186C4DA91F203BDC00A9A1E2 /* ownViewController.m in Sources */,
 				18B0C3201F2589CA00E1448A /* BaseTableViewCell.m in Sources */,

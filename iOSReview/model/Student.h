@@ -13,5 +13,6 @@
 HitoProperty(stuAge);
 HitoProperty(stuHeight);
 HitoProperty(stuName);
+HitoProperty(MyID);
 - (void)setValue:(id)value forUndefinedKey:(NSString *)key;
 @end
