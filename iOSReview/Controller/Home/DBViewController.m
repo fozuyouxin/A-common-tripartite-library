@@ -37,10 +37,9 @@
 
     UISwitch * sw = [[UISwitch alloc]initWithFrame:CGRectMake(50, 50, 100, 50)];
     sw.on = NO;//默认关闭状态
-    sw.tag = indexPath.row;
+    sw.tag = [user.MyID integerValue];
     if ([[SQliteManager defaultSqliteManager] isExsitMenuWithID:user.MyID]) {
         sw.on = YES;
-        
     }
     [sw addTarget:self action:@selector(changeEvent:) forControlEvents:UIControlEventValueChanged];
     cell.accessoryView = sw;
@@ -49,6 +48,7 @@
 }
 #pragma mark -- UISwitch开关按钮事件实现
 - (void)changeEvent:(UISwitch *)sw{
+    
     NSString * strTag = [NSString stringWithFormat:@"%ld",sw.tag];
     if (sw.on) {
         //开启

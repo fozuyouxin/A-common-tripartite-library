@@ -73,7 +73,7 @@
     //增加
     NSString * insertSql = @"insert into menuTable(menuID) values(?)";
     //执行
-    if ([_dataBase executeUpdate:insertSql,@"1"]) {
+    if ([_dataBase executeUpdate:insertSql,menuID]) {
         NSLog(@"收藏成功");
         return YES;
     }else{
