@@ -48,7 +48,7 @@
 }
 #pragma mark -- UISwitch开关按钮事件实现
 - (void)changeEvent:(UISwitch *)sw{
-    
+  
     NSString * strTag = [NSString stringWithFormat:@"%ld",sw.tag];
     if (sw.on) {
         //开启

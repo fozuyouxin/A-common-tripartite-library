@@ -12,6 +12,31 @@
 		1844DDEE1F2191ED00A44BE3 /* Guidance01.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1844DDEB1F2191ED00A44BE3 /* Guidance01.jpg */; };
 		1844DDEF1F2191ED00A44BE3 /* Guidance02.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1844DDEC1F2191ED00A44BE3 /* Guidance02.jpg */; };
 		1844DDF01F2191ED00A44BE3 /* Guidance03.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1844DDED1F2191ED00A44BE3 /* Guidance03.jpg */; };
+		1858913E1F29857F001C02D8 /* 美女01.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 185891251F29857E001C02D8 /* 美女01.jpg */; };
+		1858913F1F29857F001C02D8 /* 美女02.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 185891261F29857E001C02D8 /* 美女02.jpg */; };
+		185891401F29857F001C02D8 /* 美女03.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 185891271F29857E001C02D8 /* 美女03.jpg */; };
+		185891411F29857F001C02D8 /* 美女04.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 185891281F29857E001C02D8 /* 美女04.jpg */; };
+		185891421F29857F001C02D8 /* 美女05.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 185891291F29857E001C02D8 /* 美女05.jpg */; };
+		185891431F29857F001C02D8 /* 美女06.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1858912A1F29857E001C02D8 /* 美女06.jpg */; };
+		185891441F29857F001C02D8 /* 美女07.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1858912B1F29857E001C02D8 /* 美女07.jpg */; };
+		185891451F29857F001C02D8 /* 美女08.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1858912C1F29857E001C02D8 /* 美女08.jpg */; };
+		185891461F29857F001C02D8 /* 美女09.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1858912D1F29857E001C02D8 /* 美女09.jpg */; };
+		185891471F29857F001C02D8 /* 美女10.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1858912E1F29857E001C02D8 /* 美女10.jpg */; };
+		185891481F29857F001C02D8 /* 美女11.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1858912F1F29857E001C02D8 /* 美女11.jpg */; };
+		185891491F29857F001C02D8 /* 美女12.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 185891301F29857E001C02D8 /* 美女12.jpg */; };
+		1858914A1F29857F001C02D8 /* 美女13.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 185891311F29857E001C02D8 /* 美女13.jpg */; };
+		1858914B1F29857F001C02D8 /* 美女14.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 185891321F29857E001C02D8 /* 美女14.jpg */; };
+		1858914C1F29857F001C02D8 /* 美女15.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 185891331F29857E001C02D8 /* 美女15.jpg */; };
+		1858914D1F29857F001C02D8 /* 美女16.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 185891341F29857F001C02D8 /* 美女16.jpg */; };
+		1858914E1F29857F001C02D8 /* 美女17.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 185891351F29857F001C02D8 /* 美女17.jpg */; };
+		1858914F1F29857F001C02D8 /* 美女18.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 185891361F29857F001C02D8 /* 美女18.jpg */; };
+		185891501F29857F001C02D8 /* 美女19.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 185891371F29857F001C02D8 /* 美女19.jpg */; };
+		185891511F29857F001C02D8 /* 美女20.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 185891381F29857F001C02D8 /* 美女20.jpg */; };
+		185891521F29857F001C02D8 /* 美女21.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 185891391F29857F001C02D8 /* 美女21.jpg */; };
+		185891531F29857F001C02D8 /* 美女22.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1858913A1F29857F001C02D8 /* 美女22.jpg */; };
+		185891541F29857F001C02D8 /* 美女23.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1858913B1F29857F001C02D8 /* 美女23.jpg */; };
+		185891551F29857F001C02D8 /* 美女24.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1858913C1F29857F001C02D8 /* 美女24.jpg */; };
+		185891561F29857F001C02D8 /* 美女25.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1858913D1F29857F001C02D8 /* 美女25.jpg */; };
 		1865E5E61F2874A6005A1189 /* DBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1865E5E51F2874A6005A1189 /* DBViewController.m */; };
 		1865E5EA1F2875BF005A1189 /* SQliteManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1865E5E91F2875BF005A1189 /* SQliteManager.m */; };
 		186C4DA61F203BDC00A9A1E2 /* HitoLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 186C4D9C1F203BDC00A9A1E2 /* HitoLocation.m */; };
@@ -119,6 +144,31 @@
 		1844DDEB1F2191ED00A44BE3 /* Guidance01.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Guidance01.jpg; sourceTree = "<group>"; };
 		1844DDEC1F2191ED00A44BE3 /* Guidance02.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Guidance02.jpg; sourceTree = "<group>"; };
 		1844DDED1F2191ED00A44BE3 /* Guidance03.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Guidance03.jpg; sourceTree = "<group>"; };
+		185891251F29857E001C02D8 /* 美女01.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "美女01.jpg"; sourceTree = "<group>"; };
+		185891261F29857E001C02D8 /* 美女02.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "美女02.jpg"; sourceTree = "<group>"; };
+		185891271F29857E001C02D8 /* 美女03.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "美女03.jpg"; sourceTree = "<group>"; };
+		185891281F29857E001C02D8 /* 美女04.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "美女04.jpg"; sourceTree = "<group>"; };
+		185891291F29857E001C02D8 /* 美女05.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "美女05.jpg"; sourceTree = "<group>"; };
+		1858912A1F29857E001C02D8 /* 美女06.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "美女06.jpg"; sourceTree = "<group>"; };
+		1858912B1F29857E001C02D8 /* 美女07.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "美女07.jpg"; sourceTree = "<group>"; };
+		1858912C1F29857E001C02D8 /* 美女08.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "美女08.jpg"; sourceTree = "<group>"; };
+		1858912D1F29857E001C02D8 /* 美女09.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "美女09.jpg"; sourceTree = "<group>"; };
+		1858912E1F29857E001C02D8 /* 美女10.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "美女10.jpg"; sourceTree = "<group>"; };
+		1858912F1F29857E001C02D8 /* 美女11.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "美女11.jpg"; sourceTree = "<group>"; };
+		185891301F29857E001C02D8 /* 美女12.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "美女12.jpg"; sourceTree = "<group>"; };
+		185891311F29857E001C02D8 /* 美女13.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "美女13.jpg"; sourceTree = "<group>"; };
+		185891321F29857E001C02D8 /* 美女14.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "美女14.jpg"; sourceTree = "<group>"; };
+		185891331F29857E001C02D8 /* 美女15.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "美女15.jpg"; sourceTree = "<group>"; };
+		185891341F29857F001C02D8 /* 美女16.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "美女16.jpg"; sourceTree = "<group>"; };
+		185891351F29857F001C02D8 /* 美女17.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "美女17.jpg"; sourceTree = "<group>"; };
+		185891361F29857F001C02D8 /* 美女18.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "美女18.jpg"; sourceTree = "<group>"; };
+		185891371F29857F001C02D8 /* 美女19.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "美女19.jpg"; sourceTree = "<group>"; };
+		185891381F29857F001C02D8 /* 美女20.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "美女20.jpg"; sourceTree = "<group>"; };
+		185891391F29857F001C02D8 /* 美女21.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "美女21.jpg"; sourceTree = "<group>"; };
+		1858913A1F29857F001C02D8 /* 美女22.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "美女22.jpg"; sourceTree = "<group>"; };
+		1858913B1F29857F001C02D8 /* 美女23.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "美女23.jpg"; sourceTree = "<group>"; };
+		1858913C1F29857F001C02D8 /* 美女24.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "美女24.jpg"; sourceTree = "<group>"; };
+		1858913D1F29857F001C02D8 /* 美女25.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "美女25.jpg"; sourceTree = "<group>"; };
 		1865E5E41F2874A6005A1189 /* DBViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBViewController.h; sourceTree = "<group>"; };
 		1865E5E51F2874A6005A1189 /* DBViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBViewController.m; sourceTree = "<group>"; };
 		1865E5E81F2875BF005A1189 /* SQliteManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQliteManager.h; sourceTree = "<group>"; };
@@ -292,6 +342,38 @@
 			path = model;
 			sourceTree = "<group>";
 		};
+		185891241F29857E001C02D8 /* 美女 */ = {
+			isa = PBXGroup;
+			children = (
+				185891251F29857E001C02D8 /* 美女01.jpg */,
+				185891261F29857E001C02D8 /* 美女02.jpg */,
+				185891271F29857E001C02D8 /* 美女03.jpg */,
+				185891281F29857E001C02D8 /* 美女04.jpg */,
+				185891291F29857E001C02D8 /* 美女05.jpg */,
+				1858912A1F29857E001C02D8 /* 美女06.jpg */,
+				1858912B1F29857E001C02D8 /* 美女07.jpg */,
+				1858912C1F29857E001C02D8 /* 美女08.jpg */,
+				1858912D1F29857E001C02D8 /* 美女09.jpg */,
+				1858912E1F29857E001C02D8 /* 美女10.jpg */,
+				1858912F1F29857E001C02D8 /* 美女11.jpg */,
+				185891301F29857E001C02D8 /* 美女12.jpg */,
+				185891311F29857E001C02D8 /* 美女13.jpg */,
+				185891321F29857E001C02D8 /* 美女14.jpg */,
+				185891331F29857E001C02D8 /* 美女15.jpg */,
+				185891341F29857F001C02D8 /* 美女16.jpg */,
+				185891351F29857F001C02D8 /* 美女17.jpg */,
+				185891361F29857F001C02D8 /* 美女18.jpg */,
+				185891371F29857F001C02D8 /* 美女19.jpg */,
+				185891381F29857F001C02D8 /* 美女20.jpg */,
+				185891391F29857F001C02D8 /* 美女21.jpg */,
+				1858913A1F29857F001C02D8 /* 美女22.jpg */,
+				1858913B1F29857F001C02D8 /* 美女23.jpg */,
+				1858913C1F29857F001C02D8 /* 美女24.jpg */,
+				1858913D1F29857F001C02D8 /* 美女25.jpg */,
+			);
+			path = "美女";
+			sourceTree = "<group>";
+		};
 		1865E5E71F2875AA005A1189 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -454,6 +536,7 @@
 		18FBDBE91F1F3A8400A4B333 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				185891241F29857E001C02D8 /* 美女 */,
 				1844DDEB1F2191ED00A44BE3 /* Guidance01.jpg */,
 				1844DDEC1F2191ED00A44BE3 /* Guidance02.jpg */,
 				1844DDED1F2191ED00A44BE3 /* Guidance03.jpg */,
@@ -785,6 +868,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				18FBDC071F1F3ACD00A4B333 /* niao_7.png in Resources */,
+				185891561F29857F001C02D8 /* 美女25.jpg in Resources */,
+				1858914F1F29857F001C02D8 /* 美女18.jpg in Resources */,
+				1858914D1F29857F001C02D8 /* 美女16.jpg in Resources */,
+				185891471F29857F001C02D8 /* 美女10.jpg in Resources */,
+				185891521F29857F001C02D8 /* 美女21.jpg in Resources */,
 				18FBDBFC1F1F3ACD00A4B333 /* 123.mp4 in Resources */,
 				18FBDBFD1F1F3ACD00A4B333 /* 霍建华、赵丽颖 - 不可说.mp4 in Resources */,
 				18FBDC001F1F3ACD00A4B333 /* next.png in Resources */,
@@ -792,27 +880,47 @@
 				18FBDC091F1F3ACD00A4B333 /* t1.jpeg in Resources */,
 				186C4DDA1F205CD500A9A1E2 /* 飞机的壁纸.jpg in Resources */,
 				18FBDC051F1F3ACD00A4B333 /* niao_5.png in Resources */,
+				185891411F29857F001C02D8 /* 美女04.jpg in Resources */,
+				185891541F29857F001C02D8 /* 美女23.jpg in Resources */,
+				185891501F29857F001C02D8 /* 美女19.jpg in Resources */,
 				18FBDC041F1F3ACD00A4B333 /* niao_4.png in Resources */,
 				1844DDEF1F2191ED00A44BE3 /* Guidance02.jpg in Resources */,
+				185891421F29857F001C02D8 /* 美女05.jpg in Resources */,
 				508E516B1EFB54B1007C32B3 /* LaunchScreen.storyboard in Resources */,
 				1844DDEE1F2191ED00A44BE3 /* Guidance01.jpg in Resources */,
 				186C4DDB1F205CD500A9A1E2 /* 手表的壁纸.jpg in Resources */,
 				18FBDBFE1F1F3ACD00A4B333 /* aa.jpg in Resources */,
+				185891551F29857F001C02D8 /* 美女24.jpg in Resources */,
 				18FBDC711F1F634B00A4B333 /* biao.jpg in Resources */,
 				186C4DD91F205CD500A9A1E2 /* 电脑的壁纸.jpg in Resources */,
+				185891491F29857F001C02D8 /* 美女12.jpg in Resources */,
+				185891531F29857F001C02D8 /* 美女22.jpg in Resources */,
 				1844DDF01F2191ED00A44BE3 /* Guidance03.jpg in Resources */,
+				1858914B1F29857F001C02D8 /* 美女14.jpg in Resources */,
 				186C4DD51F205B7800A9A1E2 /* showViewController.xib in Resources */,
+				185891511F29857F001C02D8 /* 美女20.jpg in Resources */,
 				18FBDC0A1F1F3ACD00A4B333 /* t2.jpeg in Resources */,
+				185891401F29857F001C02D8 /* 美女03.jpg in Resources */,
+				185891431F29857F001C02D8 /* 美女06.jpg in Resources */,
 				18FBDC021F1F3ACD00A4B333 /* niao_2.png in Resources */,
 				18FBDBFF1F1F3ACD00A4B333 /* back.png in Resources */,
 				186C4DEE1F20A2AB00A9A1E2 /* QRCodeViewController.xib in Resources */,
+				185891451F29857F001C02D8 /* 美女08.jpg in Resources */,
+				185891441F29857F001C02D8 /* 美女07.jpg in Resources */,
+				1858914C1F29857F001C02D8 /* 美女15.jpg in Resources */,
 				18FBDC0B1F1F3ACD00A4B333 /* ying.png in Resources */,
+				1858914E1F29857F001C02D8 /* 美女17.jpg in Resources */,
 				18FBDC061F1F3ACD00A4B333 /* niao_6.png in Resources */,
 				18FBDC081F1F3ACD00A4B333 /* niao_8.png in Resources */,
 				18FBDC011F1F3ACD00A4B333 /* niao_1.png in Resources */,
+				1858913F1F29857F001C02D8 /* 美女02.jpg in Resources */,
+				185891481F29857F001C02D8 /* 美女11.jpg in Resources */,
+				1858914A1F29857F001C02D8 /* 美女13.jpg in Resources */,
 				186C4DB01F204B2D00A9A1E2 /* zoedear.jpg in Resources */,
+				1858913E1F29857F001C02D8 /* 美女01.jpg in Resources */,
 				18FBDC031F1F3ACD00A4B333 /* niao_3.png in Resources */,
 				508E51681EFB54B1007C32B3 /* Assets.xcassets in Resources */,
+				185891461F29857F001C02D8 /* 美女09.jpg in Resources */,
 				508E51661EFB54B1007C32B3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
