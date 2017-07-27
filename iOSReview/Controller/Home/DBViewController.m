@@ -35,11 +35,18 @@
     Student * user = self.dataArr[indexPath.row];
     cell.textLabel.text = user.stuName;
 
+    UILabel * label = [[UILabel alloc]initWithFrame:CGRectMake(HitoScreenW-180, 0, 100, CGRectGetHeight(cell.bounds))];
+    label.textAlignment = NSTextAlignmentRight;
+    label.font = [UIFont systemFontOfSize:13];
+    [cell.contentView addSubview:label];
+    
     UISwitch * sw = [[UISwitch alloc]initWithFrame:CGRectMake(50, 50, 100, 50)];
     sw.on = NO;//默认关闭状态
+    label.text = @"未收藏";
     sw.tag = [user.MyID integerValue];
     if ([[SQliteManager defaultSqliteManager] isExsitMenuWithID:user.MyID]) {
         sw.on = YES;
+        label.text = @"已收藏";
     }
     [sw addTarget:self action:@selector(changeEvent:) forControlEvents:UIControlEventValueChanged];
     cell.accessoryView = sw;
@@ -57,6 +64,7 @@
         //关闭
         [[SQliteManager defaultSqliteManager] deleteMenuWithID:strTag];
     }
+    [self reloadTableView];
 }
 
 - (void)AFNetworking{
