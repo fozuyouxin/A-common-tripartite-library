@@ -127,10 +127,30 @@
 <img width="250" height="400" src="Image/1.png" />
 </div>
 
+* 2017.7.17 
+    1.app启动引导图,第一次安装或者更新app第一次启动会出现引导图;</br>
+    2.增加本地推送;</br>
+    3.实现苹果自带的分享功能,摇一摇功能和定位功能;</br>
+
+* 2017.7.20 实现轮播图,物流查询功能</br>
+<div>
+<img width="250" height="400" src="Image/4.png" />
+</div>
+
+* 2017.7.26 实现三方库FMDB,采用SQLite数据库(有可视化的桌面软件,需要的可以[Issues](https://github.com/NSLog-YuHaitao/iOSReview/issues)我),主要功能有产品收藏... (开启即为收藏成功,关闭即为取消收藏);</br>
+<div>
+<img width="250" height="400" src="Image/5.png" />
+</div>
+
+* 2017.7.27 如何使用UICollectionView,其实也就是简单的瀑布流,但是等高等宽的图片;
+<div>
+<img width="250" height="400" src="Image/6.png" />
+</div>
+
 * 功能持续更新中...
 
 实现功能效果图:
 ----------------
 
-<img width="250" height="400" src="Image/result.gif" />
+<img width="250" height="400" src="Image/11.gif" />
 
