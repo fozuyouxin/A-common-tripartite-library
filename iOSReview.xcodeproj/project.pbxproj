@@ -12,6 +12,8 @@
 		1844DDEE1F2191ED00A44BE3 /* Guidance01.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1844DDEB1F2191ED00A44BE3 /* Guidance01.jpg */; };
 		1844DDEF1F2191ED00A44BE3 /* Guidance02.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1844DDEC1F2191ED00A44BE3 /* Guidance02.jpg */; };
 		1844DDF01F2191ED00A44BE3 /* Guidance03.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1844DDED1F2191ED00A44BE3 /* Guidance03.jpg */; };
+		184CAAB51F2AD1E100AEAB18 /* you.png in Resources */ = {isa = PBXBuildFile; fileRef = 184CAAB31F2AD1E100AEAB18 /* you.png */; };
+		184CAAB81F2AE44A00AEAB18 /* xia.png in Resources */ = {isa = PBXBuildFile; fileRef = 184CAAB71F2AE44A00AEAB18 /* xia.png */; };
 		1858913E1F29857F001C02D8 /* 美女01.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 185891251F29857E001C02D8 /* 美女01.jpg */; };
 		1858913F1F29857F001C02D8 /* 美女02.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 185891261F29857E001C02D8 /* 美女02.jpg */; };
 		185891401F29857F001C02D8 /* 美女03.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 185891271F29857E001C02D8 /* 美女03.jpg */; };
@@ -144,6 +146,8 @@
 		1844DDEB1F2191ED00A44BE3 /* Guidance01.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Guidance01.jpg; sourceTree = "<group>"; };
 		1844DDEC1F2191ED00A44BE3 /* Guidance02.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Guidance02.jpg; sourceTree = "<group>"; };
 		1844DDED1F2191ED00A44BE3 /* Guidance03.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Guidance03.jpg; sourceTree = "<group>"; };
+		184CAAB31F2AD1E100AEAB18 /* you.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = you.png; sourceTree = "<group>"; };
+		184CAAB71F2AE44A00AEAB18 /* xia.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = xia.png; sourceTree = "<group>"; };
 		185891251F29857E001C02D8 /* 美女01.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "美女01.jpg"; sourceTree = "<group>"; };
 		185891261F29857E001C02D8 /* 美女02.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "美女02.jpg"; sourceTree = "<group>"; };
 		185891271F29857E001C02D8 /* 美女03.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "美女03.jpg"; sourceTree = "<group>"; };
@@ -536,6 +540,8 @@
 		18FBDBE91F1F3A8400A4B333 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				184CAAB71F2AE44A00AEAB18 /* xia.png */,
+				184CAAB31F2AD1E100AEAB18 /* you.png */,
 				185891241F29857E001C02D8 /* 美女 */,
 				1844DDEB1F2191ED00A44BE3 /* Guidance01.jpg */,
 				1844DDEC1F2191ED00A44BE3 /* Guidance02.jpg */,
@@ -874,6 +880,7 @@
 				185891471F29857F001C02D8 /* 美女10.jpg in Resources */,
 				185891521F29857F001C02D8 /* 美女21.jpg in Resources */,
 				18FBDBFC1F1F3ACD00A4B333 /* 123.mp4 in Resources */,
+				184CAAB51F2AD1E100AEAB18 /* you.png in Resources */,
 				18FBDBFD1F1F3ACD00A4B333 /* 霍建华、赵丽颖 - 不可说.mp4 in Resources */,
 				18FBDC001F1F3ACD00A4B333 /* next.png in Resources */,
 				18FBDC6E1F1F532B00A4B333 /* bao.jpg in Resources */,
@@ -902,6 +909,7 @@
 				18FBDC0A1F1F3ACD00A4B333 /* t2.jpeg in Resources */,
 				185891401F29857F001C02D8 /* 美女03.jpg in Resources */,
 				185891431F29857F001C02D8 /* 美女06.jpg in Resources */,
+				184CAAB81F2AE44A00AEAB18 /* xia.png in Resources */,
 				18FBDC021F1F3ACD00A4B333 /* niao_2.png in Resources */,
 				18FBDBFF1F1F3ACD00A4B333 /* back.png in Resources */,
 				186C4DEE1F20A2AB00A9A1E2 /* QRCodeViewController.xib in Resources */,
