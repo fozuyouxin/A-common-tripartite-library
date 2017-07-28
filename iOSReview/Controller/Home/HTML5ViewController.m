@@ -35,7 +35,7 @@
     
     content[@"niu"] = ^{
         
-        UIAlertController *alertCtl = [UIAlertController alertControllerWithTitle:@"交互" message:@"跳转成功" preferredStyle:UIAlertControllerStyleAlert];
+        UIAlertController *alertCtl = [UIAlertController alertControllerWithTitle:@"温馨提示" message:@"app端与H5交互成功" preferredStyle:UIAlertControllerStyleAlert];
         UIAlertAction *action = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
             
         }];

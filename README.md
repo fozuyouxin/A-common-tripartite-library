@@ -147,9 +147,15 @@
 <img width="250" height="400" src="Image/6.png" />
 </div>
 
-* 2017.7.28 增加UITableView展开和收起,并且实现右侧索引,定位功能;
+* 2017.7.28 </br>
+    1.增加UITableView展开和收起,并且实现右侧索引,定位功能;
 <div>
 <img width="250" height="400" src="Image/12345.gif" />
+</div>
+
+    2.增加app端与H5交互;
+<div>
+<img width="250" height="400" src="Image/jiaohu.jpeg" />
 </div>
 
 * 功能持续更新中...
