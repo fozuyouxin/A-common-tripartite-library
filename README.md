@@ -147,6 +147,11 @@
 <img width="250" height="400" src="Image/6.png" />
 </div>
 
+* 2017.7.28 增加UITableView展开和收起,并且实现右侧索引,定位功能;
+<div>
+<img width="250" height="400" src="Image/12345.gif" />
+</div>
+
 * 功能持续更新中...
 
 实现功能效果图:
