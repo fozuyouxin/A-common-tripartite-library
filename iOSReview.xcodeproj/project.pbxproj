@@ -14,6 +14,9 @@
 		1844DDF01F2191ED00A44BE3 /* Guidance03.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1844DDED1F2191ED00A44BE3 /* Guidance03.jpg */; };
 		184CAAB51F2AD1E100AEAB18 /* you.png in Resources */ = {isa = PBXBuildFile; fileRef = 184CAAB31F2AD1E100AEAB18 /* you.png */; };
 		184CAAB81F2AE44A00AEAB18 /* xia.png in Resources */ = {isa = PBXBuildFile; fileRef = 184CAAB71F2AE44A00AEAB18 /* xia.png */; };
+		184CAABB1F2B0B4700AEAB18 /* HTML5ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 184CAABA1F2B0B4700AEAB18 /* HTML5ViewController.m */; };
+		184CAABD1F2B0B9100AEAB18 /* test.html in Resources */ = {isa = PBXBuildFile; fileRef = 184CAABC1F2B0B9100AEAB18 /* test.html */; };
+		184CAABF1F2B0BCD00AEAB18 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 184CAABE1F2B0BCD00AEAB18 /* JavaScriptCore.framework */; };
 		1858913E1F29857F001C02D8 /* 美女01.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 185891251F29857E001C02D8 /* 美女01.jpg */; };
 		1858913F1F29857F001C02D8 /* 美女02.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 185891261F29857E001C02D8 /* 美女02.jpg */; };
 		185891401F29857F001C02D8 /* 美女03.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 185891271F29857E001C02D8 /* 美女03.jpg */; };
@@ -148,6 +151,10 @@
 		1844DDED1F2191ED00A44BE3 /* Guidance03.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Guidance03.jpg; sourceTree = "<group>"; };
 		184CAAB31F2AD1E100AEAB18 /* you.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = you.png; sourceTree = "<group>"; };
 		184CAAB71F2AE44A00AEAB18 /* xia.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = xia.png; sourceTree = "<group>"; };
+		184CAAB91F2B0B4700AEAB18 /* HTML5ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTML5ViewController.h; sourceTree = "<group>"; };
+		184CAABA1F2B0B4700AEAB18 /* HTML5ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTML5ViewController.m; sourceTree = "<group>"; };
+		184CAABC1F2B0B9100AEAB18 /* test.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = test.html; sourceTree = "<group>"; };
+		184CAABE1F2B0BCD00AEAB18 /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		185891251F29857E001C02D8 /* 美女01.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "美女01.jpg"; sourceTree = "<group>"; };
 		185891261F29857E001C02D8 /* 美女02.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "美女02.jpg"; sourceTree = "<group>"; };
 		185891271F29857E001C02D8 /* 美女03.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "美女03.jpg"; sourceTree = "<group>"; };
@@ -315,6 +322,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				184CAABF1F2B0BCD00AEAB18 /* JavaScriptCore.framework in Frameworks */,
 				18A680A51F1346A4002F8F73 /* Social.framework in Frameworks */,
 				C7E71C500A8B1E936C36857E /* libPods-iOSReview.a in Frameworks */,
 			);
@@ -623,6 +631,9 @@
 				186C4DEC1F20A2AB00A9A1E2 /* QRCodeViewController.xib */,
 				1865E5E41F2874A6005A1189 /* DBViewController.h */,
 				1865E5E51F2874A6005A1189 /* DBViewController.m */,
+				184CAABC1F2B0B9100AEAB18 /* test.html */,
+				184CAAB91F2B0B4700AEAB18 /* HTML5ViewController.h */,
+				184CAABA1F2B0B4700AEAB18 /* HTML5ViewController.m */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -755,6 +766,7 @@
 		D7D293DCB24624A0727C641E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				184CAABE1F2B0BCD00AEAB18 /* JavaScriptCore.framework */,
 				18A680A41F1346A4002F8F73 /* Social.framework */,
 				E65799262CF3F95730523830 /* libPods-iOSReview.a */,
 			);
@@ -901,6 +913,7 @@
 				18FBDC711F1F634B00A4B333 /* biao.jpg in Resources */,
 				186C4DD91F205CD500A9A1E2 /* 电脑的壁纸.jpg in Resources */,
 				185891491F29857F001C02D8 /* 美女12.jpg in Resources */,
+				184CAABD1F2B0B9100AEAB18 /* test.html in Resources */,
 				185891531F29857F001C02D8 /* 美女22.jpg in Resources */,
 				1844DDF01F2191ED00A44BE3 /* Guidance03.jpg in Resources */,
 				1858914B1F29857F001C02D8 /* 美女14.jpg in Resources */,
@@ -1007,6 +1020,7 @@
 				186C4DE91F205F0700A9A1E2 /* LocalpushViewController.m in Sources */,
 				1844DDEA1F2191C100A44BE3 /* GuidanceController.m in Sources */,
 				18FBDC631F1F4A7300A4B333 /* ShakeViewController.m in Sources */,
+				184CAABB1F2B0B4700AEAB18 /* HTML5ViewController.m in Sources */,
 				18B0C3241F258A1D00E1448A /* taoAlert.m in Sources */,
 				186C4DAE1F2046C100A9A1E2 /* aboutViewController.m in Sources */,
 				186C4DC81F2059CC00A9A1E2 /* ScienceViewController.m in Sources */,

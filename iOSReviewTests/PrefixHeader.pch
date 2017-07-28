@@ -55,6 +55,7 @@
 #import "dataModel.h"
 #import "DBViewController.h"
 #import "SQliteManager.h"
+#import "HTML5ViewController.h"
 
 #ifdef __OBJC__
 #import <UIKit/UIKit.h>
