@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		181E74E01F2B26B200592F23 /* addressViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 181E74DF1F2B26B200592F23 /* addressViewController.m */; };
 		18345CEB1F17429A00257B87 /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = 18345CEA1F17429A00257B87 /* Student.m */; };
 		1844DDEA1F2191C100A44BE3 /* GuidanceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1844DDE91F2191C100A44BE3 /* GuidanceController.m */; };
 		1844DDEE1F2191ED00A44BE3 /* Guidance01.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1844DDEB1F2191ED00A44BE3 /* Guidance01.jpg */; };
@@ -17,6 +18,12 @@
 		184CAABB1F2B0B4700AEAB18 /* HTML5ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 184CAABA1F2B0B4700AEAB18 /* HTML5ViewController.m */; };
 		184CAABD1F2B0B9100AEAB18 /* test.html in Resources */ = {isa = PBXBuildFile; fileRef = 184CAABC1F2B0B9100AEAB18 /* test.html */; };
 		184CAABF1F2B0BCD00AEAB18 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 184CAABE1F2B0BCD00AEAB18 /* JavaScriptCore.framework */; };
+		184CAAD11F2B161B00AEAB18 /* city.json in Resources */ = {isa = PBXBuildFile; fileRef = 184CAAC11F2B161B00AEAB18 /* city.json */; };
+		184CAAD61F2B161B00AEAB18 /* RXGetAddress.m in Sources */ = {isa = PBXBuildFile; fileRef = 184CAAC71F2B161B00AEAB18 /* RXGetAddress.m */; };
+		184CAAD71F2B161B00AEAB18 /* RXJDAddressPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 184CAAC91F2B161B00AEAB18 /* RXJDAddressPickerView.m */; };
+		184CAAD81F2B161B00AEAB18 /* RXJDButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 184CAACB1F2B161B00AEAB18 /* RXJDButton.m */; };
+		184CAAD91F2B161B00AEAB18 /* RXJDTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 184CAACD1F2B161B00AEAB18 /* RXJDTableCell.m */; };
+		184CAADA1F2B161B00AEAB18 /* RXHexColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 184CAAD01F2B161B00AEAB18 /* RXHexColor.m */; };
 		1858913E1F29857F001C02D8 /* 美女01.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 185891251F29857E001C02D8 /* 美女01.jpg */; };
 		1858913F1F29857F001C02D8 /* 美女02.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 185891261F29857E001C02D8 /* 美女02.jpg */; };
 		185891401F29857F001C02D8 /* 美女03.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 185891271F29857E001C02D8 /* 美女03.jpg */; };
@@ -142,6 +149,8 @@
 
 /* Begin PBXFileReference section */
 		1805075F1F0C879B00D52818 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		181E74DE1F2B26B200592F23 /* addressViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = addressViewController.h; sourceTree = "<group>"; };
+		181E74DF1F2B26B200592F23 /* addressViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = addressViewController.m; sourceTree = "<group>"; };
 		18345CE91F17429A00257B87 /* Student.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Student.h; sourceTree = "<group>"; };
 		18345CEA1F17429A00257B87 /* Student.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Student.m; sourceTree = "<group>"; };
 		1844DDE81F2191C100A44BE3 /* GuidanceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GuidanceController.h; sourceTree = "<group>"; };
@@ -155,6 +164,17 @@
 		184CAABA1F2B0B4700AEAB18 /* HTML5ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTML5ViewController.m; sourceTree = "<group>"; };
 		184CAABC1F2B0B9100AEAB18 /* test.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = test.html; sourceTree = "<group>"; };
 		184CAABE1F2B0BCD00AEAB18 /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		184CAAC11F2B161B00AEAB18 /* city.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = city.json; sourceTree = "<group>"; };
+		184CAAC61F2B161B00AEAB18 /* RXGetAddress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RXGetAddress.h; sourceTree = "<group>"; };
+		184CAAC71F2B161B00AEAB18 /* RXGetAddress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RXGetAddress.m; sourceTree = "<group>"; };
+		184CAAC81F2B161B00AEAB18 /* RXJDAddressPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RXJDAddressPickerView.h; sourceTree = "<group>"; };
+		184CAAC91F2B161B00AEAB18 /* RXJDAddressPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RXJDAddressPickerView.m; sourceTree = "<group>"; };
+		184CAACA1F2B161B00AEAB18 /* RXJDButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RXJDButton.h; sourceTree = "<group>"; };
+		184CAACB1F2B161B00AEAB18 /* RXJDButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RXJDButton.m; sourceTree = "<group>"; };
+		184CAACC1F2B161B00AEAB18 /* RXJDTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RXJDTableCell.h; sourceTree = "<group>"; };
+		184CAACD1F2B161B00AEAB18 /* RXJDTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RXJDTableCell.m; sourceTree = "<group>"; };
+		184CAACF1F2B161B00AEAB18 /* RXHexColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RXHexColor.h; sourceTree = "<group>"; };
+		184CAAD01F2B161B00AEAB18 /* RXHexColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RXHexColor.m; sourceTree = "<group>"; };
 		185891251F29857E001C02D8 /* 美女01.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "美女01.jpg"; sourceTree = "<group>"; };
 		185891261F29857E001C02D8 /* 美女02.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "美女02.jpg"; sourceTree = "<group>"; };
 		185891271F29857E001C02D8 /* 美女03.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "美女03.jpg"; sourceTree = "<group>"; };
@@ -352,6 +372,32 @@
 				18345CEA1F17429A00257B87 /* Student.m */,
 			);
 			path = model;
+			sourceTree = "<group>";
+		};
+		184CAAC01F2B161B00AEAB18 /* JDAddressPicker */ = {
+			isa = PBXGroup;
+			children = (
+				184CAAC11F2B161B00AEAB18 /* city.json */,
+				184CAAC61F2B161B00AEAB18 /* RXGetAddress.h */,
+				184CAAC71F2B161B00AEAB18 /* RXGetAddress.m */,
+				184CAAC81F2B161B00AEAB18 /* RXJDAddressPickerView.h */,
+				184CAAC91F2B161B00AEAB18 /* RXJDAddressPickerView.m */,
+				184CAACA1F2B161B00AEAB18 /* RXJDButton.h */,
+				184CAACB1F2B161B00AEAB18 /* RXJDButton.m */,
+				184CAACC1F2B161B00AEAB18 /* RXJDTableCell.h */,
+				184CAACD1F2B161B00AEAB18 /* RXJDTableCell.m */,
+				184CAACE1F2B161B00AEAB18 /* UIColor */,
+			);
+			path = JDAddressPicker;
+			sourceTree = "<group>";
+		};
+		184CAACE1F2B161B00AEAB18 /* UIColor */ = {
+			isa = PBXGroup;
+			children = (
+				184CAACF1F2B161B00AEAB18 /* RXHexColor.h */,
+				184CAAD01F2B161B00AEAB18 /* RXHexColor.m */,
+			);
+			path = UIColor;
 			sourceTree = "<group>";
 		};
 		185891241F29857E001C02D8 /* 美女 */ = {
@@ -634,6 +680,8 @@
 				184CAABC1F2B0B9100AEAB18 /* test.html */,
 				184CAAB91F2B0B4700AEAB18 /* HTML5ViewController.h */,
 				184CAABA1F2B0B4700AEAB18 /* HTML5ViewController.m */,
+				181E74DE1F2B26B200592F23 /* addressViewController.h */,
+				181E74DF1F2B26B200592F23 /* addressViewController.m */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -669,6 +717,7 @@
 		18FBDC6F1F1F55A100A4B333 /* Lib */ = {
 			isa = PBXGroup;
 			children = (
+				184CAAC01F2B161B00AEAB18 /* JDAddressPicker */,
 				18B0C3211F258A1D00E1448A /* Alert */,
 				18D71A961F20B4530039FACD /* YHTReachability */,
 			);
@@ -940,6 +989,7 @@
 				186C4DB01F204B2D00A9A1E2 /* zoedear.jpg in Resources */,
 				1858913E1F29857F001C02D8 /* 美女01.jpg in Resources */,
 				18FBDC031F1F3ACD00A4B333 /* niao_3.png in Resources */,
+				184CAAD11F2B161B00AEAB18 /* city.json in Resources */,
 				508E51681EFB54B1007C32B3 /* Assets.xcassets in Resources */,
 				185891461F29857F001C02D8 /* 美女09.jpg in Resources */,
 				508E51661EFB54B1007C32B3 /* Main.storyboard in Resources */,
@@ -1025,6 +1075,7 @@
 				186C4DAE1F2046C100A9A1E2 /* aboutViewController.m in Sources */,
 				186C4DC81F2059CC00A9A1E2 /* ScienceViewController.m in Sources */,
 				18D71A991F20B4530039FACD /* YHTReachability.m in Sources */,
+				184CAAD71F2B161B00AEAB18 /* RXJDAddressPickerView.m in Sources */,
 				1865E5E61F2874A6005A1189 /* DBViewController.m in Sources */,
 				18E8D9301F25E03A0051BF53 /* XHAppInfo.m in Sources */,
 				18B0C31C1F25894A00E1448A /* DetailsLogisticsViewController.m in Sources */,
@@ -1036,6 +1087,7 @@
 				18FBDC691F1F4C9E00A4B333 /* AFViewController.m in Sources */,
 				18FBDC571F1F440800A4B333 /* sucessViewController.m in Sources */,
 				186C4DCD1F2059CC00A9A1E2 /* YHTScrollView.m in Sources */,
+				184CAAD61F2B161B00AEAB18 /* RXGetAddress.m in Sources */,
 				18E8D9311F25E03A0051BF53 /* XHVersion.m in Sources */,
 				186C4DA71F203BDC00A9A1E2 /* Location.m in Sources */,
 				186C4DCC1F2059CC00A9A1E2 /* nextViewController.m in Sources */,
@@ -1050,6 +1102,9 @@
 				1865E5EA1F2875BF005A1189 /* SQliteManager.m in Sources */,
 				18FBDC6C1F1F510200A4B333 /* VideoViewController.m in Sources */,
 				186C4DA91F203BDC00A9A1E2 /* ownViewController.m in Sources */,
+				184CAADA1F2B161B00AEAB18 /* RXHexColor.m in Sources */,
+				181E74E01F2B26B200592F23 /* addressViewController.m in Sources */,
+				184CAAD91F2B161B00AEAB18 /* RXJDTableCell.m in Sources */,
 				18B0C3201F2589CA00E1448A /* BaseTableViewCell.m in Sources */,
 				186C4DDE1F205D7100A9A1E2 /* musicViewController.m in Sources */,
 				186C4DD41F205B7800A9A1E2 /* showViewController.m in Sources */,
@@ -1066,6 +1121,7 @@
 				18FBDC541F1F43E300A4B333 /* touchViewController.m in Sources */,
 				18B0C31D1F25894A00E1448A /* logisticsViewController.m in Sources */,
 				18FBDC481F1F408F00A4B333 /* MeViewController.m in Sources */,
+				184CAAD81F2B161B00AEAB18 /* RXJDButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

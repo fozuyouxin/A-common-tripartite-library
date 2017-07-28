@@ -48,8 +48,8 @@
 //屏幕大小
 #define HitoScreenSize [UIScreen mainScreen].bounds
 //比例宽和高(以6s为除数)
-#define HitoScreenWS HitoScreenW/375
-#define HitoScreenWH HitoScreenH/667
+#define HitoActureHeight(height)  roundf(height/375.0 * HitoScreenW)
+#define HitoActureWidth(Width)  roundf(Width/667.0 * HitoScreenH)
 
 //声明属性
 #define HitoProperty(key) @property (nonatomic,strong) NSString * key
