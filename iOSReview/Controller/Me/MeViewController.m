@@ -119,9 +119,9 @@
         [self alertTitle:@"温馨提示" andMessage:@"确定删除所有缓存?" andAction1:@"取消" andAction2:@"确定" andBlock:^(NSString *alertMessage) {
             if ([alertMessage isEqualToString:HitoSuccess]) {
                 [self clearCacheFromPath:[NSString stringWithFormat:@"%@/Library/Caches",NSHomeDirectory()]];
+                [self reloadTableView];
             }
         }];
-        [self reloadTableView];
         
     }else if(indexPath.row == 8){
         //夜间模式模块
