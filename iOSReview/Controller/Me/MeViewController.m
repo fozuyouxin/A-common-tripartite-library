@@ -12,6 +12,7 @@
 
 @property(nonatomic,strong) UIImageView * topImageView;
 @property(nonatomic,strong) NSArray * arrData;
+@property(nonatomic,assign) BOOL flag;
 
 @end
 
@@ -19,6 +20,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    _flag = NO;
     _arrData = @[@"GitHub",@"我的博客",@"我的微博",@"我的简书",@"联系我们",@"反馈信息",@"我的设备",@"清除缓存",@"夜间模式",@"关于App"];
     [self setUpTableView];
     [self createTopImageView];
@@ -58,7 +60,10 @@
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
         cell.accessoryType = UITableViewCellAccessoryNone;
         UISwitch * sw = [[UISwitch alloc]initWithFrame:CGRectMake(50, 50, 100, 50)];
-        sw.on = NO;//默认关闭状态
+        sw.on = NO;//关闭状态
+        if (_flag) {
+            sw.on = YES;//开启状态
+        }
         [sw addTarget:self action:@selector(changeEvent:) forControlEvents:UIControlEventValueChanged];
         cell.accessoryView = sw;
     }
@@ -67,9 +72,8 @@
 
 #pragma mark -- UISwitch开关按钮事件实现
 - (void)changeEvent:(UISwitch *)sw{
-    static BOOL flag = NO;
-    flag = !flag;
-    if (sw.on && flag) {
+    _flag = !_flag;
+    if (sw.on && _flag) {
         self.view.window.backgroundColor = [UIColor blackColor];//设置背景色
         self.view.window.alpha = 0.5;//透明度
     }else{
