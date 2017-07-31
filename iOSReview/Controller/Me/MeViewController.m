@@ -54,6 +54,7 @@
     cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     cell.textLabel.text = _arrData[indexPath.row];
     if (indexPath.row == 7) {
+        NSLog(@"11111");
         cell.detailTextLabel.text = [self showCache];
         
     }else if (indexPath.row == 8) {
@@ -115,7 +116,11 @@
         
     }else if(indexPath.row == 7){
         //清除缓存
-        [self clearCache];
+        [self alertTitle:@"温馨提示" andMessage:@"确定删除所有缓存?" andAction1:@"取消" andAction2:@"确定" andBlock:^(NSString *alertMessage) {
+            if ([alertMessage isEqualToString:HitoSuccess]) {
+                [self clearCacheFromPath:[NSString stringWithFormat:@"%@/Library/Caches",NSHomeDirectory()]];
+            }
+        }];
         [self reloadTableView];
         
     }else if(indexPath.row == 8){

@@ -87,6 +87,7 @@ typedef void (^ alertBlock)(NSString * alertMessage);//UIAlertController
 - (NSString * )showCache;
 /* 清除缓存 */
 - (void)clearCache;
+- (void)clearCacheFromPath:(NSString*)path;
 /* 保存图片的方法 */
 - (void)savePicture:(UIImage *)image;
 /* 颜色转图片 */

@@ -89,3 +89,8 @@
 #define HitoSendNotification(key) [[NSNotificationCenter defaultCenter] postNotificationName:key object:self userInfo:nil];
 //移除通知
 #define HitoRemoveNotification(key) [[NSNotificationCenter defaultCenter]removeObserver:self name:key object:nil];
+
+//成功标识
+#define HitoSuccess @"success"
+//失败标识
+#define HitoFailure @"failure"

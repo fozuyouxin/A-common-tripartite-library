@@ -467,15 +467,8 @@
 - (NSString * )showCache{
     return [NSString stringWithFormat:@"%0.2fM",[self folderSizeAtPath:[NSString stringWithFormat:@"%@/Library/Caches",NSHomeDirectory()]]];
 }
-/* 清除缓存 */
--(void)clearCache{
-    
-    [self alertTitle:@"温馨提示" andMessage:@"确定删除所有缓存?" andAction1:@"取消" andAction2:@"确定" andBlock:^(NSString *alertMessage) {
-        if ([alertMessage isEqualToString:SUCCESS]) {
-            [self clearCacheFromPath:[NSString stringWithFormat:@"%@/Library/Caches",NSHomeDirectory()]];
-        }
-    }];
-    
+- (void)clearCache{
+    [self clearCacheFromPath:[NSString stringWithFormat:@"%@/Library/Caches",NSHomeDirectory()]];
 }
 /* 返回缓存的大小 */
 - (long long) fileSizeAtPath:(NSString*) filePath{
