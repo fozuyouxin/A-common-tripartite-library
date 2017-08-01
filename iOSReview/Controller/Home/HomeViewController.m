@@ -7,6 +7,7 @@
 //
 
 #import "HomeViewController.h"
+#import "UIImage+GIF.h"
 
 @interface HomeViewController ()
 
@@ -75,8 +76,26 @@
 
     [self addDropUpRefresh];
     [self addDropDownRefresh];
+
+    //自定义动画
+    //[self showHudInView:HitoApplication];
 }
 
+- (void)showHudInView:(UIView *)view{
+    //自定义动画
+    UIImageView *gifImageView = [[UIImageView alloc] initWithFrame:CGRectMake(HitoScreenW/2-30, HitoScreenH/2-30, 60, 60)];
+    gifImageView.backgroundColor = [UIColor whiteColor];
+    gifImageView.image = [UIImage imageNamed:@"king1"];
+    NSMutableArray *arrM = [[NSMutableArray alloc] init];
+    for (int i = 1; i < 6; i++) {
+        UIImage *image = [UIImage imageNamed:[NSString stringWithFormat:@"king%d", i]];
+        [arrM addObject:image];
+    }
+    [gifImageView setAnimationImages:arrM];
+    [gifImageView setAnimationDuration:0.5];
+    [gifImageView startAnimating];
+    [view addSubview:gifImageView];
+}
 
 /* cell内容 */
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{

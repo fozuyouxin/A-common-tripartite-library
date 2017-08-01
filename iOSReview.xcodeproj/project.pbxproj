@@ -77,6 +77,13 @@
 		186C4DE91F205F0700A9A1E2 /* LocalpushViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 186C4DE81F205F0700A9A1E2 /* LocalpushViewController.m */; };
 		186C4DED1F20A2AB00A9A1E2 /* QRCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 186C4DEB1F20A2AB00A9A1E2 /* QRCodeViewController.m */; };
 		186C4DEE1F20A2AB00A9A1E2 /* QRCodeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 186C4DEC1F20A2AB00A9A1E2 /* QRCodeViewController.xib */; };
+		18A385061F301B3D00B97276 /* king1.png in Resources */ = {isa = PBXBuildFile; fileRef = 18A385011F301B3D00B97276 /* king1.png */; };
+		18A385071F301B3D00B97276 /* king2.png in Resources */ = {isa = PBXBuildFile; fileRef = 18A385021F301B3D00B97276 /* king2.png */; };
+		18A385081F301B3D00B97276 /* king3.png in Resources */ = {isa = PBXBuildFile; fileRef = 18A385031F301B3D00B97276 /* king3.png */; };
+		18A385091F301B3D00B97276 /* king4.png in Resources */ = {isa = PBXBuildFile; fileRef = 18A385041F301B3D00B97276 /* king4.png */; };
+		18A3850A1F301B3D00B97276 /* king5.png in Resources */ = {isa = PBXBuildFile; fileRef = 18A385051F301B3D00B97276 /* king5.png */; };
+		18A385101F3022A300B97276 /* UIImage+GIF.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A3850F1F3022A300B97276 /* UIImage+GIF.m */; };
+		18A385121F30269E00B97276 /* 123.gif in Resources */ = {isa = PBXBuildFile; fileRef = 18A385111F30269E00B97276 /* 123.gif */; };
 		18A680A51F1346A4002F8F73 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18A680A41F1346A4002F8F73 /* Social.framework */; };
 		18B0C31C1F25894A00E1448A /* DetailsLogisticsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B0C3191F25894A00E1448A /* DetailsLogisticsViewController.m */; };
 		18B0C31D1F25894A00E1448A /* logisticsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B0C31B1F25894A00E1448A /* logisticsViewController.m */; };
@@ -250,6 +257,14 @@
 		186C4DEA1F20A2AB00A9A1E2 /* QRCodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRCodeViewController.h; sourceTree = "<group>"; };
 		186C4DEB1F20A2AB00A9A1E2 /* QRCodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QRCodeViewController.m; sourceTree = "<group>"; };
 		186C4DEC1F20A2AB00A9A1E2 /* QRCodeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QRCodeViewController.xib; sourceTree = "<group>"; };
+		18A385011F301B3D00B97276 /* king1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = king1.png; sourceTree = "<group>"; };
+		18A385021F301B3D00B97276 /* king2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = king2.png; sourceTree = "<group>"; };
+		18A385031F301B3D00B97276 /* king3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = king3.png; sourceTree = "<group>"; };
+		18A385041F301B3D00B97276 /* king4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = king4.png; sourceTree = "<group>"; };
+		18A385051F301B3D00B97276 /* king5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = king5.png; sourceTree = "<group>"; };
+		18A3850E1F3022A300B97276 /* UIImage+GIF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+GIF.h"; sourceTree = "<group>"; };
+		18A3850F1F3022A300B97276 /* UIImage+GIF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+GIF.m"; sourceTree = "<group>"; };
+		18A385111F30269E00B97276 /* 123.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 123.gif; sourceTree = "<group>"; };
 		18A680A41F1346A4002F8F73 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		18B0C3181F25894A00E1448A /* DetailsLogisticsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailsLogisticsViewController.h; sourceTree = "<group>"; };
 		18B0C3191F25894A00E1448A /* DetailsLogisticsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailsLogisticsViewController.m; sourceTree = "<group>"; };
@@ -437,6 +452,8 @@
 			children = (
 				1865E5E81F2875BF005A1189 /* SQliteManager.h */,
 				1865E5E91F2875BF005A1189 /* SQliteManager.m */,
+				18A3850E1F3022A300B97276 /* UIImage+GIF.h */,
+				18A3850F1F3022A300B97276 /* UIImage+GIF.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -519,6 +536,18 @@
 			path = UISegmentedControl;
 			sourceTree = "<group>";
 		};
+		18A385001F301B3D00B97276 /* loading */ = {
+			isa = PBXGroup;
+			children = (
+				18A385011F301B3D00B97276 /* king1.png */,
+				18A385021F301B3D00B97276 /* king2.png */,
+				18A385031F301B3D00B97276 /* king3.png */,
+				18A385041F301B3D00B97276 /* king4.png */,
+				18A385051F301B3D00B97276 /* king5.png */,
+			);
+			path = loading;
+			sourceTree = "<group>";
+		};
 		18B0C3171F25892F00E1448A /* 物流查询 */ = {
 			isa = PBXGroup;
 			children = (
@@ -594,6 +623,7 @@
 		18FBDBE91F1F3A8400A4B333 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				18A385111F30269E00B97276 /* 123.gif */,
 				184CAAB71F2AE44A00AEAB18 /* xia.png */,
 				184CAAB31F2AD1E100AEAB18 /* you.png */,
 				185891241F29857E001C02D8 /* 美女 */,
@@ -616,6 +646,7 @@
 		18FBDBEC1F1F3ACD00A4B333 /* image */ = {
 			isa = PBXGroup;
 			children = (
+				18A385001F301B3D00B97276 /* loading */,
 				18FBDBED1F1F3ACD00A4B333 /* aa.jpg */,
 				18FBDBEE1F1F3ACD00A4B333 /* back.png */,
 				18FBDBEF1F1F3ACD00A4B333 /* next.png */,
@@ -940,6 +971,7 @@
 				1858914D1F29857F001C02D8 /* 美女16.jpg in Resources */,
 				185891471F29857F001C02D8 /* 美女10.jpg in Resources */,
 				185891521F29857F001C02D8 /* 美女21.jpg in Resources */,
+				18A385121F30269E00B97276 /* 123.gif in Resources */,
 				18FBDBFC1F1F3ACD00A4B333 /* 123.mp4 in Resources */,
 				184CAAB51F2AD1E100AEAB18 /* you.png in Resources */,
 				18FBDBFD1F1F3ACD00A4B333 /* 霍建华、赵丽颖 - 不可说.mp4 in Resources */,
@@ -956,9 +988,11 @@
 				185891421F29857F001C02D8 /* 美女05.jpg in Resources */,
 				508E516B1EFB54B1007C32B3 /* LaunchScreen.storyboard in Resources */,
 				1844DDEE1F2191ED00A44BE3 /* Guidance01.jpg in Resources */,
+				18A385061F301B3D00B97276 /* king1.png in Resources */,
 				186C4DDB1F205CD500A9A1E2 /* 手表的壁纸.jpg in Resources */,
 				18FBDBFE1F1F3ACD00A4B333 /* aa.jpg in Resources */,
 				185891551F29857F001C02D8 /* 美女24.jpg in Resources */,
+				18A3850A1F301B3D00B97276 /* king5.png in Resources */,
 				18FBDC711F1F634B00A4B333 /* biao.jpg in Resources */,
 				186C4DD91F205CD500A9A1E2 /* 电脑的壁纸.jpg in Resources */,
 				185891491F29857F001C02D8 /* 美女12.jpg in Resources */,
@@ -973,6 +1007,7 @@
 				185891431F29857F001C02D8 /* 美女06.jpg in Resources */,
 				184CAAB81F2AE44A00AEAB18 /* xia.png in Resources */,
 				18FBDC021F1F3ACD00A4B333 /* niao_2.png in Resources */,
+				18A385091F301B3D00B97276 /* king4.png in Resources */,
 				18FBDBFF1F1F3ACD00A4B333 /* back.png in Resources */,
 				186C4DEE1F20A2AB00A9A1E2 /* QRCodeViewController.xib in Resources */,
 				185891451F29857F001C02D8 /* 美女08.jpg in Resources */,
@@ -983,6 +1018,7 @@
 				18FBDC061F1F3ACD00A4B333 /* niao_6.png in Resources */,
 				18FBDC081F1F3ACD00A4B333 /* niao_8.png in Resources */,
 				18FBDC011F1F3ACD00A4B333 /* niao_1.png in Resources */,
+				18A385071F301B3D00B97276 /* king2.png in Resources */,
 				1858913F1F29857F001C02D8 /* 美女02.jpg in Resources */,
 				185891481F29857F001C02D8 /* 美女11.jpg in Resources */,
 				1858914A1F29857F001C02D8 /* 美女13.jpg in Resources */,
@@ -992,6 +1028,7 @@
 				184CAAD11F2B161B00AEAB18 /* city.json in Resources */,
 				508E51681EFB54B1007C32B3 /* Assets.xcassets in Resources */,
 				185891461F29857F001C02D8 /* 美女09.jpg in Resources */,
+				18A385081F301B3D00B97276 /* king3.png in Resources */,
 				508E51661EFB54B1007C32B3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1107,6 +1144,7 @@
 				184CAAD91F2B161B00AEAB18 /* RXJDTableCell.m in Sources */,
 				18B0C3201F2589CA00E1448A /* BaseTableViewCell.m in Sources */,
 				186C4DDE1F205D7100A9A1E2 /* musicViewController.m in Sources */,
+				18A385101F3022A300B97276 /* UIImage+GIF.m in Sources */,
 				186C4DD41F205B7800A9A1E2 /* showViewController.m in Sources */,
 				18FBDC601F1F4A2600A4B333 /* vipViewController.m in Sources */,
 				18FBDC0E1F1F3E5700A4B333 /* BaseTabBarController.m in Sources */,

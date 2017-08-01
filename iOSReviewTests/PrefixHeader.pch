@@ -70,5 +70,6 @@
 #import <MBProgressHUD.h>
 #import <AFNetworking.h>
 #import <FMDB.h>
+#import <SVProgressHUD.h>
 
 #endif /* PrefixHeader_pch */
