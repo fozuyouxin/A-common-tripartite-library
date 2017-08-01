@@ -59,6 +59,7 @@
 #import "addressViewController.h"
 #import "UITouchViewController.h"
 #import "savePicViewController.h"
+#import "lightViewController.h"
 
 #ifdef __OBJC__
 #import <UIKit/UIKit.h>

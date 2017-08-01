@@ -63,7 +63,7 @@
     [super viewDidLoad];
     [self setUpService];
     [self setUpTableView];
-    [self.dataArr addObjectsFromArray:@[@"Masonry使用",@"指纹解锁",@"网络/本地 视频播放",@"制作会员卡",@"苹果系统自带分享功能",@"苹果自带摇一摇功能",@"Block回调使用",@"AFNetworking网络请求",@"苹果原生定位系统",@"自学PHP后台开发",@"调用相机/相册",@"UIScrollView轮播效果",@"UISegmentedControl分段",@"本地推送",@"二维码扫描",@"物流查询功能",@"FMDB如何使用,收藏功能",@"HTML5交互",@"仿京东地址选择器",@"UITouch移动图片位置",@"图片保存"]];
+    [self.dataArr addObjectsFromArray:@[@"Masonry使用",@"指纹解锁",@"网络/本地 视频播放",@"制作会员卡",@"苹果系统自带分享功能",@"苹果自带摇一摇功能",@"Block回调使用",@"AFNetworking网络请求",@"苹果原生定位系统",@"自学PHP后台开发",@"调用相机/相册",@"UIScrollView轮播效果",@"UISegmentedControl分段",@"本地推送",@"二维码扫描",@"物流查询功能",@"FMDB如何使用,收藏功能",@"HTML5交互",@"仿京东地址选择器",@"UITouch移动图片位置",@"图片保存",@"打开/关闭闪光灯"]];
     
     
     NSArray *oldArr = @[@"12",@"123",@"123"];
@@ -210,6 +210,10 @@
     }else if(indexPath.row == 20) {
         HitoAllocInit(savePicViewController, view);
         view.navigationItem.title = @"图片保存";
+        [self pushNextViewController:view];
+    }else if(indexPath.row == 21) {
+        HitoAllocInit(lightViewController, view);
+        view.navigationItem.title = @"打开/关闭闪光灯";
         [self pushNextViewController:view];
     }
 

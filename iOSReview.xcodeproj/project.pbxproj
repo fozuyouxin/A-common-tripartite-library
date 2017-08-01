@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		180166E91F307E4F00D19BF6 /* lightViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 180166E71F307E4F00D19BF6 /* lightViewController.m */; };
+		180166EA1F307E4F00D19BF6 /* lightViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 180166E81F307E4F00D19BF6 /* lightViewController.xib */; };
+		180166EC1F30800100D19BF6 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 180166EB1F30800100D19BF6 /* AVFoundation.framework */; };
 		1806E35C1F30632B000564D3 /* UITouchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1806E35B1F30632B000564D3 /* UITouchViewController.m */; };
 		181E74E01F2B26B200592F23 /* addressViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 181E74DF1F2B26B200592F23 /* addressViewController.m */; };
 		18345CEB1F17429A00257B87 /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = 18345CEA1F17429A00257B87 /* Student.m */; };
@@ -157,6 +160,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		180166E61F307E4F00D19BF6 /* lightViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lightViewController.h; sourceTree = "<group>"; };
+		180166E71F307E4F00D19BF6 /* lightViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = lightViewController.m; sourceTree = "<group>"; };
+		180166E81F307E4F00D19BF6 /* lightViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = lightViewController.xib; sourceTree = "<group>"; };
+		180166EB1F30800100D19BF6 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		1805075F1F0C879B00D52818 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		1806E35A1F30632B000564D3 /* UITouchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITouchViewController.h; sourceTree = "<group>"; };
 		1806E35B1F30632B000564D3 /* UITouchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UITouchViewController.m; sourceTree = "<group>"; };
@@ -363,6 +370,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				180166EC1F30800100D19BF6 /* AVFoundation.framework in Frameworks */,
 				184CAABF1F2B0BCD00AEAB18 /* JavaScriptCore.framework in Frameworks */,
 				18A680A51F1346A4002F8F73 /* Social.framework in Frameworks */,
 				C7E71C500A8B1E936C36857E /* libPods-iOSReview.a in Frameworks */,
@@ -723,6 +731,9 @@
 				1806E35B1F30632B000564D3 /* UITouchViewController.m */,
 				18B53AD51F30728600260D97 /* savePicViewController.h */,
 				18B53AD61F30728600260D97 /* savePicViewController.m */,
+				180166E61F307E4F00D19BF6 /* lightViewController.h */,
+				180166E71F307E4F00D19BF6 /* lightViewController.m */,
+				180166E81F307E4F00D19BF6 /* lightViewController.xib */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -856,6 +867,7 @@
 		D7D293DCB24624A0727C641E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				180166EB1F30800100D19BF6 /* AVFoundation.framework */,
 				184CAABE1F2B0BCD00AEAB18 /* JavaScriptCore.framework */,
 				18A680A41F1346A4002F8F73 /* Social.framework */,
 				E65799262CF3F95730523830 /* libPods-iOSReview.a */,
@@ -982,6 +994,7 @@
 				185891471F29857F001C02D8 /* 美女10.jpg in Resources */,
 				185891521F29857F001C02D8 /* 美女21.jpg in Resources */,
 				18A385121F30269E00B97276 /* 123.gif in Resources */,
+				180166EA1F307E4F00D19BF6 /* lightViewController.xib in Resources */,
 				18FBDBFC1F1F3ACD00A4B333 /* 123.mp4 in Resources */,
 				184CAAB51F2AD1E100AEAB18 /* you.png in Resources */,
 				18FBDBFD1F1F3ACD00A4B333 /* 霍建华、赵丽颖 - 不可说.mp4 in Resources */,
@@ -1137,6 +1150,7 @@
 				184CAAD61F2B161B00AEAB18 /* RXGetAddress.m in Sources */,
 				18E8D9311F25E03A0051BF53 /* XHVersion.m in Sources */,
 				186C4DA71F203BDC00A9A1E2 /* Location.m in Sources */,
+				180166E91F307E4F00D19BF6 /* lightViewController.m in Sources */,
 				186C4DCC1F2059CC00A9A1E2 /* nextViewController.m in Sources */,
 				18FBDC4B1F1F409A00A4B333 /* CommunityViewController.m in Sources */,
 				18FBDBE51F1F3A4A00A4B333 /* BaseViewController.m in Sources */,
