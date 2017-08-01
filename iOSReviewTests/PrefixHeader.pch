@@ -57,6 +57,7 @@
 #import "SQliteManager.h"
 #import "HTML5ViewController.h"
 #import "addressViewController.h"
+#import "UITouchViewController.h"
 
 #ifdef __OBJC__
 #import <UIKit/UIKit.h>

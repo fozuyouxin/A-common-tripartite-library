@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1806E35C1F30632B000564D3 /* UITouchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1806E35B1F30632B000564D3 /* UITouchViewController.m */; };
 		181E74E01F2B26B200592F23 /* addressViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 181E74DF1F2B26B200592F23 /* addressViewController.m */; };
 		18345CEB1F17429A00257B87 /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = 18345CEA1F17429A00257B87 /* Student.m */; };
 		1844DDEA1F2191C100A44BE3 /* GuidanceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1844DDE91F2191C100A44BE3 /* GuidanceController.m */; };
@@ -156,6 +157,8 @@
 
 /* Begin PBXFileReference section */
 		1805075F1F0C879B00D52818 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		1806E35A1F30632B000564D3 /* UITouchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITouchViewController.h; sourceTree = "<group>"; };
+		1806E35B1F30632B000564D3 /* UITouchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UITouchViewController.m; sourceTree = "<group>"; };
 		181E74DE1F2B26B200592F23 /* addressViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = addressViewController.h; sourceTree = "<group>"; };
 		181E74DF1F2B26B200592F23 /* addressViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = addressViewController.m; sourceTree = "<group>"; };
 		18345CE91F17429A00257B87 /* Student.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Student.h; sourceTree = "<group>"; };
@@ -713,6 +716,8 @@
 				184CAABA1F2B0B4700AEAB18 /* HTML5ViewController.m */,
 				181E74DE1F2B26B200592F23 /* addressViewController.h */,
 				181E74DF1F2B26B200592F23 /* addressViewController.m */,
+				1806E35A1F30632B000564D3 /* UITouchViewController.h */,
+				1806E35B1F30632B000564D3 /* UITouchViewController.m */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -1154,6 +1159,7 @@
 				508E515D1EFB54B1007C32B3 /* main.m in Sources */,
 				186C4DA81F203BDC00A9A1E2 /* LocationViewController.m in Sources */,
 				18FBDC661F1F4B5200A4B333 /* BlockViewController.m in Sources */,
+				1806E35C1F30632B000564D3 /* UITouchViewController.m in Sources */,
 				186C4DAA1F203BDC00A9A1E2 /* phpModel.m in Sources */,
 				18345CEB1F17429A00257B87 /* Student.m in Sources */,
 				18FBDC541F1F43E300A4B333 /* touchViewController.m in Sources */,
