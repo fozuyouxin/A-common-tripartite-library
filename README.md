@@ -159,6 +159,17 @@
 <img width="250" height="400" src="Image/jiaohu.jpeg" />
 </div>
 
+* 2017.8.1 </br>
+    1.增加手动拖拽移动图片功能;
+<div>
+<img width="250" height="400" src="Image/move.gif" />
+</div>
+
+    2.增加三方库SDWebImage,加载网络图片,同时采用长按和按钮的方式保存图片到相册中;
+<div>
+<img width="250" height="400" src="Image/save.png" />
+</div>
+
 * 功能持续更新中...
 
 实现功能效果图:
