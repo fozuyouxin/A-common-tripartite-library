@@ -94,3 +94,6 @@
 #define HitoSuccess @"success"
 //失败标识
 #define HitoFailure @"failure"
+
+//字符串拼接
+#define HitoStringWithFormat(Object) [NSString stringWithFormat:@"%@",Object]
