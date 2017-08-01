@@ -91,6 +91,7 @@
 		18B0C3201F2589CA00E1448A /* BaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B0C31F1F2589CA00E1448A /* BaseTableViewCell.m */; };
 		18B0C3241F258A1D00E1448A /* taoAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B0C3231F258A1D00E1448A /* taoAlert.m */; };
 		18B0C3271F258A4200E1448A /* dataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B0C3261F258A4200E1448A /* dataModel.m */; };
+		18B53AD71F30728600260D97 /* savePicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B53AD61F30728600260D97 /* savePicViewController.m */; };
 		18D71A991F20B4530039FACD /* YHTReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D71A981F20B4530039FACD /* YHTReachability.m */; };
 		18E8D9301F25E03A0051BF53 /* XHAppInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E8D92B1F25E03A0051BF53 /* XHAppInfo.m */; };
 		18E8D9311F25E03A0051BF53 /* XHVersion.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E8D92D1F25E03A0051BF53 /* XHVersion.m */; };
@@ -279,6 +280,8 @@
 		18B0C3231F258A1D00E1448A /* taoAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = taoAlert.m; sourceTree = "<group>"; };
 		18B0C3251F258A4200E1448A /* dataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dataModel.h; sourceTree = "<group>"; };
 		18B0C3261F258A4200E1448A /* dataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = dataModel.m; sourceTree = "<group>"; };
+		18B53AD51F30728600260D97 /* savePicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = savePicViewController.h; sourceTree = "<group>"; };
+		18B53AD61F30728600260D97 /* savePicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = savePicViewController.m; sourceTree = "<group>"; };
 		18D71A971F20B4530039FACD /* YHTReachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHTReachability.h; sourceTree = "<group>"; };
 		18D71A981F20B4530039FACD /* YHTReachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHTReachability.m; sourceTree = "<group>"; };
 		18E8D92A1F25E03A0051BF53 /* XHAppInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHAppInfo.h; sourceTree = "<group>"; };
@@ -718,6 +721,8 @@
 				181E74DF1F2B26B200592F23 /* addressViewController.m */,
 				1806E35A1F30632B000564D3 /* UITouchViewController.h */,
 				1806E35B1F30632B000564D3 /* UITouchViewController.m */,
+				18B53AD51F30728600260D97 /* savePicViewController.h */,
+				18B53AD61F30728600260D97 /* savePicViewController.m */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -1143,6 +1148,7 @@
 				186C4DA61F203BDC00A9A1E2 /* HitoLocation.m in Sources */,
 				1865E5EA1F2875BF005A1189 /* SQliteManager.m in Sources */,
 				18FBDC6C1F1F510200A4B333 /* VideoViewController.m in Sources */,
+				18B53AD71F30728600260D97 /* savePicViewController.m in Sources */,
 				186C4DA91F203BDC00A9A1E2 /* ownViewController.m in Sources */,
 				184CAADA1F2B161B00AEAB18 /* RXHexColor.m in Sources */,
 				181E74E01F2B26B200592F23 /* addressViewController.m in Sources */,

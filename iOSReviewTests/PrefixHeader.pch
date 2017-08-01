@@ -58,6 +58,7 @@
 #import "HTML5ViewController.h"
 #import "addressViewController.h"
 #import "UITouchViewController.h"
+#import "savePicViewController.h"
 
 #ifdef __OBJC__
 #import <UIKit/UIKit.h>
@@ -72,5 +73,6 @@
 #import <AFNetworking.h>
 #import <FMDB.h>
 #import <SVProgressHUD.h>
+#import <UIImageView+WebCache.h>
 
 #endif /* PrefixHeader_pch */
