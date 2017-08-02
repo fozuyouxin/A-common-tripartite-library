@@ -55,6 +55,8 @@
 		185891561F29857F001C02D8 /* 美女25.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1858913D1F29857F001C02D8 /* 美女25.jpg */; };
 		1865E5E61F2874A6005A1189 /* DBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1865E5E51F2874A6005A1189 /* DBViewController.m */; };
 		1865E5EA1F2875BF005A1189 /* SQliteManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1865E5E91F2875BF005A1189 /* SQliteManager.m */; };
+		186C30641F317918006AA066 /* UIView+extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 186C30611F317918006AA066 /* UIView+extension.m */; };
+		186C30651F317918006AA066 /* WindowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 186C30631F317918006AA066 /* WindowView.m */; };
 		186C4DA61F203BDC00A9A1E2 /* HitoLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 186C4D9C1F203BDC00A9A1E2 /* HitoLocation.m */; };
 		186C4DA71F203BDC00A9A1E2 /* Location.m in Sources */ = {isa = PBXBuildFile; fileRef = 186C4D9E1F203BDC00A9A1E2 /* Location.m */; };
 		186C4DA81F203BDC00A9A1E2 /* LocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 186C4DA01F203BDC00A9A1E2 /* LocationViewController.m */; };
@@ -222,6 +224,10 @@
 		1865E5E51F2874A6005A1189 /* DBViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBViewController.m; sourceTree = "<group>"; };
 		1865E5E81F2875BF005A1189 /* SQliteManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQliteManager.h; sourceTree = "<group>"; };
 		1865E5E91F2875BF005A1189 /* SQliteManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQliteManager.m; sourceTree = "<group>"; };
+		186C30601F317918006AA066 /* UIView+extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+extension.h"; sourceTree = "<group>"; };
+		186C30611F317918006AA066 /* UIView+extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+extension.m"; sourceTree = "<group>"; };
+		186C30621F317918006AA066 /* WindowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WindowView.h; sourceTree = "<group>"; };
+		186C30631F317918006AA066 /* WindowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WindowView.m; sourceTree = "<group>"; };
 		186C4D9B1F203BDC00A9A1E2 /* HitoLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HitoLocation.h; sourceTree = "<group>"; };
 		186C4D9C1F203BDC00A9A1E2 /* HitoLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HitoLocation.m; sourceTree = "<group>"; };
 		186C4D9D1F203BDC00A9A1E2 /* Location.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Location.h; sourceTree = "<group>"; };
@@ -464,6 +470,10 @@
 		1865E5E71F2875AA005A1189 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				186C30601F317918006AA066 /* UIView+extension.h */,
+				186C30611F317918006AA066 /* UIView+extension.m */,
+				186C30621F317918006AA066 /* WindowView.h */,
+				186C30631F317918006AA066 /* WindowView.m */,
 				1865E5E81F2875BF005A1189 /* SQliteManager.h */,
 				1865E5E91F2875BF005A1189 /* SQliteManager.m */,
 				18A3850E1F3022A300B97276 /* UIImage+GIF.h */,
@@ -1145,6 +1155,7 @@
 				186C4DC91F2059CC00A9A1E2 /* SocietyViewController.m in Sources */,
 				18FBDC111F1F3E8000A4B333 /* BaseNavigationController.m in Sources */,
 				18FBDC691F1F4C9E00A4B333 /* AFViewController.m in Sources */,
+				186C30651F317918006AA066 /* WindowView.m in Sources */,
 				18FBDC571F1F440800A4B333 /* sucessViewController.m in Sources */,
 				186C4DCD1F2059CC00A9A1E2 /* YHTScrollView.m in Sources */,
 				184CAAD61F2B161B00AEAB18 /* RXGetAddress.m in Sources */,
@@ -1153,6 +1164,7 @@
 				180166E91F307E4F00D19BF6 /* lightViewController.m in Sources */,
 				186C4DCC1F2059CC00A9A1E2 /* nextViewController.m in Sources */,
 				18FBDC4B1F1F409A00A4B333 /* CommunityViewController.m in Sources */,
+				186C30641F317918006AA066 /* UIView+extension.m in Sources */,
 				18FBDBE51F1F3A4A00A4B333 /* BaseViewController.m in Sources */,
 				18FBDBE81F1F3A6B00A4B333 /* AppDelegate.m in Sources */,
 				186C4DD01F205AF500A9A1E2 /* MenuModel.m in Sources */,

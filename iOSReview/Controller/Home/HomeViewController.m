@@ -8,56 +8,65 @@
 
 #import "HomeViewController.h"
 #import "UIImage+GIF.h"
+#import "WindowView.h"
 
 @interface HomeViewController ()
 
 @property (nonatomic,strong) UIButton * button;//客服按钮
+@property (nonatomic, strong) WindowView *windowView1;
 
 @end
 
 @implementation HomeViewController
 
 - (void)setUpService{
-    UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
-    [button setTitle:@"客服" forState:UIControlStateNormal];
-    button.titleLabel.numberOfLines = 0;
-    button.titleLabel.textAlignment = 1;
-    button.titleLabel.font = [UIFont systemFontOfSize:11];
-    [button setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-    [button addTarget:self action:@selector(present) forControlEvents:UIControlEventTouchUpInside];
-    button.backgroundColor = [UIColor grayColor];
-    button.layer.cornerRadius = 20;
-    button.layer.masksToBounds = YES;
-    [HitoApplication addSubview:button];
-    [button mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.size.mas_equalTo(CGSizeMake(40, 40));//设置按钮大小
-        make.right.mas_equalTo(0);//距右边边距
-        make.bottom.mas_lessThanOrEqualTo(0);//小于或等于
-        make.top.mas_greaterThanOrEqualTo(200);//大于或等于
+//    UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+//    [button setTitle:@"客服" forState:UIControlStateNormal];
+//    button.titleLabel.numberOfLines = 0;
+//    button.titleLabel.textAlignment = 1;
+//    button.titleLabel.font = [UIFont systemFontOfSize:11];
+//    [button setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+//    [button addTarget:self action:@selector(present) forControlEvents:UIControlEventTouchUpInside];
+//    button.backgroundColor = [UIColor grayColor];
+//    button.layer.cornerRadius = 20;
+//    button.layer.masksToBounds = YES;
+//    [HitoApplication addSubview:button];
+//    [button mas_makeConstraints:^(MASConstraintMaker *make) {
+//        make.size.mas_equalTo(CGSizeMake(40, 40));//设置按钮大小
+//        make.right.mas_equalTo(0);//距右边边距
+//        make.bottom.mas_lessThanOrEqualTo(0);//小于或等于
+//        make.top.mas_greaterThanOrEqualTo(200);//大于或等于
+//    }];
+//    
+//    self.button = button;
+//    // 手势
+//    UIPanGestureRecognizer *pan = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(pan:)];
+//    [button addGestureRecognizer:pan];
+    self.windowView1 = [[WindowView alloc] initWithWindowView: CGSizeZero withClickBlock:^{
+        [self skipQQ:@"1154180808"];
     }];
+    //self.windowView2 = [[WindowView alloc] initWithWindowView: CGSizeMake(100, 80) withImage:@"redPack.png" withClickBlock:^{
+        //NSLog(@"带图片");
+    //}];
     
-    self.button = button;
-    // 手势
-    UIPanGestureRecognizer *pan = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(pan:)];
-    [button addGestureRecognizer:pan];
 }
 - (void)present{
     [self skipQQ:@"1154180808"];
 }
 
-#pragma mark - 手势
-- (void)pan:(UIPanGestureRecognizer *)panGesture{
-    //locationInView:获取到的是手指点击屏幕实时的坐标点；
-    //translationInView：获取到的是手指移动后，在相对坐标中的偏移量
-    
-    UIView *button = panGesture.view;
-    CGPoint newCenter = CGPointMake([panGesture translationInView:panGesture.view].x + button.center.x - [UIScreen mainScreen].bounds.size.width / 2, [panGesture translationInView:panGesture.view].y + button.center.y - [UIScreen mainScreen].bounds.size.height / 2);
-    
-    [button mas_updateConstraints:^(MASConstraintMaker *make) {
-        make.center.mas_equalTo(newCenter).priorityLow();
-    }];
-    [panGesture setTranslation:CGPointZero inView:panGesture.view];
-}
+//#pragma mark - 手势
+//- (void)pan:(UIPanGestureRecognizer *)panGesture{
+//    //locationInView:获取到的是手指点击屏幕实时的坐标点；
+//    //translationInView：获取到的是手指移动后，在相对坐标中的偏移量
+//    
+//    UIView *button = panGesture.view;
+//    CGPoint newCenter = CGPointMake([panGesture translationInView:panGesture.view].x + button.center.x - [UIScreen mainScreen].bounds.size.width / 2, [panGesture translationInView:panGesture.view].y + button.center.y - [UIScreen mainScreen].bounds.size.height / 2);
+//    
+//    [button mas_updateConstraints:^(MASConstraintMaker *make) {
+//        make.center.mas_equalTo(newCenter).priorityLow();
+//    }];
+//    [panGesture setTranslation:CGPointZero inView:panGesture.view];
+//}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -79,6 +88,8 @@
 
     //自定义动画
     //[self showHudInView:HitoApplication];
+    
+    
 }
 
 - (void)showHudInView:(UIView *)view{
