@@ -12,65 +12,27 @@
 
 @interface HomeViewController ()
 
-@property (nonatomic,strong) UIButton * button;//客服按钮
 @property (nonatomic, strong) WindowView *windowView1;
-
+@property (nonatomic, strong) WindowView *windowView2;
 @end
 
 @implementation HomeViewController
 
+#pragma mark -- 客服功能
 - (void)setUpService{
-//    UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
-//    [button setTitle:@"客服" forState:UIControlStateNormal];
-//    button.titleLabel.numberOfLines = 0;
-//    button.titleLabel.textAlignment = 1;
-//    button.titleLabel.font = [UIFont systemFontOfSize:11];
-//    [button setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-//    [button addTarget:self action:@selector(present) forControlEvents:UIControlEventTouchUpInside];
-//    button.backgroundColor = [UIColor grayColor];
-//    button.layer.cornerRadius = 20;
-//    button.layer.masksToBounds = YES;
-//    [HitoApplication addSubview:button];
-//    [button mas_makeConstraints:^(MASConstraintMaker *make) {
-//        make.size.mas_equalTo(CGSizeMake(40, 40));//设置按钮大小
-//        make.right.mas_equalTo(0);//距右边边距
-//        make.bottom.mas_lessThanOrEqualTo(0);//小于或等于
-//        make.top.mas_greaterThanOrEqualTo(200);//大于或等于
+    
+//    self.windowView1 = [[WindowView alloc] initWithWindowView: CGSizeZero withClickBlock:^{
+//        [self skipQQ:@"1154180808"];
 //    }];
-//    
-//    self.button = button;
-//    // 手势
-//    UIPanGestureRecognizer *pan = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(pan:)];
-//    [button addGestureRecognizer:pan];
-    self.windowView1 = [[WindowView alloc] initWithWindowView: CGSizeZero withClickBlock:^{
+    
+    self.windowView2 = [[WindowView alloc] initWithWindowView: CGSizeMake(40, 40) withImage:@"kefu.png" withClickBlock:^{
         [self skipQQ:@"1154180808"];
     }];
-    //self.windowView2 = [[WindowView alloc] initWithWindowView: CGSizeMake(100, 80) withImage:@"redPack.png" withClickBlock:^{
-        //NSLog(@"带图片");
-    //}];
     
 }
-- (void)present{
-    [self skipQQ:@"1154180808"];
-}
-
-//#pragma mark - 手势
-//- (void)pan:(UIPanGestureRecognizer *)panGesture{
-//    //locationInView:获取到的是手指点击屏幕实时的坐标点；
-//    //translationInView：获取到的是手指移动后，在相对坐标中的偏移量
-//    
-//    UIView *button = panGesture.view;
-//    CGPoint newCenter = CGPointMake([panGesture translationInView:panGesture.view].x + button.center.x - [UIScreen mainScreen].bounds.size.width / 2, [panGesture translationInView:panGesture.view].y + button.center.y - [UIScreen mainScreen].bounds.size.height / 2);
-//    
-//    [button mas_updateConstraints:^(MASConstraintMaker *make) {
-//        make.center.mas_equalTo(newCenter).priorityLow();
-//    }];
-//    [panGesture setTranslation:CGPointZero inView:panGesture.view];
-//}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self setUpService];
     [self setUpTableView];
     [self.dataArr addObjectsFromArray:@[@"Masonry使用",@"指纹解锁",@"网络/本地 视频播放",@"制作会员卡",@"苹果系统自带分享功能",@"苹果自带摇一摇功能",@"Block回调使用",@"AFNetworking网络请求",@"苹果原生定位系统",@"自学PHP后台开发",@"调用相机/相册",@"UIScrollView轮播效果",@"UISegmentedControl分段",@"本地推送",@"二维码扫描",@"物流查询功能",@"FMDB如何使用,收藏功能",@"HTML5交互",@"仿京东地址选择器",@"UITouch移动图片位置",@"图片保存",@"打开/关闭闪光灯"]];
     
@@ -254,14 +216,13 @@
 }
 
 
-
 - (void)viewWillDisappear:(BOOL)animated{
     [super viewWillDisappear:animated];
-    [self.button setHidden:YES];
+    [self.windowView2 windowButtonHide];
 }
 - (void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
-    [self.button setHidden:NO];
+    [self setUpService];
 }
 
 @end
