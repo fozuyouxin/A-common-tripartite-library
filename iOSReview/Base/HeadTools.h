@@ -33,9 +33,6 @@
 //失败标识
 #define HitoFailure @"failure"
 
-//WeakSelf
-#define HitoWeakSelf __weak typeof(self) WeakSelf = self;
-
 //主窗口
 #define HitoApplication [UIApplication sharedApplication].keyWindow
 
@@ -50,6 +47,10 @@
 //比例宽和高(以6s为除数)
 #define HitoActureHeight(height)  roundf(height/375.0 * HitoScreenW)
 #define HitoActureWidth(Width)  roundf(Width/667.0 * HitoScreenH)
+//导航栏+状态栏的高度
+#define HitoNavHeight 64
+//分栏高度
+#define HitoTabBarHeight 44
 
 //声明属性
 #define HitoProperty(key) @property (nonatomic,strong) NSString * key
@@ -62,9 +63,13 @@
 //获取self.view的宽高
 #define HitoSelfViewW (self.view.frame.size.width)
 #define HitoSelfViewH (self.view.frame.size.height)
+
+
 ///实例化
 #define HitoViewAlloc(view,x,y,w,h) [[view alloc]initWithFrame:CGRectMake(x, y, w, h)]
 #define HitoAllocInit(Controller,cName) Controller *cName = [[Controller alloc]init]
+//字符串拼接
+#define HitoStringWithFormat(Object) [NSString stringWithFormat:@"%@",Object]
 
 //默认图片
 #define HitoPlaceholderImage [UIImage imageNamed:@"XXX"]
@@ -90,10 +95,3 @@
 //移除通知
 #define HitoRemoveNotification(key) [[NSNotificationCenter defaultCenter]removeObserver:self name:key object:nil];
 
-//成功标识
-#define HitoSuccess @"success"
-//失败标识
-#define HitoFailure @"failure"
-
-//字符串拼接
-#define HitoStringWithFormat(Object) [NSString stringWithFormat:@"%@",Object]
