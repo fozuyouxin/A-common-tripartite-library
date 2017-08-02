@@ -57,6 +57,9 @@
 		1865E5EA1F2875BF005A1189 /* SQliteManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1865E5E91F2875BF005A1189 /* SQliteManager.m */; };
 		186C30641F317918006AA066 /* UIView+extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 186C30611F317918006AA066 /* UIView+extension.m */; };
 		186C30651F317918006AA066 /* WindowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 186C30631F317918006AA066 /* WindowView.m */; };
+		186C30681F31B68E006AA066 /* BaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 186C30671F31B68E006AA066 /* BaseView.m */; };
+		186C306B1F31B6D5006AA066 /* Load_failed.png in Resources */ = {isa = PBXBuildFile; fileRef = 186C30691F31B6D5006AA066 /* Load_failed.png */; };
+		186C306C1F31B6D5006AA066 /* Refresh_Img.png in Resources */ = {isa = PBXBuildFile; fileRef = 186C306A1F31B6D5006AA066 /* Refresh_Img.png */; };
 		186C4DA61F203BDC00A9A1E2 /* HitoLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 186C4D9C1F203BDC00A9A1E2 /* HitoLocation.m */; };
 		186C4DA71F203BDC00A9A1E2 /* Location.m in Sources */ = {isa = PBXBuildFile; fileRef = 186C4D9E1F203BDC00A9A1E2 /* Location.m */; };
 		186C4DA81F203BDC00A9A1E2 /* LocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 186C4DA01F203BDC00A9A1E2 /* LocationViewController.m */; };
@@ -228,6 +231,10 @@
 		186C30611F317918006AA066 /* UIView+extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+extension.m"; sourceTree = "<group>"; };
 		186C30621F317918006AA066 /* WindowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WindowView.h; sourceTree = "<group>"; };
 		186C30631F317918006AA066 /* WindowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WindowView.m; sourceTree = "<group>"; };
+		186C30661F31B68E006AA066 /* BaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseView.h; sourceTree = "<group>"; };
+		186C30671F31B68E006AA066 /* BaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseView.m; sourceTree = "<group>"; };
+		186C30691F31B6D5006AA066 /* Load_failed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Load_failed.png; sourceTree = "<group>"; };
+		186C306A1F31B6D5006AA066 /* Refresh_Img.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Refresh_Img.png; sourceTree = "<group>"; };
 		186C4D9B1F203BDC00A9A1E2 /* HitoLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HitoLocation.h; sourceTree = "<group>"; };
 		186C4D9C1F203BDC00A9A1E2 /* HitoLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HitoLocation.m; sourceTree = "<group>"; };
 		186C4D9D1F203BDC00A9A1E2 /* Location.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Location.h; sourceTree = "<group>"; };
@@ -640,6 +647,8 @@
 				18FBDC101F1F3E8000A4B333 /* BaseNavigationController.m */,
 				18FBDBE21F1F3A4A00A4B333 /* BaseViewController.h */,
 				18FBDBE31F1F3A4A00A4B333 /* BaseViewController.m */,
+				186C30661F31B68E006AA066 /* BaseView.h */,
+				186C30671F31B68E006AA066 /* BaseView.m */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -647,6 +656,8 @@
 		18FBDBE91F1F3A8400A4B333 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				186C30691F31B6D5006AA066 /* Load_failed.png */,
+				186C306A1F31B6D5006AA066 /* Refresh_Img.png */,
 				18A385111F30269E00B97276 /* 123.gif */,
 				184CAAB71F2AE44A00AEAB18 /* xia.png */,
 				184CAAB31F2AD1E100AEAB18 /* you.png */,
@@ -1018,12 +1029,14 @@
 				185891501F29857F001C02D8 /* 美女19.jpg in Resources */,
 				18FBDC041F1F3ACD00A4B333 /* niao_4.png in Resources */,
 				1844DDEF1F2191ED00A44BE3 /* Guidance02.jpg in Resources */,
+				186C306C1F31B6D5006AA066 /* Refresh_Img.png in Resources */,
 				185891421F29857F001C02D8 /* 美女05.jpg in Resources */,
 				508E516B1EFB54B1007C32B3 /* LaunchScreen.storyboard in Resources */,
 				1844DDEE1F2191ED00A44BE3 /* Guidance01.jpg in Resources */,
 				18A385061F301B3D00B97276 /* king1.png in Resources */,
 				186C4DDB1F205CD500A9A1E2 /* 手表的壁纸.jpg in Resources */,
 				18FBDBFE1F1F3ACD00A4B333 /* aa.jpg in Resources */,
+				186C306B1F31B6D5006AA066 /* Load_failed.png in Resources */,
 				185891551F29857F001C02D8 /* 美女24.jpg in Resources */,
 				18A3850A1F301B3D00B97276 /* king5.png in Resources */,
 				18FBDC711F1F634B00A4B333 /* biao.jpg in Resources */,
@@ -1194,6 +1207,7 @@
 				1806E35C1F30632B000564D3 /* UITouchViewController.m in Sources */,
 				186C4DAA1F203BDC00A9A1E2 /* phpModel.m in Sources */,
 				18345CEB1F17429A00257B87 /* Student.m in Sources */,
+				186C30681F31B68E006AA066 /* BaseView.m in Sources */,
 				18FBDC541F1F43E300A4B333 /* touchViewController.m in Sources */,
 				18B0C31D1F25894A00E1448A /* logisticsViewController.m in Sources */,
 				18FBDC481F1F408F00A4B333 /* MeViewController.m in Sources */,

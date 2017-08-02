@@ -57,6 +57,7 @@
     [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(showKeyboard:) name:UIKeyboardDidShowNotification object:nil];
     //键盘消失的观察者注册
     [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(hideKeyboard:) name:UIKeyboardDidHideNotification object:nil];
+    
 }
 /* 监听键盘是否收起还是弹起*/
 -(void)showKeyboard:(NSNotification *)noti{
@@ -205,6 +206,7 @@
     UIButton *btn =[[UIButton alloc]initWithFrame:CGRectMake(0, 0, 100, 30)];
     [btn setTitle:text forState:UIControlStateNormal];
     [btn setTitleColor:color forState:UIControlStateNormal];
+    btn.titleLabel.font = [UIFont boldSystemFontOfSize:17];
     //文字靠右显示
     [btn setContentHorizontalAlignment:UIControlContentHorizontalAlignmentRight];
     [btn addTarget:self action:@selector(rightNavClick:) forControlEvents:UIControlEventTouchUpInside];
@@ -555,6 +557,30 @@
     UIColor *randColor = [UIColor colorWithRed:aRedValue / 255.0f green:aGreenValue / 255.0f blue:aBlueValue / 255.0f alpha:1.0f];
     return randColor;
 }
+/* 十六进制数转颜色 */
+- (UIColor *)colorWithHexadecimal:(NSString *)hexCode{
+    NSString *cleanString = [hexCode stringByReplacingOccurrencesOfString:@"#" withString:@""];
+    if([cleanString length] == 3) {
+        cleanString = [NSString stringWithFormat:@"%@%@%@%@%@%@",
+                       [cleanString substringWithRange:NSMakeRange(0, 1)],[cleanString substringWithRange:NSMakeRange(0, 1)],
+                       [cleanString substringWithRange:NSMakeRange(1, 1)],[cleanString substringWithRange:NSMakeRange(1, 1)],
+                       [cleanString substringWithRange:NSMakeRange(2, 1)],[cleanString substringWithRange:NSMakeRange(2, 1)]];
+    }
+    if([cleanString length] == 6) {
+        cleanString = [cleanString stringByAppendingString:@"ff"];
+    }
+    
+    unsigned int baseValue;
+    [[NSScanner scannerWithString:cleanString] scanHexInt:&baseValue];
+    
+    float red = ((baseValue >> 24) & 0xFF)/255.0f;
+    float green = ((baseValue >> 16) & 0xFF)/255.0f;
+    float blue = ((baseValue >> 8) & 0xFF)/255.0f;
+    float alpha = ((baseValue >> 0) & 0xFF)/255.0f;
+    
+    return [UIColor colorWithRed:red green:green blue:blue alpha:alpha];
+}
+
 /** 是否支持自动转屏 */
 - (BOOL)shouldAutorotate {
     return NO;

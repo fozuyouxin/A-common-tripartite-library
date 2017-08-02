@@ -94,6 +94,8 @@ typedef void (^ alertBlock)(NSString * alertMessage);//UIAlertController
 - (UIImage *)colorSwitchImageWidth:(float)imageWidth andImageHeight:(float)imageHeight andColor:(UIColor *)color;
 /* 随机颜色 */
 - (UIColor *)RandomColor;
+/* 十六进制数转颜色 */
+- (UIColor *)colorWithHexadecimal:(NSString *)hexCode;
 /* 拿到当前正在显示的控制器，不管是push进去的，还是present进去的都能拿到 */
 - (UIViewController *)getVisibleViewControllerFrom:(UIViewController*)vc;
 /* 可以将彩色图片变成黑白图片,获得灰度图*/

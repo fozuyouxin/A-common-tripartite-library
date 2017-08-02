@@ -9,11 +9,13 @@
 #import "HomeViewController.h"
 #import "UIImage+GIF.h"
 #import "WindowView.h"
-
+#import "BaseView.h"
 @interface HomeViewController ()
 
 @property (nonatomic, strong) WindowView *windowView1;
 @property (nonatomic, strong) WindowView *windowView2;
+@property (nonatomic, strong) BaseView * placeholderView;
+
 @end
 
 @implementation HomeViewController
@@ -31,11 +33,22 @@
     
 }
 
+#pragma mark - 懒加载区
+- (BaseView *)placeholderView{
+    if (!_placeholderView) {
+        _placeholderView = [[BaseView alloc] init];
+        _placeholderView.frame = self.tableView.bounds;
+        [self.tableView addSubview:_placeholderView];
+    }
+    return _placeholderView;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self setUpTableView];
     [self.dataArr addObjectsFromArray:@[@"Masonry使用",@"指纹解锁",@"网络/本地 视频播放",@"制作会员卡",@"苹果系统自带分享功能",@"苹果自带摇一摇功能",@"Block回调使用",@"AFNetworking网络请求",@"苹果原生定位系统",@"自学PHP后台开发",@"调用相机/相册",@"UIScrollView轮播效果",@"UISegmentedControl分段",@"本地推送",@"二维码扫描",@"物流查询功能",@"FMDB如何使用,收藏功能",@"HTML5交互",@"仿京东地址选择器",@"UITouch移动图片位置",@"图片保存",@"打开/关闭闪光灯"]];
     
+    [self addNavRightBarButtonWithText:@"无网络" andTextColor:[UIColor whiteColor]];
     
     NSArray *oldArr = @[@"12",@"123",@"123"];
     //去除数组中相同的元素
@@ -51,7 +64,16 @@
     //自定义动画
     //[self showHudInView:HitoApplication];
     
-    
+    __weak typeof(self) WeakSelf = self;
+    self.placeholderView.clickLoadBtnBlock = ^{
+        WeakSelf.placeholderView.hidden = YES;
+        [WeakSelf.tableView reloadData];
+    };
+}
+/* 点击右侧导航栏按钮 */
+- (void)rightNavClick:(UIBarButtonItem *)item{
+    NSLog(@"===点击右侧导航栏按钮===");
+    self.placeholderView.hidden = NO;
 }
 
 - (void)showHudInView:(UIView *)view{

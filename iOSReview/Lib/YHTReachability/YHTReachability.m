@@ -8,6 +8,7 @@
 
 #import "YHTReachability.h"
 #import "AFNetworkReachabilityManager.h"
+
 @implementation YHTReachability
 
 + (void)reachabilityChanged{
@@ -25,6 +26,7 @@
             default:{
                 //NSLog(@"没网");
                 [WeakSelf showWarningViewAndTitle:@"当前没有网络,请检查网络!"];
+                
                 break;
             }
         }
