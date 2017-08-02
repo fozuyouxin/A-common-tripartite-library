@@ -194,6 +194,7 @@
 
 #pragma mark --下拉刷新
 - (void)addDropDownRefresh{
+    NSLog(@"dddf");
     MJRefreshNormalHeader * header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
         //下拉刷新
         [self.tableView. mj_header endRefreshing];

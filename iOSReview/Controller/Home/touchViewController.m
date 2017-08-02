@@ -122,16 +122,19 @@
         switch (error.code) {
             case LAErrorTouchIDNotEnrolled:
             {
+                //身份验证无法启动，TouchID没有注册的手指。
                 NSLog(@"TouchID is not enrolled");
                 break;
             }
             case LAErrorPasscodeNotSet:
             {
+                //认证无法启动，因为密码没有设置在设备。
                 NSLog(@"A passcode has not been set");
                 break;
             }
             default:
             {
+                //TouchID不可用
                 NSLog(@"TouchID not available");
                 break;
             }
