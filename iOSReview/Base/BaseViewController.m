@@ -31,6 +31,8 @@
 
 @interface BaseViewController ()<UITableViewDelegate,UITableViewDataSource>
 
+@property (nonatomic, strong) BaseView * placeholderView;
+
 @end
 
 @implementation BaseViewController
@@ -48,6 +50,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
+    
+    [self setUp];
+    [self checkNetwork];
     
     //关于iOS自定义返回按钮右滑返回手势失效的解决
     self.navigationController.interactivePopGestureRecognizer.delegate=(id)self;
@@ -77,6 +82,40 @@
     //移除监听
     [[NSNotificationCenter defaultCenter] removeObserver:self name:UIKeyboardWillShowNotification object:nil];
     [[NSNotificationCenter defaultCenter] removeObserver:self name:UIKeyboardWillHideNotification object:nil];
+}
+
+- (void)setUp{
+    self.placeholderView.clickLoadBtnBlock = ^{
+        
+    };
+    
+}
+
+#pragma mark - 懒加载区
+- (BaseView *)placeholderView{
+    if (!_placeholderView) {
+        _placeholderView = [[BaseView alloc] init];
+        _placeholderView.frame = CGRectMake(0, 64, HitoScreenW, HitoScreenH-HitoNavHeight-HitoTabBarHeight);
+        [HitoApplication addSubview:_placeholderView];
+    }
+    return _placeholderView;
+}
+
+- (void)checkNetwork{
+    AFNetworkReachabilityManager *manager = [AFNetworkReachabilityManager sharedManager];
+    // 提示：要监控网络连接状态，必须要先调用单例的startMonitoring方法
+    [manager startMonitoring];
+    //检测的结果
+    [manager setReachabilityStatusChangeBlock:^(AFNetworkReachabilityStatus status) {
+        if (status==0||status==-1) {
+            //将netState值传入block中
+            [HitoApplication bringSubviewToFront:self.placeholderView];
+            
+        }else{
+            //将netState值传入block中
+            [HitoApplication sendSubviewToBack:self.placeholderView];
+        }
+    }];
 }
 
 #pragma mark 创建tableview
@@ -783,6 +822,14 @@
     CGRect rect = [string boundingRectWithSize:size options:NSStringDrawingTruncatesLastVisibleLine | NSStringDrawingUsesFontLeading  |NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName: [UIFont systemFontOfSize:font]}context:nil];
     return rect.size;
 }
+
+/* 计算文字宽度 */
+- (CGSize)widthForLabel:(NSString *)text fontSize:(CGFloat)font{
+    
+    CGSize size = [text sizeWithAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIFont systemFontOfSize:font], NSFontAttributeName, nil]];
+    return size;
+}
+
 /* UILabel,UIButton设置下划线 */
 - (void)setUnderline:(id)sender {
     NSString * title;
@@ -919,6 +966,11 @@
 - (void)viewWillDisappear:(BOOL)animated{
     [super viewWillDisappear:animated];
     [self.navigationController.navigationBar setTranslucent:YES];
+}
+
+- (void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    
 }
 
 - (void)didReceiveMemoryWarning {

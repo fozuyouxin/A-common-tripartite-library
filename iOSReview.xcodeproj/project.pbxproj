@@ -94,6 +94,9 @@
 		18A385101F3022A300B97276 /* UIImage+GIF.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A3850F1F3022A300B97276 /* UIImage+GIF.m */; };
 		18A385121F30269E00B97276 /* 123.gif in Resources */ = {isa = PBXBuildFile; fileRef = 18A385111F30269E00B97276 /* 123.gif */; };
 		18A680A51F1346A4002F8F73 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18A680A41F1346A4002F8F73 /* Social.framework */; };
+		18AEE9561F32F7EC0075AC6F /* tagViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18AEE9551F32F7EC0075AC6F /* tagViewController.m */; };
+		18AEE9581F32F83E0075AC6F /* tagsData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 18AEE9571F32F83E0075AC6F /* tagsData.plist */; };
+		18AEE95B1F32F92A0075AC6F /* tagModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 18AEE95A1F32F92A0075AC6F /* tagModel.m */; };
 		18B0C31C1F25894A00E1448A /* DetailsLogisticsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B0C3191F25894A00E1448A /* DetailsLogisticsViewController.m */; };
 		18B0C31D1F25894A00E1448A /* logisticsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B0C31B1F25894A00E1448A /* logisticsViewController.m */; };
 		18B0C3201F2589CA00E1448A /* BaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B0C31F1F2589CA00E1448A /* BaseTableViewCell.m */; };
@@ -290,6 +293,11 @@
 		18A3850F1F3022A300B97276 /* UIImage+GIF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+GIF.m"; sourceTree = "<group>"; };
 		18A385111F30269E00B97276 /* 123.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 123.gif; sourceTree = "<group>"; };
 		18A680A41F1346A4002F8F73 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		18AEE9541F32F7EC0075AC6F /* tagViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tagViewController.h; sourceTree = "<group>"; };
+		18AEE9551F32F7EC0075AC6F /* tagViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = tagViewController.m; sourceTree = "<group>"; };
+		18AEE9571F32F83E0075AC6F /* tagsData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = tagsData.plist; sourceTree = "<group>"; };
+		18AEE9591F32F92A0075AC6F /* tagModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tagModel.h; sourceTree = "<group>"; };
+		18AEE95A1F32F92A0075AC6F /* tagModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = tagModel.m; sourceTree = "<group>"; };
 		18B0C3181F25894A00E1448A /* DetailsLogisticsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailsLogisticsViewController.h; sourceTree = "<group>"; };
 		18B0C3191F25894A00E1448A /* DetailsLogisticsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailsLogisticsViewController.m; sourceTree = "<group>"; };
 		18B0C31A1F25894A00E1448A /* logisticsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = logisticsViewController.h; sourceTree = "<group>"; };
@@ -412,6 +420,8 @@
 			children = (
 				18345CE91F17429A00257B87 /* Student.h */,
 				18345CEA1F17429A00257B87 /* Student.m */,
+				18AEE9591F32F92A0075AC6F /* tagModel.h */,
+				18AEE95A1F32F92A0075AC6F /* tagModel.m */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -656,6 +666,7 @@
 		18FBDBE91F1F3A8400A4B333 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				18AEE9571F32F83E0075AC6F /* tagsData.plist */,
 				186C30691F31B6D5006AA066 /* Load_failed.png */,
 				186C306A1F31B6D5006AA066 /* Refresh_Img.png */,
 				18A385111F30269E00B97276 /* 123.gif */,
@@ -755,6 +766,8 @@
 				180166E61F307E4F00D19BF6 /* lightViewController.h */,
 				180166E71F307E4F00D19BF6 /* lightViewController.m */,
 				180166E81F307E4F00D19BF6 /* lightViewController.xib */,
+				18AEE9541F32F7EC0075AC6F /* tagViewController.h */,
+				18AEE9551F32F7EC0075AC6F /* tagViewController.m */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -1047,6 +1060,7 @@
 				1844DDF01F2191ED00A44BE3 /* Guidance03.jpg in Resources */,
 				1858914B1F29857F001C02D8 /* 美女14.jpg in Resources */,
 				186C4DD51F205B7800A9A1E2 /* showViewController.xib in Resources */,
+				18AEE9581F32F83E0075AC6F /* tagsData.plist in Resources */,
 				185891511F29857F001C02D8 /* 美女20.jpg in Resources */,
 				18FBDC0A1F1F3ACD00A4B333 /* t2.jpeg in Resources */,
 				185891401F29857F001C02D8 /* 美女03.jpg in Resources */,
@@ -1159,6 +1173,7 @@
 				186C4DC81F2059CC00A9A1E2 /* ScienceViewController.m in Sources */,
 				18D71A991F20B4530039FACD /* YHTReachability.m in Sources */,
 				184CAAD71F2B161B00AEAB18 /* RXJDAddressPickerView.m in Sources */,
+				18AEE9561F32F7EC0075AC6F /* tagViewController.m in Sources */,
 				1865E5E61F2874A6005A1189 /* DBViewController.m in Sources */,
 				18E8D9301F25E03A0051BF53 /* XHAppInfo.m in Sources */,
 				18B0C31C1F25894A00E1448A /* DetailsLogisticsViewController.m in Sources */,
@@ -1203,6 +1218,7 @@
 				18B0C3271F258A4200E1448A /* dataModel.m in Sources */,
 				508E515D1EFB54B1007C32B3 /* main.m in Sources */,
 				186C4DA81F203BDC00A9A1E2 /* LocationViewController.m in Sources */,
+				18AEE95B1F32F92A0075AC6F /* tagModel.m in Sources */,
 				18FBDC661F1F4B5200A4B333 /* BlockViewController.m in Sources */,
 				1806E35C1F30632B000564D3 /* UITouchViewController.m in Sources */,
 				186C4DAA1F203BDC00A9A1E2 /* phpModel.m in Sources */,

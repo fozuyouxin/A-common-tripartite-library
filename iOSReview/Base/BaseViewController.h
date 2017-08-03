@@ -121,7 +121,9 @@ typedef void (^ alertBlock)(NSString * alertMessage);//UIAlertController
 /* UILabel设置不同字体颜色 */
 - (void)colorLabel:(UILabel *)lab andFont:(int)font andRange:(NSRange)range andColor:(UIColor *)color;
 /* 设置UILabel的高度 */
-- (CGSize)sizeWithString:(NSString *)string size:(CGSize)size andFont:(int)size;
+- (CGSize)sizeWithString:(NSString *)string size:(CGSize)size andFont:(int)font;
+/* 计算文字宽度 */
+- (CGSize)widthForLabel:(NSString *)text fontSize:(CGFloat)font;
 /* UILabel,UIButton设置下划线 */
 - (void)setUnderline:(id)sender;
 

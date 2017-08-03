@@ -60,6 +60,8 @@
 #import "UITouchViewController.h"
 #import "savePicViewController.h"
 #import "lightViewController.h"
+#import "tagViewController.h"
+#import "BaseView.h"
 
 #ifdef __OBJC__
 #import <UIKit/UIKit.h>
