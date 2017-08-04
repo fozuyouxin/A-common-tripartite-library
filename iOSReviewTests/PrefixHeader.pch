@@ -62,6 +62,8 @@
 #import "lightViewController.h"
 #import "tagViewController.h"
 #import "BaseView.h"
+#import "GouwuViewController.h"
+
 
 #ifdef __OBJC__
 #import <UIKit/UIKit.h>

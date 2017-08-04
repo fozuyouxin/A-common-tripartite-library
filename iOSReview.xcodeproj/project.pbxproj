@@ -13,6 +13,10 @@
 		1806E35C1F30632B000564D3 /* UITouchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1806E35B1F30632B000564D3 /* UITouchViewController.m */; };
 		181E74E01F2B26B200592F23 /* addressViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 181E74DF1F2B26B200592F23 /* addressViewController.m */; };
 		18345CEB1F17429A00257B87 /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = 18345CEA1F17429A00257B87 /* Student.m */; };
+		183BDEA51F341CCC00E7A3C3 /* GouwuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 183BDEA41F341CCC00E7A3C3 /* GouwuViewController.m */; };
+		183BDEA81F341D5800E7A3C3 /* ShoppingCartTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 183BDEA71F341D5800E7A3C3 /* ShoppingCartTool.m */; };
+		183BDEAB1F341D8900E7A3C3 /* cart.png in Resources */ = {isa = PBXBuildFile; fileRef = 183BDEA91F341D8900E7A3C3 /* cart.png */; };
+		183BDEAE1F341E9500E7A3C3 /* xin.png in Resources */ = {isa = PBXBuildFile; fileRef = 183BDEAD1F341E9500E7A3C3 /* xin.png */; };
 		1844DDEA1F2191C100A44BE3 /* GuidanceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1844DDE91F2191C100A44BE3 /* GuidanceController.m */; };
 		1844DDEE1F2191ED00A44BE3 /* Guidance01.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1844DDEB1F2191ED00A44BE3 /* Guidance01.jpg */; };
 		1844DDEF1F2191ED00A44BE3 /* Guidance02.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1844DDEC1F2191ED00A44BE3 /* Guidance02.jpg */; };
@@ -179,6 +183,12 @@
 		181E74DF1F2B26B200592F23 /* addressViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = addressViewController.m; sourceTree = "<group>"; };
 		18345CE91F17429A00257B87 /* Student.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Student.h; sourceTree = "<group>"; };
 		18345CEA1F17429A00257B87 /* Student.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Student.m; sourceTree = "<group>"; };
+		183BDEA31F341CCC00E7A3C3 /* GouwuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GouwuViewController.h; sourceTree = "<group>"; };
+		183BDEA41F341CCC00E7A3C3 /* GouwuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GouwuViewController.m; sourceTree = "<group>"; };
+		183BDEA61F341D5800E7A3C3 /* ShoppingCartTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShoppingCartTool.h; sourceTree = "<group>"; };
+		183BDEA71F341D5800E7A3C3 /* ShoppingCartTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShoppingCartTool.m; sourceTree = "<group>"; };
+		183BDEA91F341D8900E7A3C3 /* cart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cart.png; sourceTree = "<group>"; };
+		183BDEAD1F341E9500E7A3C3 /* xin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = xin.png; sourceTree = "<group>"; };
 		1844DDE81F2191C100A44BE3 /* GuidanceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GuidanceController.h; sourceTree = "<group>"; };
 		1844DDE91F2191C100A44BE3 /* GuidanceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GuidanceController.m; sourceTree = "<group>"; };
 		1844DDEB1F2191ED00A44BE3 /* Guidance01.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Guidance01.jpg; sourceTree = "<group>"; };
@@ -666,6 +676,8 @@
 		18FBDBE91F1F3A8400A4B333 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				183BDEAD1F341E9500E7A3C3 /* xin.png */,
+				183BDEA91F341D8900E7A3C3 /* cart.png */,
 				18AEE9571F32F83E0075AC6F /* tagsData.plist */,
 				186C30691F31B6D5006AA066 /* Load_failed.png */,
 				186C306A1F31B6D5006AA066 /* Refresh_Img.png */,
@@ -768,6 +780,10 @@
 				180166E81F307E4F00D19BF6 /* lightViewController.xib */,
 				18AEE9541F32F7EC0075AC6F /* tagViewController.h */,
 				18AEE9551F32F7EC0075AC6F /* tagViewController.m */,
+				183BDEA31F341CCC00E7A3C3 /* GouwuViewController.h */,
+				183BDEA41F341CCC00E7A3C3 /* GouwuViewController.m */,
+				183BDEA61F341D5800E7A3C3 /* ShoppingCartTool.h */,
+				183BDEA71F341D5800E7A3C3 /* ShoppingCartTool.m */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -1042,6 +1058,7 @@
 				185891501F29857F001C02D8 /* 美女19.jpg in Resources */,
 				18FBDC041F1F3ACD00A4B333 /* niao_4.png in Resources */,
 				1844DDEF1F2191ED00A44BE3 /* Guidance02.jpg in Resources */,
+				183BDEAB1F341D8900E7A3C3 /* cart.png in Resources */,
 				186C306C1F31B6D5006AA066 /* Refresh_Img.png in Resources */,
 				185891421F29857F001C02D8 /* 美女05.jpg in Resources */,
 				508E516B1EFB54B1007C32B3 /* LaunchScreen.storyboard in Resources */,
@@ -1076,6 +1093,7 @@
 				18FBDC0B1F1F3ACD00A4B333 /* ying.png in Resources */,
 				1858914E1F29857F001C02D8 /* 美女17.jpg in Resources */,
 				18FBDC061F1F3ACD00A4B333 /* niao_6.png in Resources */,
+				183BDEAE1F341E9500E7A3C3 /* xin.png in Resources */,
 				18FBDC081F1F3ACD00A4B333 /* niao_8.png in Resources */,
 				18FBDC011F1F3ACD00A4B333 /* niao_1.png in Resources */,
 				18A385071F301B3D00B97276 /* king2.png in Resources */,
@@ -1183,6 +1201,7 @@
 				186C4DC91F2059CC00A9A1E2 /* SocietyViewController.m in Sources */,
 				18FBDC111F1F3E8000A4B333 /* BaseNavigationController.m in Sources */,
 				18FBDC691F1F4C9E00A4B333 /* AFViewController.m in Sources */,
+				183BDEA81F341D5800E7A3C3 /* ShoppingCartTool.m in Sources */,
 				186C30651F317918006AA066 /* WindowView.m in Sources */,
 				18FBDC571F1F440800A4B333 /* sucessViewController.m in Sources */,
 				186C4DCD1F2059CC00A9A1E2 /* YHTScrollView.m in Sources */,
@@ -1207,6 +1226,7 @@
 				184CAADA1F2B161B00AEAB18 /* RXHexColor.m in Sources */,
 				181E74E01F2B26B200592F23 /* addressViewController.m in Sources */,
 				184CAAD91F2B161B00AEAB18 /* RXJDTableCell.m in Sources */,
+				183BDEA51F341CCC00E7A3C3 /* GouwuViewController.m in Sources */,
 				18B0C3201F2589CA00E1448A /* BaseTableViewCell.m in Sources */,
 				186C4DDE1F205D7100A9A1E2 /* musicViewController.m in Sources */,
 				18A385101F3022A300B97276 /* UIImage+GIF.m in Sources */,

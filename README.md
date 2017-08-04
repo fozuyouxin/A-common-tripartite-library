@@ -170,13 +170,19 @@
 <img width="250" height="400" src="Image/save.png" />
 </div>
 
-* 2017.8.4 增加标签选择器功能;
-    主要采用UICollectionView进行布局,详情看代码;
+* 2017.8.4 </br>
+    1.增加标签选择器功能,主要采用UICollectionView进行布局,详情看代码;
     
 <div>
 <img width="250" height="400" src="Image/addTitle.gif" />
 </div>
 
+    2.增加加入购物车动画效果;
+
+<div>
+<img width="250" height="400" src="Image/add.gif" />
+</div>
+    
 * 功能持续更新中...
 
 实现功能效果图:
