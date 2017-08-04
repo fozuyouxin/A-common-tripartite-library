@@ -171,10 +171,11 @@
 </div>
 
 * 2017.8.4 </br>
-    1.增加标签选择器功能,主要采用UICollectionView进行布局,详情看代码;
+    1.增加标签选择器功能,主要采用UICollectionView进行布局,详情看代码;这里我又写了一种方式,可以手动添加标签;
     
 <div>
 <img width="250" height="400" src="Image/addTitle.gif" />
+<img width="250" height="400" src="Image/addTitle1.gif" />
 </div>
 
     2.增加加入购物车动画效果;
