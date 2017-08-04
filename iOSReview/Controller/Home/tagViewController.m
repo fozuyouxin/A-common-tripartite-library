@@ -34,8 +34,9 @@ static NSString * cellID = @"cellID";
 //初始化数据
 - (void)setData{
     _dataArr = [[NSMutableArray alloc]init];
-    _allArr = [[NSMutableArray alloc]init];
     _meArr = [[NSMutableArray alloc]init];
+#if 0
+    _allArr = [[NSMutableArray alloc]init];
     NSString * path = [[NSBundle mainBundle]pathForResource:@"tagsData" ofType:@"plist"];
     NSArray * arr = [NSArray arrayWithContentsOfFile:path];
     for (NSDictionary * dic in arr) {
@@ -44,6 +45,11 @@ static NSString * cellID = @"cellID";
         [self.allArr addObject:model];
     }
     [self.dataArr addObjectsFromArray:@[self.meArr,self.allArr]];
+#else
+    _allArr = [[NSMutableArray alloc]initWithObjects:@"Java",@"C",@"C++",@"C#",@"PHP",@"Python",@"VB",@"JavaScript",@"SQL",@"Ruby",@"Objective-C",@"Perl",@".NET",@"VF",@"R语言",@"Swift", nil];
+    [self.dataArr addObject:_meArr];
+    [self.dataArr addObject:_allArr];
+#endif
 }
 
 //创建CollectionView
@@ -52,7 +58,7 @@ static NSString * cellID = @"cellID";
     layOut.minimumLineSpacing = 5;
     layOut.minimumInteritemSpacing = 5;
     layOut.headerReferenceSize=CGSizeMake(self.view.frame.size.width, 30); //设置collectionView头视图的大小
-    _collectionView = [[UICollectionView alloc]initWithFrame:CGRectMake(10, 10, HitoScreenW-20, HitoScreenH-20) collectionViewLayout:layOut];
+    _collectionView = [[UICollectionView alloc]initWithFrame:CGRectMake(10, 10,HitoScreenW-20, HitoScreenH-20) collectionViewLayout:layOut];
     _collectionView.backgroundColor = [UIColor whiteColor];
     _collectionView.delegate = self;
     _collectionView.dataSource = self;
@@ -85,14 +91,21 @@ static NSString * cellID = @"cellID";
     for (UIView *view in cell.subviews) {
         [view removeFromSuperview];
     }
-    tagModel * model = self.dataArr[indexPath.section][indexPath.row];
+
     UILabel * lab = [[UILabel alloc]init];
     lab.layer.borderWidth = 1;
-    lab.layer.borderColor = [self colorWithHexadecimal:model.color].CGColor;
+    lab.textAlignment = NSTextAlignmentCenter;
     lab.backgroundColor = [UIColor whiteColor];
+#if 0
+    tagModel * model = self.dataArr[indexPath.section][indexPath.row];
+    lab.layer.borderColor = [self colorWithHexadecimal:model.color].CGColor;
     lab.textColor = [self colorWithHexadecimal:model.color];
     lab.text = model.title;
-    lab.textAlignment = NSTextAlignmentCenter;
+#else
+    lab.text = self.dataArr[indexPath.section][indexPath.row];
+    lab.textColor = [self RandomColor];
+    lab.layer.borderColor = lab.textColor.CGColor;
+#endif
     CGSize size = [self widthForLabel:lab.text fontSize:16];
     lab.frame = CGRectMake(0, 0,size.width+10, 21);
     [cell addSubview:lab];
@@ -102,29 +115,62 @@ static NSString * cellID = @"cellID";
 
 //cell大小
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath{
-
+#if 0
     tagModel *model = self.dataArr[indexPath.section][indexPath.row];
     CGFloat width = [self widthForLabel:model.title fontSize:16].width;
+#else
+    NSString * title = self.dataArr[indexPath.section][indexPath.row];
+    CGFloat width = [self widthForLabel:title fontSize:16].width;
     return CGSizeMake(width+10,32);
+#endif
 }
 
 - (UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath {
     if ([kind isEqualToString:UICollectionElementKindSectionHeader]) {
         UICollectionReusableView *header = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"header" forIndexPath:indexPath];
-
-        HitoAllocInit(UILabel, lab);
-        lab.frame = header.bounds;
-        lab.text = _titleArr[indexPath.section];
-        lab.textColor = [UIColor blackColor];
-        lab.backgroundColor = [UIColor whiteColor];
         for (UIView *view in header.subviews) {
             [view removeFromSuperview];
         } // 防止复用分区头
+        HitoAllocInit(UILabel, lab);
+        lab.frame = CGRectMake(0, 0, 100, header.bounds.size.height);
+        lab.text = _titleArr[indexPath.section];
+        lab.textColor = [UIColor blackColor];
+        lab.backgroundColor = [UIColor whiteColor];
         [header addSubview:lab];
+        
+        if (indexPath.section==0) {
+            HitoAllocInit(UITextField, tf);
+            tf.frame = CGRectMake(CGRectGetMaxX(lab.frame), 2, HitoScreenW-200, 25);
+            tf.borderStyle = UITextBorderStyleRoundedRect;
+            tf.placeholder = @"请输入标签";
+            tf.tag = 1000;
+            [header addSubview:tf];
+            
+            HitoAllocInit(UIButton, btn);
+            btn.frame = CGRectMake(CGRectGetMaxX(tf.frame)+10, 2, 50, 25);
+            [btn setTitle:@"添加" forState:UIControlStateNormal];
+            btn.layer.cornerRadius = 4;
+            btn.layer.masksToBounds = YES;
+            btn.backgroundColor = [UIColor grayColor];
+            [btn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+            [btn addTarget:self action:@selector(btnClick:) forControlEvents:UIControlEventTouchUpInside];
+            [header addSubview:btn];
+        }
+        
         return header;
+        
     } else {
         return nil;
     }
+}
+- (void)btnClick:(UIButton *)btn{
+    UITextField * tf = (UITextField *)[self.view viewWithTag:1000];
+    if ([tf.text isEqualToString:@""]) {
+        [taoAlert showAlertWithController:self andTitlt:@"不能为空!" andMessage:nil andTime:2];
+        return;
+    }
+    [self.meArr addObject:tf.text];
+    [self.collectionView reloadData];
 }
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
@@ -171,5 +217,12 @@ static NSString * cellID = @"cellID";
     return [UIColor colorWithRed:red green:green blue:blue alpha:alpha];
 }
 
-
+/* 随机颜色 */
+- (UIColor *)RandomColor {
+    NSInteger aRedValue = arc4random() % 255;
+    NSInteger aGreenValue = arc4random() % 255;
+    NSInteger aBlueValue = arc4random() % 255;
+    UIColor *randColor = [UIColor colorWithRed:aRedValue / 255.0f green:aGreenValue / 255.0f blue:aBlueValue / 255.0f alpha:1.0f];
+    return randColor;
+}
 @end
