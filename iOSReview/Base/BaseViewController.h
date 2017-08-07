@@ -17,6 +17,7 @@ typedef void (^ alertBlock)(NSString * alertMessage);//UIAlertController
 @property (nonatomic,strong)UITableView *tableView;//列表
 @property (nonatomic,strong)NSMutableArray *dataArr;//数据源
 @property (nonatomic,strong)UITextField * textF;//文本框
+@property (nonatomic,strong)UILabel * instructionsLabel;
 
 //单例模式
 + (BaseViewController *) shareBaseViewController;

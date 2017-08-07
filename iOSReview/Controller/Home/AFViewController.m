@@ -21,6 +21,7 @@
     [self addDropUpRefresh];
     [self addDropDownRefresh];
     [self AFNetworking];
+    self.instructionsLabel.text = @"网络请求AFNetworking;\n UI布局UITableView;";
     
 }
 

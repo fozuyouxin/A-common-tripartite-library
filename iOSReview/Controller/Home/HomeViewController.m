@@ -52,6 +52,7 @@
     //自定义动画
     //[self showHudInView:HitoApplication];
     
+    
 }
 
 - (void)showHudInView:(UIView *)view{

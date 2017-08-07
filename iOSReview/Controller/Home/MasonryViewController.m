@@ -18,6 +18,7 @@
     [super viewDidLoad];
     
     [self setUpUI];
+    
 }
 - (void)setUpUI{
     UIView *superview = self.view;

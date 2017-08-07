@@ -33,6 +33,7 @@
 
 @property (nonatomic, strong) BaseView * placeholderView;
 
+
 @end
 
 @implementation BaseViewController
@@ -45,6 +46,20 @@
         base = [[BaseViewController alloc]init];
     });
     return base;
+}
+
+- (UILabel *)instructionsLabel{
+    if (!_instructionsLabel) {
+        _instructionsLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, HitoScreenH-100,HitoScreenW,100)];
+        _instructionsLabel.font = [UIFont systemFontOfSize:15];
+        _instructionsLabel.textAlignment = NSTextAlignmentCenter;
+        _instructionsLabel.textColor = HitoRGBA(155, 89, 183, 1);
+        _instructionsLabel.backgroundColor = HitoRGBA(236, 240, 241, 1);
+        _instructionsLabel.alpha = 0.8;
+        _instructionsLabel.numberOfLines = 0;
+        [self.view addSubview:_instructionsLabel];
+    }
+    return _instructionsLabel;
 }
 
 - (void)viewDidLoad {
