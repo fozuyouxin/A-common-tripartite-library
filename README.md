@@ -184,6 +184,13 @@
 <div>
 <img width="250" height="400" src="Image/add.gif" />
 </div>
+
+* 2017.8.10 </br>
+    增加封装AVPlayer,播放网络视频;
+
+<div>
+<img width="250" height="400" src="Image/video.gif" />
+</div>
     
 * 功能持续更新中...
 

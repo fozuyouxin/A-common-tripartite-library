@@ -210,8 +210,8 @@ static CGFloat bottomHeight = 25;
         weakSelf.slider.value = currentTime/totalTime;
     }];
 }
-#pragma mark --------------------------事件---------------------------
 
+#pragma mark --------------------------事件---------------------------
 /* 横屏,竖屏 */
 - (void)bigBtnClick{
     NSString * str;
@@ -300,6 +300,7 @@ static CGFloat bottomHeight = 25;
     }
     return _player;
 }
+
 - (UIButton *)playBtn{
     if (!_playBtn) {
         _playBtn = [UIButton buttonWithType:0];
@@ -311,6 +312,7 @@ static CGFloat bottomHeight = 25;
     }
     return _playBtn;
 }
+
 - (UILabel *)startLab{
     if (!_startLab) {
         _startLab = [[UILabel alloc]init];
