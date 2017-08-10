@@ -63,13 +63,14 @@
 #import "tagViewController.h"
 #import "BaseView.h"
 #import "GouwuViewController.h"
-
+#import "AVPlayerViewController.h"
+#import "MViewController.h"
 
 #ifdef __OBJC__
 #import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
 #endif
-
+#import <AVFoundation/AVFoundation.h>
 #import <Masonry.h>
 #import <MJRefresh.h>
 #import <MJExtension.h>

@@ -10,6 +10,8 @@
 /* ----------------------系统--------------------------- */
 //获取手机系统的版本
 #define HitoSystemVersion [[[UIDevice currentDevice] systemVersion] floatValue]
+//是否为iOS7及以上系统
+#define HitoiOS7 ([[UIDevice currentDevice].systemVersion doubleValue] >= 7.0)
 //是否为iOS8及以上系统
 #define HitoiOS8 ([[UIDevice currentDevice].systemVersion doubleValue] >= 8.0)
 //是否为iOS9及以上系统

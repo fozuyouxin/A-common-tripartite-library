@@ -12,6 +12,7 @@
 		180166EC1F30800100D19BF6 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 180166EB1F30800100D19BF6 /* AVFoundation.framework */; };
 		1806E35C1F30632B000564D3 /* UITouchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1806E35B1F30632B000564D3 /* UITouchViewController.m */; };
 		181E74E01F2B26B200592F23 /* addressViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 181E74DF1F2B26B200592F23 /* addressViewController.m */; };
+		182B74E41F399BFD0066AD8D /* AVPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 182B74E31F399BFD0066AD8D /* AVPlayerViewController.m */; };
 		18345CEB1F17429A00257B87 /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = 18345CEA1F17429A00257B87 /* Student.m */; };
 		183BDEA51F341CCC00E7A3C3 /* GouwuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 183BDEA41F341CCC00E7A3C3 /* GouwuViewController.m */; };
 		183BDEA81F341D5800E7A3C3 /* ShoppingCartTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 183BDEA71F341D5800E7A3C3 /* ShoppingCartTool.m */; };
@@ -107,10 +108,18 @@
 		18B0C3241F258A1D00E1448A /* taoAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B0C3231F258A1D00E1448A /* taoAlert.m */; };
 		18B0C3271F258A4200E1448A /* dataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B0C3261F258A4200E1448A /* dataModel.m */; };
 		18B53AD71F30728600260D97 /* savePicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B53AD61F30728600260D97 /* savePicViewController.m */; };
+		18C10D2B1F3AA3DC00D19E0A /* videoback.png in Resources */ = {isa = PBXBuildFile; fileRef = 18C10D2A1F3AA3DC00D19E0A /* videoback.png */; };
+		18C10D2E1F3AB45800D19E0A /* videoPlay.png in Resources */ = {isa = PBXBuildFile; fileRef = 18C10D2C1F3AB45800D19E0A /* videoPlay.png */; };
+		18C10D2F1F3AB45800D19E0A /* videoPause.png in Resources */ = {isa = PBXBuildFile; fileRef = 18C10D2D1F3AB45800D19E0A /* videoPause.png */; };
+		18C10D361F3AD6E600D19E0A /* 你还要我怎样.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 18C10D351F3AD6E600D19E0A /* 你还要我怎样.mp3 */; };
+		18C10D391F3AD7BD00D19E0A /* MViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C10D381F3AD7BD00D19E0A /* MViewController.m */; };
 		18D71A991F20B4530039FACD /* YHTReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D71A981F20B4530039FACD /* YHTReachability.m */; };
 		18E8D9301F25E03A0051BF53 /* XHAppInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E8D92B1F25E03A0051BF53 /* XHAppInfo.m */; };
 		18E8D9311F25E03A0051BF53 /* XHVersion.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E8D92D1F25E03A0051BF53 /* XHVersion.m */; };
 		18E8D9321F25E03A0051BF53 /* XHVersionRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E8D92F1F25E03A0051BF53 /* XHVersionRequest.m */; };
+		18F2F4CD1F39A532008B0B32 /* videoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F2F4CC1F39A532008B0B32 /* videoView.m */; };
+		18F2F4CF1F39AB63008B0B32 /* fangda.png in Resources */ = {isa = PBXBuildFile; fileRef = 18F2F4CE1F39AB63008B0B32 /* fangda.png */; };
+		18F2F4D51F39BF94008B0B32 /* jindudian.png in Resources */ = {isa = PBXBuildFile; fileRef = 18F2F4D41F39BF94008B0B32 /* jindudian.png */; };
 		18FBDBE51F1F3A4A00A4B333 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FBDBE31F1F3A4A00A4B333 /* BaseViewController.m */; };
 		18FBDBE81F1F3A6B00A4B333 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FBDBE71F1F3A6B00A4B333 /* AppDelegate.m */; };
 		18FBDBFC1F1F3ACD00A4B333 /* 123.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 18FBDBEA1F1F3ACD00A4B333 /* 123.mp4 */; };
@@ -181,6 +190,8 @@
 		1806E35B1F30632B000564D3 /* UITouchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UITouchViewController.m; sourceTree = "<group>"; };
 		181E74DE1F2B26B200592F23 /* addressViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = addressViewController.h; sourceTree = "<group>"; };
 		181E74DF1F2B26B200592F23 /* addressViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = addressViewController.m; sourceTree = "<group>"; };
+		182B74E21F399BFD0066AD8D /* AVPlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVPlayerViewController.h; sourceTree = "<group>"; };
+		182B74E31F399BFD0066AD8D /* AVPlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVPlayerViewController.m; sourceTree = "<group>"; };
 		18345CE91F17429A00257B87 /* Student.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Student.h; sourceTree = "<group>"; };
 		18345CEA1F17429A00257B87 /* Student.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Student.m; sourceTree = "<group>"; };
 		183BDEA31F341CCC00E7A3C3 /* GouwuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GouwuViewController.h; sourceTree = "<group>"; };
@@ -320,6 +331,12 @@
 		18B0C3261F258A4200E1448A /* dataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = dataModel.m; sourceTree = "<group>"; };
 		18B53AD51F30728600260D97 /* savePicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = savePicViewController.h; sourceTree = "<group>"; };
 		18B53AD61F30728600260D97 /* savePicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = savePicViewController.m; sourceTree = "<group>"; };
+		18C10D2A1F3AA3DC00D19E0A /* videoback.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = videoback.png; sourceTree = "<group>"; };
+		18C10D2C1F3AB45800D19E0A /* videoPlay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = videoPlay.png; sourceTree = "<group>"; };
+		18C10D2D1F3AB45800D19E0A /* videoPause.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = videoPause.png; sourceTree = "<group>"; };
+		18C10D351F3AD6E600D19E0A /* 你还要我怎样.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "你还要我怎样.mp3"; sourceTree = "<group>"; };
+		18C10D371F3AD7BD00D19E0A /* MViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MViewController.h; sourceTree = "<group>"; };
+		18C10D381F3AD7BD00D19E0A /* MViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MViewController.m; sourceTree = "<group>"; };
 		18D71A971F20B4530039FACD /* YHTReachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHTReachability.h; sourceTree = "<group>"; };
 		18D71A981F20B4530039FACD /* YHTReachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHTReachability.m; sourceTree = "<group>"; };
 		18E8D92A1F25E03A0051BF53 /* XHAppInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHAppInfo.h; sourceTree = "<group>"; };
@@ -328,6 +345,10 @@
 		18E8D92D1F25E03A0051BF53 /* XHVersion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHVersion.m; sourceTree = "<group>"; };
 		18E8D92E1F25E03A0051BF53 /* XHVersionRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHVersionRequest.h; sourceTree = "<group>"; };
 		18E8D92F1F25E03A0051BF53 /* XHVersionRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHVersionRequest.m; sourceTree = "<group>"; };
+		18F2F4CB1F39A532008B0B32 /* videoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = videoView.h; sourceTree = "<group>"; };
+		18F2F4CC1F39A532008B0B32 /* videoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = videoView.m; sourceTree = "<group>"; };
+		18F2F4CE1F39AB63008B0B32 /* fangda.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fangda.png; sourceTree = "<group>"; };
+		18F2F4D41F39BF94008B0B32 /* jindudian.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jindudian.png; sourceTree = "<group>"; };
 		18FBDBE21F1F3A4A00A4B333 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
 		18FBDBE31F1F3A4A00A4B333 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 		18FBDBE41F1F3A4A00A4B333 /* HeadTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeadTools.h; sourceTree = "<group>"; };
@@ -505,6 +526,8 @@
 				1865E5E91F2875BF005A1189 /* SQliteManager.m */,
 				18A3850E1F3022A300B97276 /* UIImage+GIF.h */,
 				18A3850F1F3022A300B97276 /* UIImage+GIF.m */,
+				18F2F4CB1F39A532008B0B32 /* videoView.h */,
+				18F2F4CC1F39A532008B0B32 /* videoView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -676,6 +699,12 @@
 		18FBDBE91F1F3A8400A4B333 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				18C10D351F3AD6E600D19E0A /* 你还要我怎样.mp3 */,
+				18C10D2C1F3AB45800D19E0A /* videoPlay.png */,
+				18C10D2D1F3AB45800D19E0A /* videoPause.png */,
+				18C10D2A1F3AA3DC00D19E0A /* videoback.png */,
+				18F2F4D41F39BF94008B0B32 /* jindudian.png */,
+				18F2F4CE1F39AB63008B0B32 /* fangda.png */,
 				183BDEAD1F341E9500E7A3C3 /* xin.png */,
 				183BDEA91F341D8900E7A3C3 /* cart.png */,
 				18AEE9571F32F83E0075AC6F /* tagsData.plist */,
@@ -784,6 +813,10 @@
 				183BDEA41F341CCC00E7A3C3 /* GouwuViewController.m */,
 				183BDEA61F341D5800E7A3C3 /* ShoppingCartTool.h */,
 				183BDEA71F341D5800E7A3C3 /* ShoppingCartTool.m */,
+				182B74E21F399BFD0066AD8D /* AVPlayerViewController.h */,
+				182B74E31F399BFD0066AD8D /* AVPlayerViewController.m */,
+				18C10D371F3AD7BD00D19E0A /* MViewController.h */,
+				18C10D381F3AD7BD00D19E0A /* MViewController.m */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -1039,6 +1072,7 @@
 			files = (
 				18FBDC071F1F3ACD00A4B333 /* niao_7.png in Resources */,
 				185891561F29857F001C02D8 /* 美女25.jpg in Resources */,
+				18C10D2F1F3AB45800D19E0A /* videoPause.png in Resources */,
 				1858914F1F29857F001C02D8 /* 美女18.jpg in Resources */,
 				1858914D1F29857F001C02D8 /* 美女16.jpg in Resources */,
 				185891471F29857F001C02D8 /* 美女10.jpg in Resources */,
@@ -1050,11 +1084,13 @@
 				18FBDBFD1F1F3ACD00A4B333 /* 霍建华、赵丽颖 - 不可说.mp4 in Resources */,
 				18FBDC001F1F3ACD00A4B333 /* next.png in Resources */,
 				18FBDC6E1F1F532B00A4B333 /* bao.jpg in Resources */,
+				18C10D2E1F3AB45800D19E0A /* videoPlay.png in Resources */,
 				18FBDC091F1F3ACD00A4B333 /* t1.jpeg in Resources */,
 				186C4DDA1F205CD500A9A1E2 /* 飞机的壁纸.jpg in Resources */,
 				18FBDC051F1F3ACD00A4B333 /* niao_5.png in Resources */,
 				185891411F29857F001C02D8 /* 美女04.jpg in Resources */,
 				185891541F29857F001C02D8 /* 美女23.jpg in Resources */,
+				18F2F4D51F39BF94008B0B32 /* jindudian.png in Resources */,
 				185891501F29857F001C02D8 /* 美女19.jpg in Resources */,
 				18FBDC041F1F3ACD00A4B333 /* niao_4.png in Resources */,
 				1844DDEF1F2191ED00A44BE3 /* Guidance02.jpg in Resources */,
@@ -1068,6 +1104,7 @@
 				18FBDBFE1F1F3ACD00A4B333 /* aa.jpg in Resources */,
 				186C306B1F31B6D5006AA066 /* Load_failed.png in Resources */,
 				185891551F29857F001C02D8 /* 美女24.jpg in Resources */,
+				18C10D361F3AD6E600D19E0A /* 你还要我怎样.mp3 in Resources */,
 				18A3850A1F301B3D00B97276 /* king5.png in Resources */,
 				18FBDC711F1F634B00A4B333 /* biao.jpg in Resources */,
 				186C4DD91F205CD500A9A1E2 /* 电脑的壁纸.jpg in Resources */,
@@ -1083,6 +1120,7 @@
 				185891401F29857F001C02D8 /* 美女03.jpg in Resources */,
 				185891431F29857F001C02D8 /* 美女06.jpg in Resources */,
 				184CAAB81F2AE44A00AEAB18 /* xia.png in Resources */,
+				18F2F4CF1F39AB63008B0B32 /* fangda.png in Resources */,
 				18FBDC021F1F3ACD00A4B333 /* niao_2.png in Resources */,
 				18A385091F301B3D00B97276 /* king4.png in Resources */,
 				18FBDBFF1F1F3ACD00A4B333 /* back.png in Resources */,
@@ -1099,6 +1137,7 @@
 				18A385071F301B3D00B97276 /* king2.png in Resources */,
 				1858913F1F29857F001C02D8 /* 美女02.jpg in Resources */,
 				185891481F29857F001C02D8 /* 美女11.jpg in Resources */,
+				18C10D2B1F3AA3DC00D19E0A /* videoback.png in Resources */,
 				1858914A1F29857F001C02D8 /* 美女13.jpg in Resources */,
 				186C4DB01F204B2D00A9A1E2 /* zoedear.jpg in Resources */,
 				1858913E1F29857F001C02D8 /* 美女01.jpg in Resources */,
@@ -1191,6 +1230,7 @@
 				186C4DC81F2059CC00A9A1E2 /* ScienceViewController.m in Sources */,
 				18D71A991F20B4530039FACD /* YHTReachability.m in Sources */,
 				184CAAD71F2B161B00AEAB18 /* RXJDAddressPickerView.m in Sources */,
+				18C10D391F3AD7BD00D19E0A /* MViewController.m in Sources */,
 				18AEE9561F32F7EC0075AC6F /* tagViewController.m in Sources */,
 				1865E5E61F2874A6005A1189 /* DBViewController.m in Sources */,
 				18E8D9301F25E03A0051BF53 /* XHAppInfo.m in Sources */,
@@ -1206,6 +1246,7 @@
 				18FBDC571F1F440800A4B333 /* sucessViewController.m in Sources */,
 				186C4DCD1F2059CC00A9A1E2 /* YHTScrollView.m in Sources */,
 				184CAAD61F2B161B00AEAB18 /* RXGetAddress.m in Sources */,
+				18F2F4CD1F39A532008B0B32 /* videoView.m in Sources */,
 				18E8D9311F25E03A0051BF53 /* XHVersion.m in Sources */,
 				186C4DA71F203BDC00A9A1E2 /* Location.m in Sources */,
 				180166E91F307E4F00D19BF6 /* lightViewController.m in Sources */,
@@ -1227,6 +1268,7 @@
 				181E74E01F2B26B200592F23 /* addressViewController.m in Sources */,
 				184CAAD91F2B161B00AEAB18 /* RXJDTableCell.m in Sources */,
 				183BDEA51F341CCC00E7A3C3 /* GouwuViewController.m in Sources */,
+				182B74E41F399BFD0066AD8D /* AVPlayerViewController.m in Sources */,
 				18B0C3201F2589CA00E1448A /* BaseTableViewCell.m in Sources */,
 				186C4DDE1F205D7100A9A1E2 /* musicViewController.m in Sources */,
 				18A385101F3022A300B97276 /* UIImage+GIF.m in Sources */,
